@@ -95,14 +95,14 @@
 
 
   <meta name="description" content="方法缓存 Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度  12345678910struct cache_t &amp;#123;  	struct bucket_t *_buckets; // 散列表  	mask_t _mask; // 散列表的长度-1  	mask_t _occipied; // 已经缓存的方法数量&amp;#125;;stru">
-<meta name="keywords" content="coderJohnhao, johnhao">
+<meta name="keywords" content="iOS, Runtime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS_Runtime_方法缓存">
 <meta property="og:url" content="https://CoderJohnhao.github.io/2019/03/11/iOS-Runtime-方法缓存/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="方法缓存 Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度  12345678910struct cache_t &amp;#123;  	struct bucket_t *_buckets; // 散列表  	mask_t _mask; // 散列表的长度-1  	mask_t _occipied; // 已经缓存的方法数量&amp;#125;;stru">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-07T08:12:00.142Z">
+<meta property="og:updated_time" content="2019-05-07T09:51:26.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_Runtime_方法缓存">
 <meta name="twitter:description" content="方法缓存 Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度  12345678910struct cache_t &amp;#123;  	struct bucket_t *_buckets; // 散列表  	mask_t _mask; // 散列表的长度-1  	mask_t _occipied; // 已经缓存的方法数量&amp;#125;;stru">
@@ -415,6 +415,24 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -473,6 +491,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS-Runtime/" rel="tag"># iOS, Runtime</a>
+          
+        </div>
       
 
       
@@ -566,12 +590,35 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -587,7 +634,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -1185,6 +1238,7 @@
 
   
 
+  
   
   <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   

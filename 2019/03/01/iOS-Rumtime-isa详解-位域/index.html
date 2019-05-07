@@ -95,14 +95,14 @@
 
 
   <meta name="description" content="isa详解-位域 接isa的详解   nopointer 0，代表普通的指针，存储着Class、Meta-Class对象的内存地址 1，代表优化过嘛，使用位域存储更多的信息   has_assoc 是否有设置过关联对象，如果没有，释放时会更快   has_cxx_dtor 是否有c++的析构函数（.cxx_destruct），如果没有，释放时会更快   shiftcls 存储着Class、Meta">
-<meta name="keywords" content="coderJohnhao, johnhao">
+<meta name="keywords" content="iOS, runtime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS_Rumtime_isa详解-位域">
 <meta property="og:url" content="https://CoderJohnhao.github.io/2019/03/01/iOS-Rumtime-isa详解-位域/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="isa详解-位域 接isa的详解   nopointer 0，代表普通的指针，存储着Class、Meta-Class对象的内存地址 1，代表优化过嘛，使用位域存储更多的信息   has_assoc 是否有设置过关联对象，如果没有，释放时会更快   has_cxx_dtor 是否有c++的析构函数（.cxx_destruct），如果没有，释放时会更快   shiftcls 存储着Class、Meta">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-07T08:07:23.031Z">
+<meta property="og:updated_time" content="2019-05-07T09:50:45.658Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_Rumtime_isa详解-位域">
 <meta name="twitter:description" content="isa详解-位域 接isa的详解   nopointer 0，代表普通的指针，存储着Class、Meta-Class对象的内存地址 1，代表优化过嘛，使用位域存储更多的信息   has_assoc 是否有设置过关联对象，如果没有，释放时会更快   has_cxx_dtor 是否有c++的析构函数（.cxx_destruct），如果没有，释放时会更快   shiftcls 存储着Class、Meta">
@@ -415,6 +415,24 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -506,6 +524,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS-runtime/" rel="tag"># iOS, runtime</a>
+          
+        </div>
       
 
       
@@ -599,12 +623,35 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">38</span>
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -620,7 +667,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -1218,6 +1271,7 @@
 
   
 
+  
   
   <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
