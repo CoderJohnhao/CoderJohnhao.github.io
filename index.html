@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-cn">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,16 +49,14 @@
 <link rel="stylesheet" href="/css/main.css?v=7.1.1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/header_32.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/header_32.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/header_16.png?v=7.1.1">
 
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
 
 
 
@@ -103,7 +101,7 @@
 <meta property="og:url" content="https://CoderJohnhao.github.io/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="一个热爱生活，热爱科技的程序猿！">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CoderJohnhao个人博客">
 <meta name="twitter:description" content="一个热爱生活，热爱科技的程序猿！">
@@ -175,7 +173,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -378,7 +376,7 @@
                 
               
 
-              <time title="Created: 2019-03-12 15:26:46" itemprop="dateCreated datePublished" datetime="2019-03-12T15:26:46Z">2019-03-12</time>
+              <time title="Created: 2019-03-12 15:26:46" itemprop="dateCreated datePublished" datetime="2019-03-12T15:26:46+08:00">2019-03-12</time>
             
 
             
@@ -395,7 +393,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:12:01" itemprop="dateModified" datetime="2019-05-07T08:12:01Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:26:27" itemprop="dateModified" datetime="2019-05-07T16:26:27+08:00">2019-05-07</time>
               
             
           </span>
@@ -432,6 +430,7 @@
         
           
             <h2 id="动态添加方法"><a href="#动态添加方法" class="headerlink" title="动态添加方法"></a>动态添加方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        // 获取其他方法</span><br><span class="line">        Method method = class_getInstanceMethod(self, @selector(other));</span><br><span class="line"></span><br><span class="line">        // 动态添加test实现方法</span><br><span class="line">        class_addMethod(self, </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line"></span><br><span class="line">        // 返回true代表有动态方法添加</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveInstanceMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (BOOL)resolveClassMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        Method method = class_getClassMethod(object_getClass(self), @selector(other));</span><br><span class="line">        class_addMethod(object_getClass(self), </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveClassMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -532,7 +531,7 @@
                 
               
 
-              <time title="Created: 2019-03-11 16:05:10" itemprop="dateCreated datePublished" datetime="2019-03-11T16:05:10Z">2019-03-11</time>
+              <time title="Created: 2019-03-12 00:05:10" itemprop="dateCreated datePublished" datetime="2019-03-12T00:05:10+08:00">2019-03-12</time>
             
 
             
@@ -549,7 +548,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:12:00" itemprop="dateModified" datetime="2019-05-07T08:12:00Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:12:00" itemprop="dateModified" datetime="2019-05-07T16:12:00+08:00">2019-05-07</time>
               
             
           </span>
@@ -651,7 +650,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2019/03/11/iOS-Runtime-Type-Encodeing/">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2019/03/10/iOS-Runtime-Type-Encodeing/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CoderJohnhao">
@@ -671,7 +670,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/11/iOS-Runtime-Type-Encodeing/" class="post-title-link" itemprop="url">iOS_Runtime_Type Encodeing</a>
+                <a href="/2019/03/10/iOS-Runtime-Type-Encodeing/" class="post-title-link" itemprop="url">iOS_Runtime_Type Encodeing</a>
               
             
           </h1>
@@ -696,7 +695,7 @@
                 
               
 
-              <time title="Created: 2019-03-10 16:04:26" itemprop="dateCreated datePublished" datetime="2019-03-10T16:04:26Z">2019-03-10</time>
+              <time title="Created: 2019-03-10 16:04:26" itemprop="dateCreated datePublished" datetime="2019-03-10T16:04:26+08:00">2019-03-10</time>
             
 
             
@@ -713,7 +712,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:08:43" itemprop="dateModified" datetime="2019-05-07T08:08:43Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:26:41" itemprop="dateModified" datetime="2019-05-07T16:26:41+08:00">2019-05-07</time>
               
             
           </span>
@@ -748,116 +747,16 @@
 
       
         
+          <h2 id="Type-Encodeing"><a href="#Type-Encodeing" class="headerlink" title="Type Encodeing"></a>Type Encodeing</h2><p>iOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码</p>
+          <!--noindex-->
           
-            <h2 id="Type-Encodeing"><a href="#Type-Encodeing" class="headerlink" title="Type Encodeing"></a>Type Encodeing</h2><p>iOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Code</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">c</td>
-<td>A char</td>
-</tr>
-<tr>
-<td style="text-align:left">i</td>
-<td>An int</td>
-</tr>
-<tr>
-<td style="text-align:left">s</td>
-<td>A short</td>
-</tr>
-<tr>
-<td style="text-align:left">l</td>
-<td>A long     l is treated as a 32-bit quantity on 64-bit programs</td>
-</tr>
-<tr>
-<td style="text-align:left">q</td>
-<td>A long long</td>
-</tr>
-<tr>
-<td style="text-align:left">C</td>
-<td>An unsigned char</td>
-</tr>
-<tr>
-<td style="text-align:left">I(大写的i)</td>
-<td>An unsigned int</td>
-</tr>
-<tr>
-<td style="text-align:left">S</td>
-<td>An unsigned short</td>
-</tr>
-<tr>
-<td style="text-align:left">L</td>
-<td>An unsigned long</td>
-</tr>
-<tr>
-<td style="text-align:left">Q</td>
-<td>An unsigned long long</td>
-</tr>
-<tr>
-<td style="text-align:left">f</td>
-<td>A float</td>
-</tr>
-<tr>
-<td style="text-align:left">d</td>
-<td>A double</td>
-</tr>
-<tr>
-<td style="text-align:left">B</td>
-<td>A c++ bool or a C99 _Bool</td>
-</tr>
-<tr>
-<td style="text-align:left">v</td>
-<td>A void</td>
-</tr>
-<tr>
-<td style="text-align:left">*</td>
-<td>A character string (char*)</td>
-</tr>
-<tr>
-<td style="text-align:left">@</td>
-<td>An object(where statically typed or typed id)</td>
-</tr>
-<tr>
-<td style="text-align:left">#</td>
-<td>A class object(Class)</td>
-</tr>
-<tr>
-<td style="text-align:left">:</td>
-<td>A method selector(SEL)</td>
-</tr>
-<tr>
-<td style="text-align:left">[array type]</td>
-<td>An array</td>
-</tr>
-<tr>
-<td style="text-align:left">{name=type…}</td>
-<td>A structure</td>
-</tr>
-<tr>
-<td style="text-align:left">(name=type…)</td>
-<td>A union</td>
-</tr>
-<tr>
-<td style="text-align:left">bnum</td>
-<td>A bit field of num bits</td>
-</tr>
-<tr>
-<td style="text-align:left">^type</td>
-<td>A pointer to type</td>
-</tr>
-<tr>
-<td style="text-align:left">?</td>
-<td>An unknown type(among other things, this code is used for function pointers)</td>
-</tr>
-</tbody>
-</table>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/10/iOS-Runtime-Type-Encodeing/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -957,7 +856,7 @@
                 
               
 
-              <time title="Created: 2019-03-07 15:05:55" itemprop="dateCreated datePublished" datetime="2019-03-07T15:05:55Z">2019-03-07</time>
+              <time title="Created: 2019-03-07 15:05:55" itemprop="dateCreated datePublished" datetime="2019-03-07T15:05:55+08:00">2019-03-07</time>
             
 
             
@@ -974,7 +873,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:08:25" itemprop="dateModified" datetime="2019-05-07T08:08:25Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:25:47" itemprop="dateModified" datetime="2019-05-07T16:25:47+08:00">2019-05-07</time>
               
             
           </span>
@@ -1009,8 +908,7 @@
 
       
         
-          
-            <h2 id="objc-msgSend执行流程"><a href="#objc-msgSend执行流程" class="headerlink" title="objc_msgSend执行流程"></a>objc_msgSend执行流程</h2><ul>
+          <h2 id="objc-msgSend执行流程"><a href="#objc-msgSend执行流程" class="headerlink" title="objc_msgSend执行流程"></a>objc_msgSend执行流程</h2><ul>
 <li><p>OC中方法的调用，其实都是转换为objc_msgSend函数调用</p>
 </li>
 <li><p>objc_msgSend的执行流程可以分为3个阶段</p>
@@ -1025,31 +923,15 @@
 </ul>
 </li>
 </ul>
-<h2 id="objc-msgSend执行流程01-消息发送"><a href="#objc-msgSend执行流程01-消息发送" class="headerlink" title="objc_msgSend执行流程01-消息发送"></a>objc_msgSend执行流程01-消息发送</h2><p><img src="images/image-20190422110657828.png" alt="image-20190422110657828"></p>
-<ul>
-<li><p>如果是从class_rw_t中查找方法</p>
-<ul>
-<li>已经排序的，二分查找</li>
-<li>没有排序的，遍历查找</li>
-</ul>
-</li>
-<li><p>receiver通过isa指针找到receiverClass</p>
-</li>
-<li>receiverClass通过superClass指针找到superClass</li>
-</ul>
-<h2 id="objc-msgSend执行流程02-方法动态解析"><a href="#objc-msgSend执行流程02-方法动态解析" class="headerlink" title="objc_msgSend执行流程02-方法动态解析"></a>objc_msgSend执行流程02-方法动态解析</h2><p><img src="images/image-20190422145550890.png" alt="image-20190422145550890"></p>
-<ul>
-<li><p>开发者可以实现以下方法，来动态添加方法实现：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">+(BOOL)resolveInstanceMehtod：(SEL)sel;</span><br><span class="line">+(BOOL)resolveClassMehtod：(SEL)sel;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>动态解析过后，会重新走”消息发送流程”</p>
-<ul>
-<li>“从receiverClass的cache中查找方法”这一步开始执行</li>
-</ul>
-</li>
-</ul>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/07/iOS-Runtime-objc-msgSend执行流程/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1149,7 +1031,7 @@
                 
               
 
-              <time title="Created: 2019-03-04 15:32:59" itemprop="dateCreated datePublished" datetime="2019-03-04T15:32:59Z">2019-03-04</time>
+              <time title="Created: 2019-03-04 23:32:59" itemprop="dateCreated datePublished" datetime="2019-03-04T23:32:59+08:00">2019-03-04</time>
             
 
             
@@ -1166,7 +1048,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:08:13" itemprop="dateModified" datetime="2019-05-07T08:08:13Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:08:13" itemprop="dateModified" datetime="2019-05-07T16:08:13+08:00">2019-05-07</time>
               
             
           </span>
@@ -1308,7 +1190,7 @@
                 
               
 
-              <time title="Created: 2019-03-03 16:41:09" itemprop="dateCreated datePublished" datetime="2019-03-03T16:41:09Z">2019-03-03</time>
+              <time title="Created: 2019-03-04 00:41:09" itemprop="dateCreated datePublished" datetime="2019-03-04T00:41:09+08:00">2019-03-04</time>
             
 
             
@@ -1325,7 +1207,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:07:56" itemprop="dateModified" datetime="2019-05-07T08:07:56Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:07:56" itemprop="dateModified" datetime="2019-05-07T16:07:56+08:00">2019-05-07</time>
               
             
           </span>
@@ -1464,7 +1346,7 @@
                 
               
 
-              <time title="Created: 2019-03-02 15:01:51" itemprop="dateCreated datePublished" datetime="2019-03-02T15:01:51Z">2019-03-02</time>
+              <time title="Created: 2019-03-02 23:01:51" itemprop="dateCreated datePublished" datetime="2019-03-02T23:01:51+08:00">2019-03-02</time>
             
 
             
@@ -1481,7 +1363,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:07:40" itemprop="dateModified" datetime="2019-05-07T08:07:40Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:07:40" itemprop="dateModified" datetime="2019-05-07T16:07:40+08:00">2019-05-07</time>
               
             
           </span>
@@ -1647,7 +1529,7 @@
                 
               
 
-              <time title="Created: 2019-03-01 13:34:04" itemprop="dateCreated datePublished" datetime="2019-03-01T13:34:04Z">2019-03-01</time>
+              <time title="Created: 2019-03-01 21:34:04" itemprop="dateCreated datePublished" datetime="2019-03-01T21:34:04+08:00">2019-03-01</time>
             
 
             
@@ -1664,7 +1546,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:07:23" itemprop="dateModified" datetime="2019-05-07T08:07:23Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:07:23" itemprop="dateModified" datetime="2019-05-07T16:07:23+08:00">2019-05-07</time>
               
             
           </span>
@@ -1844,7 +1726,7 @@
                 
               
 
-              <time title="Created: 2019-01-07 15:44:15" itemprop="dateCreated datePublished" datetime="2019-01-07T15:44:15Z">2019-01-07</time>
+              <time title="Created: 2019-01-07 23:44:15" itemprop="dateCreated datePublished" datetime="2019-01-07T23:44:15+08:00">2019-01-07</time>
             
 
             
@@ -1861,7 +1743,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 07:46:39" itemprop="dateModified" datetime="2019-05-07T07:46:39Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 15:46:39" itemprop="dateModified" datetime="2019-05-07T15:46:39+08:00">2019-05-07</time>
               
             
           </span>
@@ -2015,7 +1897,7 @@
                 
               
 
-              <time title="Created: 2018-05-18 16:26:03" itemprop="dateCreated datePublished" datetime="2018-05-18T16:26:03Z">2018-05-18</time>
+              <time title="Created: 2018-05-19 00:26:03" itemprop="dateCreated datePublished" datetime="2018-05-19T00:26:03+08:00">2018-05-19</time>
             
 
             
@@ -2032,7 +1914,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 07:30:03" itemprop="dateModified" datetime="2019-05-07T07:30:03Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 15:30:03" itemprop="dateModified" datetime="2019-05-07T15:30:03+08:00">2019-05-07</time>
               
             
           </span>

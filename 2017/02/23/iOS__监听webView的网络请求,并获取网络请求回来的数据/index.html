@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-cn">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,16 +49,14 @@
 <link rel="stylesheet" href="/css/main.css?v=7.1.1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/header_32.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/header_32.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/header_16.png?v=7.1.1">
 
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
 
 
 
@@ -96,18 +94,18 @@
 
 
 
-  <meta name="description" content="Type EncodeingiOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码    Code Meaning     c A char   i An int   s A short   l A long     l is treated as a 32-bit quantity on 64-bit programs   q A long long   C An unsig">
-<meta name="keywords" content="coderJohnhao, johnhao">
+  <meta name="description" content="####导语:  最近,webAPP比较火,公司也在用JS框架开发移动APP,web前端的同事负责用JS开发内容,负责iOS的我 和 负责Android的同事,就简单的搭建一个架子. 但是,我在开发中就遇到一些问题,比如本篇文章要讲的webView获取网络请求返回的Session,开始我也是一头雾水,经过一番折腾,到百度,Google.还是找到了解决的办法.">
+<meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS_Runtime_Type Encodeing">
-<meta property="og:url" content="https://CoderJohnhao.github.io/2019/03/11/iOS-Runtime-Type-Encodeing/index.html">
+<meta property="og:title" content="iOS_监听webView的网络请求,并获取网络请求回来的数据">
+<meta property="og:url" content="https://CoderJohnhao.github.io/2017/02/23/iOS__监听webView的网络请求,并获取网络请求回来的数据/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
-<meta property="og:description" content="Type EncodeingiOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码    Code Meaning     c A char   i An int   s A short   l A long     l is treated as a 32-bit quantity on 64-bit programs   q A long long   C An unsig">
-<meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-05-07T08:08:43.688Z">
+<meta property="og:description" content="####导语:  最近,webAPP比较火,公司也在用JS框架开发移动APP,web前端的同事负责用JS开发内容,负责iOS的我 和 负责Android的同事,就简单的搭建一个架子. 但是,我在开发中就遇到一些问题,比如本篇文章要讲的webView获取网络请求返回的Session,开始我也是一头雾水,经过一番折腾,到百度,Google.还是找到了解决的办法.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-07T08:27:00.072Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS_Runtime_Type Encodeing">
-<meta name="twitter:description" content="Type EncodeingiOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码    Code Meaning     c A char   i An int   s A short   l A long     l is treated as a 32-bit quantity on 64-bit programs   q A long long   C An unsig">
+<meta name="twitter:title" content="iOS_监听webView的网络请求,并获取网络请求回来的数据">
+<meta name="twitter:description" content="####导语:  最近,webAPP比较火,公司也在用JS框架开发移动APP,web前端的同事负责用JS开发内容,负责iOS的我 和 负责Android的同事,就简单的搭建一个架子. 但是,我在开发中就遇到一些问题,比如本篇文章要讲的webView获取网络请求返回的Session,开始我也是一头雾水,经过一番折腾,到百度,Google.还是找到了解决的办法.">
 
 
 
@@ -115,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="https://CoderJohnhao.github.io/2019/03/11/iOS-Runtime-Type-Encodeing/">
+  <link rel="canonical" href="https://CoderJohnhao.github.io/2017/02/23/iOS__监听webView的网络请求,并获取网络请求回来的数据/">
 
 
 
@@ -125,7 +123,7 @@
   };
 </script>
 
-  <title>iOS_Runtime_Type Encodeing | CoderJohnhao个人博客</title>
+  <title>iOS_监听webView的网络请求,并获取网络请求回来的数据 | CoderJohnhao个人博客</title>
   
 
 
@@ -176,7 +174,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -333,7 +331,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2019/03/11/iOS-Runtime-Type-Encodeing/">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/02/23/iOS__监听webView的网络请求,并获取网络请求回来的数据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CoderJohnhao">
@@ -350,7 +348,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">iOS_Runtime_Type Encodeing
+          <h1 class="post-title" itemprop="name headline">iOS_监听webView的网络请求,并获取网络请求回来的数据
 
               
             
@@ -376,7 +374,7 @@
                 
               
 
-              <time title="Created: 2019-03-10 16:04:26" itemprop="dateCreated datePublished" datetime="2019-03-10T16:04:26Z">2019-03-10</time>
+              <time title="Created: 2017-02-23 17:59:03" itemprop="dateCreated datePublished" datetime="2017-02-23T17:59:03+08:00">2017-02-23</time>
             
 
             
@@ -393,7 +391,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:08:43" itemprop="dateModified" datetime="2019-05-07T08:08:43Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:27:00" itemprop="dateModified" datetime="2019-05-07T16:27:00+08:00">2019-05-07</time>
               
             
           </span>
@@ -427,113 +425,106 @@
       
 
       
-        <h2 id="Type-Encodeing"><a href="#Type-Encodeing" class="headerlink" title="Type Encodeing"></a>Type Encodeing</h2><p>iOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Code</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">c</td>
-<td>A char</td>
-</tr>
-<tr>
-<td style="text-align:left">i</td>
-<td>An int</td>
-</tr>
-<tr>
-<td style="text-align:left">s</td>
-<td>A short</td>
-</tr>
-<tr>
-<td style="text-align:left">l</td>
-<td>A long     l is treated as a 32-bit quantity on 64-bit programs</td>
-</tr>
-<tr>
-<td style="text-align:left">q</td>
-<td>A long long</td>
-</tr>
-<tr>
-<td style="text-align:left">C</td>
-<td>An unsigned char</td>
-</tr>
-<tr>
-<td style="text-align:left">I(大写的i)</td>
-<td>An unsigned int</td>
-</tr>
-<tr>
-<td style="text-align:left">S</td>
-<td>An unsigned short</td>
-</tr>
-<tr>
-<td style="text-align:left">L</td>
-<td>An unsigned long</td>
-</tr>
-<tr>
-<td style="text-align:left">Q</td>
-<td>An unsigned long long</td>
-</tr>
-<tr>
-<td style="text-align:left">f</td>
-<td>A float</td>
-</tr>
-<tr>
-<td style="text-align:left">d</td>
-<td>A double</td>
-</tr>
-<tr>
-<td style="text-align:left">B</td>
-<td>A c++ bool or a C99 _Bool</td>
-</tr>
-<tr>
-<td style="text-align:left">v</td>
-<td>A void</td>
-</tr>
-<tr>
-<td style="text-align:left">*</td>
-<td>A character string (char*)</td>
-</tr>
-<tr>
-<td style="text-align:left">@</td>
-<td>An object(where statically typed or typed id)</td>
-</tr>
-<tr>
-<td style="text-align:left">#</td>
-<td>A class object(Class)</td>
-</tr>
-<tr>
-<td style="text-align:left">:</td>
-<td>A method selector(SEL)</td>
-</tr>
-<tr>
-<td style="text-align:left">[array type]</td>
-<td>An array</td>
-</tr>
-<tr>
-<td style="text-align:left">{name=type…}</td>
-<td>A structure</td>
-</tr>
-<tr>
-<td style="text-align:left">(name=type…)</td>
-<td>A union</td>
-</tr>
-<tr>
-<td style="text-align:left">bnum</td>
-<td>A bit field of num bits</td>
-</tr>
-<tr>
-<td style="text-align:left">^type</td>
-<td>A pointer to type</td>
-</tr>
-<tr>
-<td style="text-align:left">?</td>
-<td>An unknown type(among other things, this code is used for function pointers)</td>
-</tr>
-</tbody>
-</table>
+        <p>####导语:</p>
+<blockquote>
+<p>最近,webAPP比较火,公司也在用JS框架开发移动APP,web前端的同事负责用JS开发内容,负责iOS的我 和 负责Android的同事,就简单的搭建一个架子.<br> 但是,我在开发中就遇到一些问题,比如本篇文章要讲的webView获取网络请求返回的Session,开始我也是一头雾水,经过一番折腾,到百度,Google.还是找到了解决的办法.</p>
+</blockquote>
+<a id="more"></a>
+<p>####第一步:创建一个继承NSURLProtocol的类<br>在.m文件中声明NSURLConnection的属性,而且遵守NSURLConnectionDelegate,代码如下:</p>
+<pre><code>#import &quot;CustomURLProtocol.h&quot;
+
+static NSString * const URLProtocolHandledKey =   @&quot;URLProtocolHandledKey&quot;;      
+@interface CustomURLProtocol ()&lt;NSURLConnectionDelegate&gt;
+@property (nonatomic, strong) NSURLConnection *connection
+@end
+</code></pre><ul>
+<li>NSURLConnection: 提供支持执行异步加载URL请求，向数据库提供数据客户提供的代理(<em>英语不好,找Google翻译的</em>)</li>
+</ul>
+<p>####第二步: 去重写NSURLProtocol的方法<br>代码如下:</p>
+<pre><code>//This method determines whether this protocol can handle the given request.
++ (BOOL)canInitWithRequest:(NSURLRequest *)request
+{
+    //只处理http和https请求
+    NSString *scheme = [[request URL] scheme];
+    if ( ([scheme caseInsensitiveCompare:@&quot;http&quot;] == NSOrderedSame ||
+    [scheme caseInsensitiveCompare:@&quot;https&quot;] == NSOrderedSame)) {
+    //看看是否已经处理过了，防止无限循环
+    if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
+        return NO;
+    }
+    Log(@&quot;relativePath -- %@&quot;,request.URL.relativePath);
+    // 可以做一些网络请求的需要的事情(如:带cookie等等)
+    return YES;
+}
+
+//This method returns a canonical version of the given request.
++ (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *)request {
+  return request;
+}
+
+//Compares two requests for equivalence with regard to caching.
++ (BOOL)requestIsCacheEquivalent:(NSURLRequest *)a toRequest:(NSURLRequest *)b
+{
+   return [super requestIsCacheEquivalent:a toRequest:b];
+}
+
+//Starts protocol-specific loading of a request.
+- (void)startLoading
+{
+  NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
+  //打标签，防止无限循环
+  [NSURLProtocol setProperty:@YES forKey:URLProtocolHandledKey inRequest:mutableReqeust];
+  self.connection = [NSURLConnection connectionWithRequest:mutableReqeust delegate:self];
+}
+
+//tops protocol-specific loading of a request. 
+- (void)stopLoading
+{
+  [self.connection cancel];
+}
+</code></pre><p> ####第三步: 实现NSURLConnectionDelegate<br>的方法代码如下:</p>
+<pre><code>#pragma mark - NSURLConnectionDelegate
+/// 网络请求返回数据
+- (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+  NSHTTPURLResponse *httpresponse = (NSHTTPURLResponse *)response;
+  if([httpresponse respondsToSelector:@selector(allHeaderFields)]){
+    NSDictionary *di  = [httpresponse allHeaderFields];
+    NSArray *keys = [di allKeys];
+    for(int i=0; i&lt;di.count;i++){
+        NSString *key = [keys objectAtIndex:i];
+        NSString *value=[di objectForKey:key];
+        if([key rangeOfString:@&quot;Set-Cookie&quot;].location != NSNotFound)
+        {
+            Log(@&quot;response_header_value -- %@&quot;,value);
+            // 获取Session
+        }
+    }
+}
+
+  [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
+}
+
+- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+  [self.client URLProtocol:self didLoadData:data];
+}
+
+- (void) connectionDidFinishLoading:(NSURLConnection *)connection {
+  [self.client URLProtocolDidFinishLoading:self];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+  [self.client URLProtocol:self didFailWithError:error];
+}
+</code></pre><p>####第四步:在AppDelegate.m中注册</p>
+<pre><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  //注册protocol
+  [NSURLProtocol registerClass:[CustomURLProtocol class]];
+  return YES;
+}
+</code></pre><p>####结语:</p>
+<blockquote>
+<p>也是第一次了解这方面的知识,对你有帮助就帮忙点个赞,有错误的地方望大家指出来,谢谢😁😁</p>
+</blockquote>
 
       
     </div>
@@ -555,6 +546,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
+        </div>
+      
 
       
       
@@ -564,8 +561,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/07/iOS-Runtime-objc-msgSend执行流程/" rel="next" title="iOS_Runtime_objc_msgSend执行流程">
-                <i class="fa fa-chevron-left"></i> iOS_Runtime_objc_msgSend执行流程
+              <a href="/2017/02/12/iOS__【App-Store】2016年最新审核规则/" rel="next" title="iOS_【App-Store】2016年最新审核规则">
+                <i class="fa fa-chevron-left"></i> iOS_【App-Store】2016年最新审核规则
               </a>
             
           </div>
@@ -574,8 +571,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/12/iOS-Runtime-方法缓存/" rel="prev" title="iOS_Runtime_方法缓存">
-                iOS_Runtime_方法缓存 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/18/iOS__-裁剪图片为正方形/" rel="prev" title="iOS_裁剪图片为正方形">
+                iOS_裁剪图片为正方形 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -620,17 +617,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -743,23 +731,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Type-Encodeing"><span class="nav-number">1.</span> <span class="nav-text">Type Encodeing</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       

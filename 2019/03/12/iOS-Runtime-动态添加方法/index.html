@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-cn">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,16 +49,14 @@
 <link rel="stylesheet" href="/css/main.css?v=7.1.1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/header_32.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/header_32.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/header_16.png?v=7.1.1">
 
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
 
 
 
@@ -103,8 +101,8 @@
 <meta property="og:url" content="https://CoderJohnhao.github.io/2019/03/12/iOS-Runtime-动态添加方法/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="动态添加方法12345678910111213141516171819202122232425262728293031323334353637+ (BOOL)resolveInstanceMethod:(SEL)sel &amp;#123;    if (sel == @selector(test)) &amp;#123;        // 获取其他方法        Method method = class">
-<meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-05-07T08:12:01.469Z">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-07T08:26:27.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_Runtime_动态添加方法">
 <meta name="twitter:description" content="动态添加方法12345678910111213141516171819202122232425262728293031323334353637+ (BOOL)resolveInstanceMethod:(SEL)sel &amp;#123;    if (sel == @selector(test)) &amp;#123;        // 获取其他方法        Method method = class">
@@ -176,7 +174,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -376,7 +374,7 @@
                 
               
 
-              <time title="Created: 2019-03-12 15:26:46" itemprop="dateCreated datePublished" datetime="2019-03-12T15:26:46Z">2019-03-12</time>
+              <time title="Created: 2019-03-12 15:26:46" itemprop="dateCreated datePublished" datetime="2019-03-12T15:26:46+08:00">2019-03-12</time>
             
 
             
@@ -393,7 +391,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-07 08:12:01" itemprop="dateModified" datetime="2019-05-07T08:12:01Z">2019-05-07</time>
+                <time title="Modified: 2019-05-07 16:26:27" itemprop="dateModified" datetime="2019-05-07T16:26:27+08:00">2019-05-07</time>
               
             
           </span>
@@ -428,6 +426,7 @@
 
       
         <h2 id="动态添加方法"><a href="#动态添加方法" class="headerlink" title="动态添加方法"></a>动态添加方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        // 获取其他方法</span><br><span class="line">        Method method = class_getInstanceMethod(self, @selector(other));</span><br><span class="line"></span><br><span class="line">        // 动态添加test实现方法</span><br><span class="line">        class_addMethod(self, </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line"></span><br><span class="line">        // 返回true代表有动态方法添加</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveInstanceMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (BOOL)resolveClassMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        Method method = class_getClassMethod(object_getClass(self), @selector(other));</span><br><span class="line">        class_addMethod(object_getClass(self), </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveClassMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
