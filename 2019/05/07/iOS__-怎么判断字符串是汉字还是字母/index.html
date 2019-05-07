@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="title: iOS_怎么判断字符串是汉字还是字母date: 2017-05-18 14:36:03 tags: iOS   if(self.textLabel){            for (int i=0; i&amp;lt;self.textLabel.length; i++) {                NSRange range=NSMakeRange(i,1);">
+  <meta name="description" content="title: iOS_怎么判断字符串是汉字还是字母date: 2017-05-18 14:36:03 tags: iOSif(self.textLabel){            for (int i=0; i&amp;lt;self.textLabel.length; i++) {                NSRange range=NSMakeRange(i,1);">
 <meta name="keywords" content="coderJohnhao, johnhao">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CoderJohnhao个人博客">
 <meta property="og:url" content="https://CoderJohnhao.github.io/2019/05/07/iOS__-怎么判断字符串是汉字还是字母/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
-<meta property="og:description" content="title: iOS_怎么判断字符串是汉字还是字母date: 2017-05-18 14:36:03 tags: iOS   if(self.textLabel){            for (int i=0; i&amp;lt;self.textLabel.length; i++) {                NSRange range=NSMakeRange(i,1);">
+<meta property="og:description" content="title: iOS_怎么判断字符串是汉字还是字母date: 2017-05-18 14:36:03 tags: iOSif(self.textLabel){            for (int i=0; i&amp;lt;self.textLabel.length; i++) {                NSRange range=NSMakeRange(i,1);">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-05-07T07:31:59.220Z">
+<meta property="og:updated_time" content="2019-05-07T07:34:36.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CoderJohnhao个人博客">
-<meta name="twitter:description" content="title: iOS_怎么判断字符串是汉字还是字母date: 2017-05-18 14:36:03 tags: iOS   if(self.textLabel){            for (int i=0; i&amp;lt;self.textLabel.length; i++) {                NSRange range=NSMakeRange(i,1);">
+<meta name="twitter:description" content="title: iOS_怎么判断字符串是汉字还是字母date: 2017-05-18 14:36:03 tags: iOSif(self.textLabel){            for (int i=0; i&amp;lt;self.textLabel.length; i++) {                NSRange range=NSMakeRange(i,1);">
 
 
 
@@ -381,7 +381,7 @@
                 
               
 
-              <time title="Created: 2019-05-07 06:55:24 / Modified: 07:31:59" itemprop="dateCreated datePublished" datetime="2019-05-07T06:55:24Z">2019-05-07</time>
+              <time title="Created: 2019-05-07 06:55:24 / Modified: 07:34:36" itemprop="dateCreated datePublished" datetime="2019-05-07T06:55:24Z">2019-05-07</time>
             
 
             
@@ -422,7 +422,7 @@
       
         <hr>
 <p>title: iOS_怎么判断字符串是汉字还是字母<br>date: 2017-05-18 14:36:03</p>
-<h2 id="tags-iOS"><a href="#tags-iOS" class="headerlink" title="tags: iOS"></a>tags: iOS</h2><p>   if(self.textLabel){<br>            for (int i=0; i&lt;self.textLabel.length; i++) {<br>                NSRange range=NSMakeRange(i,1);<br>                NSString <em>subString=[self.textLabel substringWithRange:range];<br>                const char </em>cString=[subString UTF8String];<br>                if (strlen(cString) == 3)<br>                {<br>                    NSLog(@”是汉字”);<br>                }else if(strlen(cString) == 1)<br>                {<br>                    NSLog(@”是字母”);<br>                }<br>            }<br>        }</p>
+<h2 id="tags-iOS"><a href="#tags-iOS" class="headerlink" title="tags: iOS"></a>tags: iOS</h2><p>if(self.textLabel){<br>            for (int i=0; i&lt;self.textLabel.length; i++) {<br>                NSRange range=NSMakeRange(i,1);<br>                NSString <em>subString=[self.textLabel substringWithRange:range];<br>                const char </em>cString=[subString UTF8String];<br>                if (strlen(cString) == 3)<br>                {<br>                    NSLog(@”是汉字”);<br>                }else if(strlen(cString) == 1)<br>                {<br>                    NSLog(@”是字母”);<br>                }<br>            }<br>        }</p>
 
       
     </div>
