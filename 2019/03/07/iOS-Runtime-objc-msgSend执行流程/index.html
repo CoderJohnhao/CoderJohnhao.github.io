@@ -102,13 +102,13 @@
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="objc_msgSend执行流程 OC中方法的调用，其实都是转换为objc_msgSend函数调用  objc_msgSend的执行流程可以分为3个阶段  消息发送 1objc_msgSend(id receiver, SEL selector);  动态方法解析  消息转发">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://coderjohnhao.github.io/2019/03/07/iOS-Runtime-objc-msgSend执行流程/images/image-20190422110657828.png">
-<meta property="og:image" content="https://coderjohnhao.github.io/2019/03/07/iOS-Runtime-objc-msgSend执行流程/images/image-20190422145550890.png">
-<meta property="og:updated_time" content="2019-05-07T09:51:13.577Z">
+<meta property="og:image" content="https://coderjohnhao.github.io/images/image-20190422110657828.png">
+<meta property="og:image" content="https://coderjohnhao.github.io/images/image-20190422145550890.png">
+<meta property="og:updated_time" content="2019-05-07T14:31:50.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_Runtime_objc_msgSend执行流程">
 <meta name="twitter:description" content="objc_msgSend执行流程 OC中方法的调用，其实都是转换为objc_msgSend函数调用  objc_msgSend的执行流程可以分为3个阶段  消息发送 1objc_msgSend(id receiver, SEL selector);  动态方法解析  消息转发">
-<meta name="twitter:image" content="https://coderjohnhao.github.io/2019/03/07/iOS-Runtime-objc-msgSend执行流程/images/image-20190422110657828.png">
+<meta name="twitter:image" content="https://coderjohnhao.github.io/images/image-20190422110657828.png">
 
 
 
@@ -491,7 +491,7 @@
 </li>
 </ul>
 <a id="more"></a>
-<h2 id="objc-msgSend执行流程01-消息发送"><a href="#objc-msgSend执行流程01-消息发送" class="headerlink" title="objc_msgSend执行流程01-消息发送"></a>objc_msgSend执行流程01-消息发送</h2><p><img src="images/image-20190422110657828.png" alt="image-20190422110657828"></p>
+<h2 id="objc-msgSend执行流程01-消息发送"><a href="#objc-msgSend执行流程01-消息发送" class="headerlink" title="objc_msgSend执行流程01-消息发送"></a>objc_msgSend执行流程01-消息发送</h2><p><img src="/images/image-20190422110657828.png" alt="image-20190422110657828"></p>
 <ul>
 <li><p>如果是从class_rw_t中查找方法</p>
 <ul>
@@ -503,7 +503,7 @@
 </li>
 <li>receiverClass通过superClass指针找到superClass</li>
 </ul>
-<h2 id="objc-msgSend执行流程02-方法动态解析"><a href="#objc-msgSend执行流程02-方法动态解析" class="headerlink" title="objc_msgSend执行流程02-方法动态解析"></a>objc_msgSend执行流程02-方法动态解析</h2><p><img src="images/image-20190422145550890.png" alt="image-20190422145550890"></p>
+<h2 id="objc-msgSend执行流程02-方法动态解析"><a href="#objc-msgSend执行流程02-方法动态解析" class="headerlink" title="objc_msgSend执行流程02-方法动态解析"></a>objc_msgSend执行流程02-方法动态解析</h2><p><img src="/images/image-20190422145550890.png" alt="image-20190422145550890"></p>
 <ul>
 <li><p>开发者可以实现以下方法，来动态添加方法实现：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">+(BOOL)resolveInstanceMehtod：(SEL)sel;</span><br><span class="line">+(BOOL)resolveClassMehtod：(SEL)sel;</span><br></pre></td></tr></table></figure>
@@ -1312,7 +1312,6 @@
           };
           
             addCount(Counter);
-           $.get('https://app-router.leancloud.cn/2/route?appId=' + "mDxK7lObEmrDK2neLeCLKR4o-gzGzoHsz")
           
         });
     });
