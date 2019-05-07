@@ -94,19 +94,19 @@
 
 
 
-  <meta name="description" content="class_rw_t class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容     class_ro_tclass_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容 method_t method_t是对方法">
+  <meta name="description" content="class_rw_t class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容">
 <meta name="keywords" content="iOS, Runtime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS_Runtime_class_rw_t">
 <meta property="og:url" content="https://CoderJohnhao.github.io/2019/03/02/iOS-Runtime-class-rw-t/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
-<meta property="og:description" content="class_rw_t class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容     class_ro_tclass_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容 method_t method_t是对方法">
+<meta property="og:description" content="class_rw_t class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://coderjohnhao.github.io/2019/03/02/iOS-Runtime-class-rw-t/images/image-20190418145911298.png">
-<meta property="og:updated_time" content="2019-05-07T09:50:58.638Z">
+<meta property="og:updated_time" content="2019-05-07T13:31:26.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_Runtime_class_rw_t">
-<meta name="twitter:description" content="class_rw_t class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容     class_ro_tclass_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容 method_t method_t是对方法">
+<meta name="twitter:description" content="class_rw_t class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容">
 <meta name="twitter:image" content="https://coderjohnhao.github.io/2019/03/02/iOS-Runtime-class-rw-t/images/image-20190418145911298.png">
 
 
@@ -466,9 +466,10 @@
         <h2 id="class-rw-t"><a href="#class-rw-t" class="headerlink" title="class_rw_t"></a>class_rw_t</h2><ul>
 <li><p>class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容 </p>
 <p><img src="images/image-20190418145911298.png" alt="image-20190418145911298"></p>
-</li>
+<a id="more"></a>
+<h2 id="class-ro-t"><a href="#class-ro-t" class="headerlink" title="class_ro_t"></a>class_ro_t</h2></li>
 </ul>
-<h2 id="class-ro-t"><a href="#class-ro-t" class="headerlink" title="class_ro_t"></a>class_ro_t</h2><p>class_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容</p>
+<p>class_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容</p>
 <h2 id="method-t"><a href="#method-t" class="headerlink" title="method_t"></a>method_t</h2><ul>
 <li><p>method_t是对方法/函数的封装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">struct method_t &#123;</span><br><span class="line">  	SEL name; // 函数名</span><br><span class="line">  	const char *types; // 编码（返回值类型、参数类型）</span><br><span class="line">  	IMP imp; // 指向函数指针（函数地址）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
@@ -611,7 +612,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -661,7 +662,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

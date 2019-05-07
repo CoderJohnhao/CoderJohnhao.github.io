@@ -94,22 +94,22 @@
 
 
 
-  <meta name="description" content="苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.    第一步:遵守UIViewControllerPreviewingDelegate协议 第二步:设置代理,在UITableView的代理方法cellForRowAtIndexP">
+  <meta name="description" content="苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS_3D-Touch实现UITableViewCell的预览和跳转">
 <meta property="og:url" content="https://CoderJohnhao.github.io/2017/11/18/iOS__3D-Touch实现UITableViewCell的预览和跳转/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
-<meta property="og:description" content="苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.    第一步:遵守UIViewControllerPreviewingDelegate协议 第二步:设置代理,在UITableView的代理方法cellForRowAtIndexP">
+<meta property="og:description" content="苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2148605-758c4cab595ea923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2148605-580e0c43a09514c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2148605-d28f9d8b1425389b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2148605-0529b2035862a6b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-05-07T09:49:36.533Z">
+<meta property="og:updated_time" content="2019-05-07T13:32:57.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_3D-Touch实现UITableViewCell的预览和跳转">
-<meta name="twitter:description" content="苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.    第一步:遵守UIViewControllerPreviewingDelegate协议 第二步:设置代理,在UITableView的代理方法cellForRowAtIndexP">
+<meta name="twitter:description" content="苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2148605-758c4cab595ea923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -466,8 +466,7 @@
       
 
       
-        <p>苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.<br>本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-758c4cab595ea923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.27.png"></p>
+        <p>苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.<br>本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.<br><a id="more"></a><br><img src="http://upload-images.jianshu.io/upload_images/2148605-758c4cab595ea923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.27.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2148605-580e0c43a09514c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.40.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2148605-d28f9d8b1425389b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.43.png"></p>
 <p>第一步:遵守UIViewControllerPreviewingDelegate协议<br><img src="http://upload-images.jianshu.io/upload_images/2148605-0529b2035862a6b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20161225-0@2x.png"></p>
@@ -591,7 +590,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -641,7 +640,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

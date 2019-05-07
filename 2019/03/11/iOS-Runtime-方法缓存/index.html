@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="方法缓存 Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度  12345678910struct cache_t &amp;#123;  	struct bucket_t *_buckets; // 散列表  	mask_t _mask; // 散列表的长度-1  	mask_t _occipied; // 已经缓存的方法数量&amp;#125;;stru">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-07T09:51:26.191Z">
+<meta property="og:updated_time" content="2019-05-07T13:31:42.529Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_Runtime_方法缓存">
 <meta name="twitter:description" content="方法缓存 Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度  12345678910struct cache_t &amp;#123;  	struct bucket_t *_buckets; // 散列表  	mask_t _mask; // 散列表的长度-1  	mask_t _occipied; // 已经缓存的方法数量&amp;#125;;stru">
@@ -465,6 +465,7 @@
 <li>Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">cache_t</span> &#123;</span></span><br><span class="line">  	<span class="class"><span class="keyword">struct</span> <span class="title">bucket_t</span> *_<span class="title">buckets</span>;</span> <span class="comment">// 散列表</span></span><br><span class="line">  	<span class="keyword">mask_t</span> _mask; <span class="comment">// 散列表的长度-1</span></span><br><span class="line">  	<span class="keyword">mask_t</span> _occipied; <span class="comment">// 已经缓存的方法数量</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">bucket_t</span> &#123;</span></span><br><span class="line">  	<span class="keyword">cache_key_t</span> _key; <span class="comment">// SEL作为key</span></span><br><span class="line">  	IMP _imp; <span class="comment">// 函数的内存地址</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <ul>
 <li><p>每次散列表扩容，都会先清除所有缓存，在重新存储新的缓存方法</p>
 </li>
@@ -590,7 +591,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -640,7 +641,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

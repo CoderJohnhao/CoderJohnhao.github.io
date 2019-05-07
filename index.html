@@ -465,7 +465,7 @@
       
         
           
-            <h2 id="动态添加方法"><a href="#动态添加方法" class="headerlink" title="动态添加方法"></a>动态添加方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        // 获取其他方法</span><br><span class="line">        Method method = class_getInstanceMethod(self, @selector(other));</span><br><span class="line"></span><br><span class="line">        // 动态添加test实现方法</span><br><span class="line">        class_addMethod(self, </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line"></span><br><span class="line">        // 返回true代表有动态方法添加</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveInstanceMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (BOOL)resolveClassMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        Method method = class_getClassMethod(object_getClass(self), @selector(other));</span><br><span class="line">        class_addMethod(object_getClass(self), </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveClassMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h2 id="动态添加方法"><a href="#动态添加方法" class="headerlink" title="动态添加方法"></a>动态添加方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        // 获取其他方法</span><br><span class="line">        Method method = class_getInstanceMethod(self, @selector(other));</span><br><span class="line"></span><br><span class="line">        // 动态添加test实现方法</span><br><span class="line">        class_addMethod(self, </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line"></span><br><span class="line">        // 返回true代表有动态方法添加</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveInstanceMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">+ (BOOL)resolveClassMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        Method method = class_getClassMethod(object_getClass(self), @selector(other));</span><br><span class="line">        class_addMethod(object_getClass(self), </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveClassMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
           
         
@@ -621,19 +621,19 @@
 
       
         
-          
-            <h2 id="方法缓存"><a href="#方法缓存" class="headerlink" title="方法缓存"></a>方法缓存</h2><ul>
+          <h2 id="方法缓存"><a href="#方法缓存" class="headerlink" title="方法缓存"></a>方法缓存</h2><ul>
 <li>Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度</li>
 </ul>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">cache_t</span> &#123;</span></span><br><span class="line">  	<span class="class"><span class="keyword">struct</span> <span class="title">bucket_t</span> *_<span class="title">buckets</span>;</span> <span class="comment">// 散列表</span></span><br><span class="line">  	<span class="keyword">mask_t</span> _mask; <span class="comment">// 散列表的长度-1</span></span><br><span class="line">  	<span class="keyword">mask_t</span> _occipied; <span class="comment">// 已经缓存的方法数量</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">bucket_t</span> &#123;</span></span><br><span class="line">  	<span class="keyword">cache_key_t</span> _key; <span class="comment">// SEL作为key</span></span><br><span class="line">  	IMP _imp; <span class="comment">// 函数的内存地址</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>每次散列表扩容，都会先清除所有缓存，在重新存储新的缓存方法</p>
-</li>
-<li><p>通过方法的SEL &amp; cache._mask 可以直接取出对应的方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Person *person = [[Person alloc] init];</span><br><span class="line">mj_objc_class *personClas = (__bridge mj_objc_class*)[Person class];</span><br><span class="line">[person personTest];</span><br><span class="line">// 获取缓存</span><br><span class="line">cache_t cache = personClas-&gt;cache;</span><br><span class="line">// 存储方法的散列表</span><br><span class="line">bucket_t *buckets = cache._buckets;</span><br><span class="line">// 根据方法SEL &amp; cache._mask 可以直接取出对应的方法</span><br><span class="line">bucket_t bucket = buckets[(long long)@selector(personTest) &amp; cache._mask];</span><br><span class="line">NSLog(@&quot;%s %p&quot;, bucket._key, bucket._imp);</span><br></pre></td></tr></table></figure></li>
-</ul>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/11/iOS-Runtime-方法缓存/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -1446,41 +1446,21 @@
 
       
         
-          
-            <h2 id="class-rw-t"><a href="#class-rw-t" class="headerlink" title="class_rw_t"></a>class_rw_t</h2><ul>
+          <h2 id="class-rw-t"><a href="#class-rw-t" class="headerlink" title="class_rw_t"></a>class_rw_t</h2><ul>
 <li><p>class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容 </p>
 <p><img src="images/image-20190418145911298.png" alt="image-20190418145911298"></p>
-</li>
-</ul>
-<h2 id="class-ro-t"><a href="#class-ro-t" class="headerlink" title="class_ro_t"></a>class_ro_t</h2><p>class_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容</p>
-<h2 id="method-t"><a href="#method-t" class="headerlink" title="method_t"></a>method_t</h2><ul>
-<li><p>method_t是对方法/函数的封装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">struct method_t &#123;</span><br><span class="line">  	SEL name; // 函数名</span><br><span class="line">  	const char *types; // 编码（返回值类型、参数类型）</span><br><span class="line">  	IMP imp; // 指向函数指针（函数地址）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>IMP代表函数的具体实现</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typedef id _Nullable (*IMP)(id _Nonnull, SEL _Nonnull, ...);</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>SEL代表方法/函数名，一般叫做选择器，底层结构跟char *类似</p>
-<ul>
-<li><p>可以通过@selector()和sel_registerName()获得</p>
-</li>
-<li><p>可以通过sel_getName()和NSStringFromSelector()转成字符串</p>
-</li>
-<li><p>不同类中相同方法/函数名，所对应的方法/函数选择器是相同的</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typedef struct objc_selector *SEL;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>types包含了函数返回值、参数编码的字符串</p>
-</li>
-</ul>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/02/iOS-Runtime-class-rw-t/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
-    </div>
+    </li></ul></div>
 
     
 
@@ -1830,29 +1810,22 @@
 
       
         
-          
-            <ul>
+          <ul>
 <li>实际情况如下图</li>
 </ul>
-<p>键盘弹起<br><img src="https://user-gold-cdn.xitu.io/2018/11/27/167533ee5b59f5d1?w=383&amp;h=758&amp;f=png&amp;s=124689" alt><br>键盘收起<br><img src="https://user-gold-cdn.xitu.io/2018/11/27/167533f2e80779dc?w=383&amp;h=758&amp;f=png&amp;s=84707" alt></p>
-<ul>
-<li>解决办法：<ul>
-<li>监听键盘的谈起和隐藏<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/// 监听将要弹起</span></span><br><span class="line">[[<span class="built_in">NSNotificationCenter</span> defaultCenter] addObserver:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(keyBoardShow) name:<span class="built_in">UIKeyboardWillShowNotification</span> object:<span class="literal">nil</span>];</span><br><span class="line"><span class="comment">/// 监听将要隐藏</span></span><br><span class="line">[[<span class="built_in">NSNotificationCenter</span> defaultCenter] addObserver:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(keyBoardHidden) name:<span class="built_in">UIKeyboardWillHideNotification</span> object:<span class="literal">nil</span>];</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>- 监听方法中设置WKWebView的scrollview的contentOffset
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** 键盘谈起屏幕偏移量 */</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">CGPoint</span> keyBoardPoint;</span><br><span class="line"></span><br><span class="line"><span class="meta">#pragma mark - addObserverKeyboard</span></span><br><span class="line"><span class="comment">/// 键盘将要弹起</span></span><br><span class="line">- (<span class="keyword">void</span>)keyBoardShow &#123;</span><br><span class="line">    <span class="built_in">CGPoint</span> point = <span class="keyword">self</span>.webView.scrollView.contentOffset;</span><br><span class="line">    <span class="keyword">self</span>.keyBoardPoint = point;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/// 键盘将要隐藏</span></span><br><span class="line">- (<span class="keyword">void</span>)keyBoardHidden &#123;</span><br><span class="line">    <span class="keyword">self</span>.webView.scrollView.contentOffset = <span class="keyword">self</span>.keyBoardPoint;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</code></pre><ul>
-<li>解决后效果</li>
-</ul>
-<p><img src="https://user-gold-cdn.xitu.io/2018/11/27/167534e299bf89cc?w=377&amp;h=716&amp;f=gif&amp;s=535925" alt></p>
-
+<p>键盘弹起<br><img src="https://user-gold-cdn.xitu.io/2018/11/27/167533ee5b59f5d1?w=383&amp;h=758&amp;f=png&amp;s=124689" alt><br>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/07/iOS-使用WKWebView出现input键盘将页面上顶不下移/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
@@ -1904,7 +1877,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/07/iOS-isa和superClass/">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/14/iOS-Block/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CoderJohnhao">
@@ -1924,7 +1897,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2018/12/07/iOS-isa和superClass/" class="post-title-link" itemprop="url">iOS_isa和superClass</a>
+                <a href="/2018/12/14/iOS-Block/" class="post-title-link" itemprop="url">iOS_Block</a>
               
             
           </h1>
@@ -1949,7 +1922,7 @@
                 
               
 
-              <time title="创建时间：2018-12-07 11:01:14" itemprop="dateCreated datePublished" datetime="2018-12-07T11:01:14+08:00">2018-12-07</time>
+              <time title="创建时间：2018-12-14 16:21:33" itemprop="dateCreated datePublished" datetime="2018-12-14T16:21:33+08:00">2018-12-14</time>
             
 
             
@@ -2004,21 +1977,15 @@
       
         
           <ol>
-<li><p>isa指针</p>
+<li><p>block本质</p>
 <ul>
-<li>instance的isa指向类对象<ul>
-<li>当调用对象方法时，通过instance的isa找到class，最后找到对象方法的实现进行调用</li>
-</ul>
-</li>
-<li>class的isa指向meta-class<ul>
-<li>当调用类方法时，通过class的isa找到meta-class，最后找到类方法的实现进行调用</li>
-</ul>
-</li>
-<li><p>meta-class的isa指向基类meta-class</p>
+<li>block本质上也是一个OC对象，它内部也有个isa指针</li>
+<li>block是封装了函数调用以及函数调用环境的OC对象</li>
+<li>block的底层结构如下图所示
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/12/07/iOS-isa和superClass/#more" rel="contents">
+              <a class="btn" href="/2018/12/14/iOS-Block/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -2111,7 +2078,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2161,7 +2128,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

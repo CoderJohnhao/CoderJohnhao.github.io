@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="CoderJohnhao个人博客">
 <meta property="og:description" content="由于iOS苹果审核需要支持ipv6，我公司手游用的socket底层调用的是C标准库，故在此记录下需要调整修改的地方1、网络环境配置方面，具体参见这篇帖子，：http://www.code4app.com/thread-8513-1-1.html补充说明，由于IPV6需要设备支持，搭建好的IPV6的WIFI，可能电脑跟安卓手机都连接不上，但用苹果手机连接却可以浏览上网，那证明网络OK，可以在真机上进">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-07T09:51:56.080Z">
+<meta property="og:updated_time" content="2019-05-07T13:32:06.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS_socket适配ipv6，同时兼容ipv4">
 <meta name="twitter:description" content="由于iOS苹果审核需要支持ipv6，我公司手游用的socket底层调用的是C标准库，故在此记录下需要调整修改的地方1、网络环境配置方面，具体参见这篇帖子，：http://www.code4app.com/thread-8513-1-1.html补充说明，由于IPV6需要设备支持，搭建好的IPV6的WIFI，可能电脑跟安卓手机都连接不上，但用苹果手机连接却可以浏览上网，那证明网络OK，可以在真机上进">
@@ -461,7 +461,7 @@
       
 
       
-        <p>由于<a href="http://lib.csdn.net/base/ios" target="_blank" rel="noopener">iOS</a>苹果审核需要支持ipv6，我公司手游用的socket底层调用的是C标准库，故在此记录下需要调整修改的地方<br>1、网络环境配置方面，具体参见这篇帖子，：<a href="http://www.code4app.com/thread-8513-1-1.html" target="_blank" rel="noopener">http://www.code4app.com/thread-8513-1-1.html</a><br>补充说明，由于IPV6需要设备支持，搭建好的IPV6的WIFI，可能电脑跟<a href="http://lib.csdn.net/base/android" target="_blank" rel="noopener">安卓</a>手机都连接不上，但用苹果手机连接却可以浏览上网，那证明网络OK，可以在真机上进行下一步的代码调试了。<br>2、原理说明：在访问服务器前，通过getaddrinfo创建对应的网络协议，ipv6网络下可以得到服务器的IPV6地址（其实是IPV4下IP的IPV6写法），通过IPV6地址去访问</p>
+        <p>由于<a href="http://lib.csdn.net/base/ios" target="_blank" rel="noopener">iOS</a>苹果审核需要支持ipv6，我公司手游用的socket底层调用的是C标准库，故在此记录下需要调整修改的地方<br>1、网络环境配置方面，具体参见这篇帖子，：<a href="http://www.code4app.com/thread-8513-1-1.html" target="_blank" rel="noopener">http://www.code4app.com/thread-8513-1-1.html</a><br>补充说明，由于IPV6需要设备支持，搭建好的IPV6的WIFI，可能电脑跟<a href="http://lib.csdn.net/base/android" target="_blank" rel="noopener">安卓</a>手机都连接不上，但用苹果手机连接却可以浏览上网，那证明网络OK，可以在真机上进行下一步的代码调试了。<br><a id="more"></a><br>2、原理说明：在访问服务器前，通过getaddrinfo创建对应的网络协议，ipv6网络下可以得到服务器的IPV6地址（其实是IPV4下IP的IPV6写法），通过IPV6地址去访问</p>
 <p>这里贴出主要的Connect方法，Connect能连接上了，后面send，recv都是可以的不用修改<br><a href="http://lib.csdn.net/base/android" target="_blank" rel="noopener">Android</a>、<a href="http://lib.csdn.net/base/ios" target="_blank" rel="noopener">ios</a>环境下代码，兼容IPV4跟IPV6：</p>
 <p><strong>[cpp]</strong> <a href="http://blog.csdn.net/xunmengdqingmao/article/details/51603825#" target="_blank" rel="noopener">view plain</a> <a href="http://blog.csdn.net/xunmengdqingmao/article/details/51603825#" target="_blank" rel="noopener">copy</a></p>
 <pre><code>bool ODSocket::Connect(const char* domain, unsigned short port)  
@@ -652,7 +652,7 @@ return true;
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -702,7 +702,11 @@ return true;
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>

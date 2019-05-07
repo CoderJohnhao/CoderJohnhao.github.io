@@ -365,6 +365,695 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/13/iOS-Category分类/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/13/iOS-Category分类/" class="post-title-link" itemprop="url">iOS_Category分类</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-13 15:23:54" itemprop="dateCreated datePublished" datetime="2018-12-13T15:23:54+08:00">2018-12-13</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ol>
+<li>Category的底层结构<ul>
+<li>定义在objc-runtime-new.h中<br>  <img src="/images/15446847762319.jpg" alt="-w1275">
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/12/13/iOS-Category分类/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </li></ul></li></ol></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/08/iOS-KVC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/08/iOS-KVC/" class="post-title-link" itemprop="url">iOS_KVC</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-08 15:11:19" itemprop="dateCreated datePublished" datetime="2018-12-08T15:11:19+08:00">2018-12-08</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ol>
+<li><p>KVC的全称是Key-Value Coding，俗称“键值编码”，可以通过一个key来访问某个属性</p>
+<ul>
+<li><p>常见的API有：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)setValue:(<span class="keyword">id</span>)value forKeyPath:(<span class="built_in">NSString</span> *)keyPath;</span><br><span class="line">- (<span class="keyword">void</span>)setValue:(<span class="keyword">id</span>)value forKey:(<span class="built_in">NSString</span> *)key;</span><br><span class="line">- (<span class="keyword">id</span>)valueForKeyPath:(<span class="built_in">NSString</span> *)keyPath;</span><br><span class="line">- (<span class="keyword">id</span>)valueForKey:(<span class="built_in">NSString</span> *)key;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/12/08/iOS-KVC/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/08/iOS-KVO/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/08/iOS-KVO/" class="post-title-link" itemprop="url">iOS_KVO</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-08 11:15:49" itemprop="dateCreated datePublished" datetime="2018-12-08T11:15:49+08:00">2018-12-08</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ol>
+<li><p>KVO</p>
+<ul>
+<li>KVO的全称是Key-Value Obsering，俗称“键值监听”，可以用于监听某个对象属性值的改变</li>
+<li><p>KVO底层实现:</p>
+<ul>
+<li>当对某个对象的属性值进行监听时，runtime会动态创建一个继承class的子类NSKVONotifying_类</li>
+<li><p>set方法实现是_NSSet(*)ValueAndNotify</p>
+<ul>
+<li><p>_NSSet*ValueAndNofify的内部实现：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="keyword">self</span> willChangeValueForKey:<span class="string">@"age"</span>];</span><br><span class="line">[<span class="keyword">super</span> setAge:age];</span><br><span class="line">[<span class="keyword">self</span> didChangeValueForKey:<span class="string">@"age"</span>];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先调用willChangeVlaueKey</p>
+</li>
+<li>再调用原来的set方法实现</li>
+<li>最调用didChangeValueKey<ul>
+<li>didChangeValueKey内部会调用obser的obserValueForKeyPath:ofObject:change:context:方法
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/12/08/iOS-KVO/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </li></ul></li></ul></li></ul></li></ul></li></ol></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/07/iOS-isa和superClass/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/07/iOS-isa和superClass/" class="post-title-link" itemprop="url">iOS_isa和superClass</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-07 11:01:14" itemprop="dateCreated datePublished" datetime="2018-12-07T11:01:14+08:00">2018-12-07</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ol>
+<li><p>isa指针</p>
+<ul>
+<li>instance的isa指向类对象<ul>
+<li>当调用对象方法时，通过instance的isa找到class，最后找到对象方法的实现进行调用</li>
+</ul>
+</li>
+<li>class的isa指向meta-class<ul>
+<li>当调用类方法时，通过class的isa找到meta-class，最后找到类方法的实现进行调用</li>
+</ul>
+</li>
+<li><p>meta-class的isa指向基类meta-class</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/12/07/iOS-isa和superClass/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </li></ul></li></ol></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/12/06/iOS-OC对象的分类/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1159,30 +1848,22 @@ return str;
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <p>苹果ipa包重签企业证书</p>
 </blockquote>
-<p>####1. 需要有有效企业证书和描述文件（xxx.mobileprovision）及对应的Bundle identifier<br><img src="http://upload-images.jianshu.io/upload_images/2148605-c3562afaaeaa11d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>####2.将ipa包的文件后缀改为zip格式，在解压！<br><img src="http://upload-images.jianshu.io/upload_images/2148605-8879f6f270c679d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="http://upload-images.jianshu.io/upload_images/2148605-993e6483eb9e2cd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>####3.打开Payload文件，右击选择显示包内容<br><img src="http://upload-images.jianshu.io/upload_images/2148605-8e9fd59979fc53f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>####4.找到一个叫embedded.mobileprovision文件，用我们自己的描述文件进行替换（注意：自己的描述文件名字一定要改成embedded.mobileprovision）</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-ded9671c32b0f8bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>####5.使用embedded.mobileprovision制作entitlements.plist 文件，打开终端</p>
-<pre><code>xianghaodeMacBook-Pro:~ Johnhao$ security cms -D -i /Users/Johnhao/Downloads/Payload/LotteryProject.app/embedded.mobileprovision &gt; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements_full.plist
-xianghaodeMacBook-Pro:~ Johnhao$ /usr/libexec/PlistBuddy -x -c &apos;Print:Entitlements&apos; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements_full.plist  &gt; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements.plist 
-</code></pre><p>######security cms -D -i embedded.mobileprovision文件路径 &gt; 生成entitlements_full.plist文件的路径</p>
-<p> ######/usr/libexec/PlistBuddy -x -c ‘Print:Entitlements’  entitlements_full.plist文件的路径 &gt; 生成entitlements.plist文件的路径</p>
-<p>####6.完成以上步骤后，打开info.plist文件，更改我们自己描述文件对应的bundle id<br><img src="http://upload-images.jianshu.io/upload_images/2148605-55e0d75e794a0bc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>####7.重签,安装一下步骤执行，出现replacing existing signature说明你成功了！就可以发布到蒲公英或者fir.im了。<br>    xianghaodeMacBook-Pro:~ Johnhao$ /usr/bin/codesign –continue -f -s “iPhone  Distribution: Xiaofu Ecommerce (Beijing) Co., Ltd.” –entitlements “/Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements.plist” “/Users/Johnhao/Downloads/Payload/LotteryProject.app”<br>/Users/Johnhao/Downloads/Payload/LotteryProject.app: replacing existing signature</p>
-<p>#####/usr/bin/codesign –continue -f -s “证书(在钥匙串访问中找到你的企业证书，在右击显示简介，拷贝组织)”   –entitlements “entitlements.plist路径” “app文件路径”</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-13392404ff56df8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>##最后：谢谢你的阅读，如果对你有帮助，请点击❤️，谢谢！</p>
-
+<p>####1. 需要有有效企业证书和描述文件（xxx.mobileprovision）及对应的Bundle identifier<br><img src="http://upload-images.jianshu.io/upload_images/2148605-c3562afaaeaa11d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/05/09/iOS__IPA包重签企业证书/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
@@ -1333,760 +2014,16 @@ xianghaodeMacBook-Pro:~ Johnhao$ /usr/libexec/PlistBuddy -x -c &apos;Print:Entit
 
       
         
-          
-            <p><img src="http://upload-images.jianshu.io/upload_images/2148605-42e68970ab3c769e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="{A8E6F204-FA15-86B7-828B-89D2A8B47641}.png"></p>
-<blockquote>
-<p>MacOS High Sierra 12.13 已经发布快一个月了，最近为了给公司的电脑装最新的系统，在网上找了资料如何将App Store下载的系统转成dmg格式的系统文件。</p>
-</blockquote>
-<ul>
-<li>首先在App Store商店下载最新的MacOS High Sierra 12.13，下载时间比较久，请慢慢等待！</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-7f5c34e9549d612f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<ul>
-<li>下载完成后，在Finder中的应用程序可以找到</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-43dab2e52e46333c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-172511@2x.png"></p>
-<ul>
-<li><p>在桌面新建一个文件夹改名为macOS High Sierra 10.13<br><img src="http://upload-images.jianshu.io/upload_images/2148605-c9f65cb16211d4cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-172641@2x.png"></p>
-</li>
-<li><p>将应用程序中的【安装 macOS High Sierra】按住command键将安装程序拖入到新建的macOS High Sierra 10.13中，会提示输入密码<br><img src="http://upload-images.jianshu.io/upload_images/2148605-7ffd953b035f1d3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-172856@2x.png"></p>
-</li>
-<li><p>【重要】打开磁盘管理工具，点击文件 &gt;&gt;&gt; 新建映像 &gt;&gt;&gt; 来自文件夹的映像<br><img src="http://upload-images.jianshu.io/upload_images/2148605-1fae94f72a28a2d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-174046@2x.png"></p>
-</li>
-<li><p>选择刚新建的文件夹macOS High Sierra 10.13，点击打开<br><img src="http://upload-images.jianshu.io/upload_images/2148605-337ad059db0ed7f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-174420@2x.png"></p>
-</li>
-<li><p>存储为名macOS.dmg，存储位置桌面，映像格式为读写，再点击存储，等待完成后生成一个macOS.dmg文件，走到这里说明你成功一大半了！</p>
-</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-a574701f0e3e7573.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-174720@2x.png"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-1a7b1650fbd853d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175034@2x.png"></p>
-<ul>
-<li><p>双击打开桌面创建的macOS.dmg，出现macOS High Sierra 10.13 卷，在终端里输入：</p>
-<pre><code>sudo ~/Desktop/macOS\ High\ Sierra\ 10.13/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/macOS\ High\ Sierra\ 10.13 --applicationpath ~/Desktop/macOS\ High\ Sierra\ 10.13/Install\ macOS\ High\ Sierra.app --nointeraction
-</code></pre></li>
-<li><p>在终端中，<br><img src="http://upload-images.jianshu.io/upload_images/2148605-fed22f3ffe55f913.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175239@2x.png"></p>
-</li>
-<li><p>推出刚刚创建的 Install macOS Sierra 卷。删除桌面上的 macOS High Sierra 10.13 文件夹。</p>
-</li>
-<li><p>打开磁盘工具，菜单：镜像 -&gt; 转换…，在出现的窗口里选择桌面的macOS.dmg，存储为: macOS High Sierra 10.13.dmg、位置桌面、映像格式压缩，点“存储”按钮。转换成功后删除桌面上的macOS.dmg。<br><img src="http://upload-images.jianshu.io/upload_images/2148605-2997d279f9f49471.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175550@2x.png"></p>
-</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-584e6bae5899a51f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175628@2x.png"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-76bce00e637e4b3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175723@2x.png"></p>
-<ul>
-<li>macOS High Sierra 10.13dmg 是我们要的最终文件。</li>
-</ul>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-d7dca1196a09ba7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175812@2x.png"></p>
-<ul>
-<li>最后，感谢你的认真阅读，如果对你有帮助请点个❤️，谢谢！</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/04/11/iOS__打越狱包/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/04/11/iOS__打越狱包/" class="post-title-link" itemprop="url">iOS_打越狱包</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-04-11 13:36:03" itemprop="dateCreated datePublished" datetime="2018-04-11T13:36:03+08:00">2018-04-11</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>最近公司接的项目，客户要求打一个越狱包，然后度娘了一下，以下是我找到的方法：</p>
-</blockquote>
+          <p><img src="http://upload-images.jianshu.io/upload_images/2148605-42e68970ab3c769e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="{A8E6F204-FA15-86B7-828B-89D2A8B47641}.png"></p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2018/04/11/iOS__打越狱包/#more" rel="contents">
+              <a class="btn" href="/2018/05/07/Macos系统文件制作/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
           
           <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/03/14/iOS-使用wkwebview加载本地html出现ajax错误/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/03/14/iOS-使用wkwebview加载本地html出现ajax错误/" class="post-title-link" itemprop="url">iOS_使用wkwebview加载本地html出现ajax错误</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-03-14 14:36:03" itemprop="dateCreated datePublished" datetime="2018-03-14T14:36:03+08:00">2018-03-14</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>运行程序，模拟器一片空白，使用safari调试，出现以下问题：<br><img src="https://upload-images.jianshu.io/upload_images/2148605-943eb3f7ea1bfe71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>  <img src="https://upload-images.jianshu.io/upload_images/2148605-90ac6d9d008f5320.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p>好像是跨域访问导致的。安卓中有个属性可以设置setAllowUniversalAccessFromFileURLs来允许跨域访问。<br>iOS 解决办法：</p>
-<pre><code>wkWebView.configuration.preferences.setValue(true, forKey: &quot;allowFileAccessFromFileURLs&quot;)
-</code></pre>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/02/28/iOS__上传应用到AppStore出现Authenticating-with-the-iTunes-store/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/02/28/iOS__上传应用到AppStore出现Authenticating-with-the-iTunes-store/" class="post-title-link" itemprop="url">iOS_上传应用到AppStore出现Authenticating-with-the-iTunes-store</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-28 16:26:03" itemprop="dateCreated datePublished" datetime="2018-02-28T16:26:03+08:00">2018-02-28</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://upload-images.jianshu.io/upload_images/2148605-b7bac6480ca2688e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-5c6b03fb1465bf07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="eV1e7.png"></p>
-<blockquote>
-<p>upload to App Store 出现一直在<strong>  Authenticating with the iTunes store</strong> 卡住</p>
-</blockquote>
-<p>######最近打包上传到App Store的时候，一直卡在验证App Store界面，一卡就是半个小时，然后提示请重试，然后在<a href="http://stackoverflow.com/questions/22443425/application-loader-stuck-at-authenticating-with-the-itunes-store-when-uploadin" target="_blank" rel="noopener">stackoverflow</a>找到解决的方法，如下：<br>   打开终端，依次输入，运行5分钟左右关闭，重启xcode，再重新upload！</p>
-<pre><code>cd ~
-mv .itmstransporter/ .old_itmstransporter/
-&quot;/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/itms/bin/iTMSTransporter&quot;
-</code></pre><p>如果对你有帮助，麻烦您点个❤️！^_^</p>
-<p>备注：如果还是不行，卸载xcode(一定要卸载干净), 重新安装xcode，再重复以上步骤！</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/02/19/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/02/19/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/" class="post-title-link" itemprop="url">iOS_播放mp3文件根据光线传感器设置外置或者听筒播放</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-19 14:36:03" itemprop="dateCreated datePublished" datetime="2018-02-19T14:36:03+08:00">2018-02-19</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <a id="more"></a>
-<pre><code>UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
-AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,
-                        sizeof(sessionCategory),
-                        &amp;sessionCategory);
-
-UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
-AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
-                         sizeof (audioRouteOverride),
-                         &amp;audioRouteOverride);
-
-AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-//默认情况下扬声器播放
-[audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
-[audioSession setActive:YES error:nil];
-
-NSError *playerError;
-  //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[VoiceRecorderBaseVC getPathByFileName:recordedFile ofType:@&quot;aac&quot;]] error:&amp;playerError];
-self.player.meteringEnabled = YES;
-
-
-if (self.player == nil)
-{
-    NSLog(@&quot;ERror creating player: %@&quot;, [playerError description]);
-}
-
-[self handleNotification:YES];
-self.player.delegate = self;
-self.player.volume = 1;
-[self.player play];
-</code></pre><p>#pragma mark - 监听听筒or扬声器</p>
-<pre><code>- (void) handleNotification:(BOOL)state
-{
-[[UIDevice currentDevice] setProximityMonitoringEnabled:state]; //建议在播放之前设置yes，播放结束设置NO，这个功能是开启红外感应
-
-if(state)//添加监听
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(sensorStateChange:) name:@&quot;UIDeviceProximityStateDidChangeNotification&quot;
-                                               object:nil];
-else//移除监听
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;UIDeviceProximityStateDidChangeNotification&quot; object:nil];
-}
-</code></pre><p>//处理监听触发事件</p>
-<pre><code>-(void)sensorStateChange:(NSNotificationCenter *)notification;
-{
-  //如果此时手机靠近面部放在耳朵旁，那么声音将通过听筒输出，并将屏幕变暗（省电啊）
-    if ([[UIDevice currentDevice] proximityState] == YES)
-    {
-        NSLog(@&quot;Device is close to user&quot;);
-        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-    }
-    else
-    {
-      NSLog(@&quot;Device is not close to user&quot;);
-      [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-    }
-}
-</code></pre>
-          
         
       
     </div>
@@ -2174,7 +2111,7 @@ else//移除监听
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-count">46</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2224,7 +2161,11 @@ else//移除监听
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
