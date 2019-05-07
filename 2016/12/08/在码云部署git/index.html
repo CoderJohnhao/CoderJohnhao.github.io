@@ -441,17 +441,6 @@
 
           
           
-            <span id="/2016/12/08/在码云部署git/" class="leancloud_visitors" data-flag-title="Git_在码云部署git">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
 
           
 
@@ -504,7 +493,7 @@
 <ul>
 <li>Johnhao-2:JohnWB Johnhao$ git commit -m “添加gitignore”</li>
 </ul>
-<p>[master b468236] 添加gitignore<br> Committer: Johnhao941026 <a href="mailto:&#x4a;&#x6f;&#104;&#x6e;&#x68;&#97;&#111;&#x40;&#74;&#111;&#104;&#110;&#104;&#97;&#x6f;&#45;&#x32;&#46;&#x6c;&#x6f;&#99;&#97;&#x6c;" target="_blank" rel="noopener">&#x4a;&#x6f;&#104;&#x6e;&#x68;&#97;&#111;&#x40;&#74;&#111;&#104;&#110;&#104;&#97;&#x6f;&#45;&#x32;&#46;&#x6c;&#x6f;&#99;&#97;&#x6c;</a><br>Your name and email address were configured automatically based<br>on your username and hostname. Please check that they are accurate.<br>You can suppress this message by setting them explicitly:</p>
+<p>[master b468236] 添加gitignore<br> Committer: Johnhao941026 <a href="mailto:&#x4a;&#111;&#x68;&#110;&#x68;&#97;&#111;&#64;&#74;&#111;&#104;&#x6e;&#x68;&#x61;&#111;&#45;&#x32;&#x2e;&#x6c;&#x6f;&#x63;&#x61;&#108;" target="_blank" rel="noopener">&#x4a;&#111;&#x68;&#110;&#x68;&#97;&#111;&#64;&#74;&#111;&#104;&#x6e;&#x68;&#x61;&#111;&#45;&#x32;&#x2e;&#x6c;&#x6f;&#x63;&#x61;&#108;</a><br>Your name and email address were configured automatically based<br>on your username and hostname. Please check that they are accurate.<br>You can suppress this message by setting them explicitly:</p>
 <pre><code>git config --global user.name &quot;Your Name&quot;
 git config --global user.email you@example.com
 </code></pre><p>After doing this, you may fix the identity used for this commit with:</p>
@@ -522,7 +511,7 @@ git config --global user.email you@example.com
 <li>Johnhao-2:JohnWB Johnhao$ git add .</li>
 <li>Johnhao-2:JohnWB Johnhao$ git commit -m “创建项目工程”</li>
 </ul>
-<p>[master 58b06f7] 创建项目工程<br> Committer: Johnhao941026 <a href="mailto:&#74;&#111;&#x68;&#x6e;&#x68;&#x61;&#111;&#64;&#x4a;&#x6f;&#104;&#x6e;&#104;&#x61;&#111;&#45;&#x32;&#x2e;&#108;&#111;&#99;&#x61;&#108;" target="_blank" rel="noopener">&#74;&#111;&#x68;&#x6e;&#x68;&#x61;&#111;&#64;&#x4a;&#x6f;&#104;&#x6e;&#104;&#x61;&#111;&#45;&#x32;&#x2e;&#108;&#111;&#99;&#x61;&#108;</a><br>Your name and email address were configured automatically based<br>on your username and hostname. Please check that they are accurate.<br>You can suppress this message by setting them explicitly:</p>
+<p>[master 58b06f7] 创建项目工程<br> Committer: Johnhao941026 <a href="mailto:&#x4a;&#111;&#104;&#110;&#x68;&#x61;&#x6f;&#x40;&#74;&#x6f;&#x68;&#x6e;&#x68;&#97;&#x6f;&#x2d;&#50;&#46;&#x6c;&#x6f;&#99;&#x61;&#x6c;" target="_blank" rel="noopener">&#x4a;&#111;&#104;&#110;&#x68;&#x61;&#x6f;&#x40;&#74;&#x6f;&#x68;&#x6e;&#x68;&#97;&#x6f;&#x2d;&#50;&#46;&#x6c;&#x6f;&#99;&#x61;&#x6c;</a><br>Your name and email address were configured automatically based<br>on your username and hostname. Please check that they are accurate.<br>You can suppress this message by setting them explicitly:</p>
 <pre><code>git config --global user.name &quot;Your Name&quot;
 git config --global user.email you@example.com
 </code></pre><p>After doing this, you may fix the identity used for this commit with:</p>
@@ -1250,66 +1239,6 @@ git config --global user.email you@example.com
 
 
   
-  
-  <script>
-    
-    function addCount(Counter) {
-      var $visitors = $('.leancloud_visitors');
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
-        .done(function({ results }) {
-          if (results.length > 0) {
-            var counter = results[0];
-            
-            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
-            
-              .done(function() {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.time + 1);
-              })
-            
-              .fail(function ({ responseJSON }) {
-                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
-              })
-          } else {
-            
-              var $element = $(document.getElementById(url));
-              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'mDxK7lObEmrDK2neLeCLKR4o-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': 'mDxK7lObEmrDK2neLeCLKR4o-gzGzoHsz',
-                'X-LC-Key': 'IEraelz8nRM7BM3WRXPoE5er',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            addCount(Counter);
-          
-        });
-    });
-  </script>
-
-
 
   
 
