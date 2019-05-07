@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback; AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,                         sizeof(sessionCategory),                         &amp;amp">
+  <meta name="description" content="动态添加方法12345678910111213141516171819202122232425262728293031323334353637+ (BOOL)resolveInstanceMethod:(SEL)sel &amp;#123;    if (sel == @selector(test)) &amp;#123;        // 获取其他方法        Method method = class">
 <meta name="keywords" content="coderJohnhao, johnhao">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CoderJohnhao个人博客">
-<meta property="og:url" content="https://CoderJohnhao.github.io/2019/05/07/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/index.html">
+<meta property="og:title" content="iOS_Runtime_动态添加方法">
+<meta property="og:url" content="https://CoderJohnhao.github.io/2019/03/12/iOS-Runtime-动态添加方法/index.html">
 <meta property="og:site_name" content="CoderJohnhao个人博客">
-<meta property="og:description" content="UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback; AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,                         sizeof(sessionCategory),                         &amp;amp">
+<meta property="og:description" content="动态添加方法12345678910111213141516171819202122232425262728293031323334353637+ (BOOL)resolveInstanceMethod:(SEL)sel &amp;#123;    if (sel == @selector(test)) &amp;#123;        // 获取其他方法        Method method = class">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-05-07T06:55:24.000Z">
+<meta property="og:updated_time" content="2019-05-07T08:12:01.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CoderJohnhao个人博客">
-<meta name="twitter:description" content="UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback; AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,                         sizeof(sessionCategory),                         &amp;amp">
+<meta name="twitter:title" content="iOS_Runtime_动态添加方法">
+<meta name="twitter:description" content="动态添加方法12345678910111213141516171819202122232425262728293031323334353637+ (BOOL)resolveInstanceMethod:(SEL)sel &amp;#123;    if (sel == @selector(test)) &amp;#123;        // 获取其他方法        Method method = class">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://CoderJohnhao.github.io/2019/05/07/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/">
+  <link rel="canonical" href="https://CoderJohnhao.github.io/2019/03/12/iOS-Runtime-动态添加方法/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title> | CoderJohnhao个人博客</title>
+  <title>iOS_Runtime_动态添加方法 | CoderJohnhao个人博客</title>
   
 
 
@@ -255,40 +255,6 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
-
-  </li>
 
       
       
@@ -338,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2019/05/07/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2019/03/12/iOS-Runtime-动态添加方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CoderJohnhao">
@@ -355,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">iOS_Runtime_动态添加方法
 
               
             
@@ -381,9 +347,25 @@
                 
               
 
-              <time title="Created: 2019-05-07 06:55:24" itemprop="dateCreated datePublished" datetime="2019-05-07T06:55:24Z">2019-05-07</time>
+              <time title="Created: 2019-03-12 15:26:46" itemprop="dateCreated datePublished" datetime="2019-03-12T15:26:46Z">2019-03-12</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 08:12:01" itemprop="dateModified" datetime="2019-05-07T08:12:01Z">2019-05-07</time>
+              
             
           </span>
 
@@ -416,63 +398,7 @@
       
 
       
-        <pre><code>UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
-AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,
-                        sizeof(sessionCategory),
-                        &amp;sessionCategory);
-
-UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
-AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
-                         sizeof (audioRouteOverride),
-                         &amp;audioRouteOverride);
-
-AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-//默认情况下扬声器播放
-[audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
-[audioSession setActive:YES error:nil];
-
-NSError *playerError;
-  //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[VoiceRecorderBaseVC getPathByFileName:recordedFile ofType:@&quot;aac&quot;]] error:&amp;playerError];
-self.player.meteringEnabled = YES;
-
-
-if (self.player == nil)
-{
-    NSLog(@&quot;ERror creating player: %@&quot;, [playerError description]);
-}
-
-[self handleNotification:YES];
-self.player.delegate = self;
-self.player.volume = 1;
-[self.player play];
-</code></pre><p>#pragma mark - 监听听筒or扬声器</p>
-<pre><code>- (void) handleNotification:(BOOL)state
-{
-[[UIDevice currentDevice] setProximityMonitoringEnabled:state]; //建议在播放之前设置yes，播放结束设置NO，这个功能是开启红外感应
-
-if(state)//添加监听
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(sensorStateChange:) name:@&quot;UIDeviceProximityStateDidChangeNotification&quot;
-                                               object:nil];
-else//移除监听
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;UIDeviceProximityStateDidChangeNotification&quot; object:nil];
-}
-</code></pre><p>//处理监听触发事件</p>
-<pre><code>-(void)sensorStateChange:(NSNotificationCenter *)notification;
-{
-  //如果此时手机靠近面部放在耳朵旁，那么声音将通过听筒输出，并将屏幕变暗（省电啊）
-    if ([[UIDevice currentDevice] proximityState] == YES)
-    {
-        NSLog(@&quot;Device is close to user&quot;);
-        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-    }
-    else
-    {
-      NSLog(@&quot;Device is not close to user&quot;);
-      [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-    }
-}
-</code></pre>
+        <h2 id="动态添加方法"><a href="#动态添加方法" class="headerlink" title="动态添加方法"></a>动态添加方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">+ (BOOL)resolveInstanceMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        // 获取其他方法</span><br><span class="line">        Method method = class_getInstanceMethod(self, @selector(other));</span><br><span class="line"></span><br><span class="line">        // 动态添加test实现方法</span><br><span class="line">        class_addMethod(self, </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line"></span><br><span class="line">        // 返回true代表有动态方法添加</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveInstanceMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (BOOL)resolveClassMethod:(SEL)sel &#123;</span><br><span class="line">    if (sel == @selector(test)) &#123;</span><br><span class="line">        Method method = class_getClassMethod(object_getClass(self), @selector(other));</span><br><span class="line">        class_addMethod(object_getClass(self), </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    return [super resolveClassMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (void)other &#123;</span><br><span class="line">    NSLog(@&quot;%s&quot;, __func__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -502,8 +428,8 @@ else//移除监听
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/08/iOS__上传应用到AppStore出现Authenticating-with-the-iTunes-store/" rel="next" title="iOS__清除cell的所有子控件">
-                <i class="fa fa-chevron-left"></i> iOS__清除cell的所有子控件
+              <a href="/2019/03/12/iOS-Runtime-方法缓存/" rel="next" title="iOS_Runtime_方法缓存">
+                <i class="fa fa-chevron-left"></i> iOS_Runtime_方法缓存
               </a>
             
           </div>
@@ -511,10 +437,6 @@ else//移除监听
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/07/iOS——socket适配ipv6，同时兼容ipv4/" rel="prev" title>
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -558,8 +480,17 @@ else//移除监听
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -576,7 +507,7 @@ else//移除监听
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -595,7 +526,9 @@ else//移除监听
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">tags</span>
                   
                 </div>
@@ -670,6 +603,23 @@ else//移除监听
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#动态添加方法"><span class="nav-number">1.</span> <span class="nav-text">动态添加方法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
