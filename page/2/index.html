@@ -338,6 +338,1441 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/05/13/iOS__字母大小写互转/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/05/13/iOS__字母大小写互转/" class="post-title-link" itemprop="url">iOS_字母大小写互转</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-12 16:31:03" itemprop="dateCreated datePublished" datetime="2018-05-12T16:31:03Z">2018-05-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:24:18" itemprop="dateModified" datetime="2019-05-07T07:24:18Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>OC字母大小写互转</p>
+</blockquote>
+<ul>
+<li>大写转小写<pre><code>-(NSString *)stringToLower:(NSString *)str{
+for (NSInteger i = 0; i &lt; str.length; i++) {
+  if ([str characterAtIndex:i] &gt;= &apos;A&apos; &amp; [str characterAtIndex:i] &lt;= &apos;Z&apos;) {
+    char  temp = [str characterAtIndex:i]+32;
+    NSRange range = NSMakeRange(i, 1);
+    str = [str stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@&quot;%c&quot;,temp]];
+  }
+}
+return str;
+</code></pre>  }</li>
+</ul>
+<ul>
+<li>小写转大写<pre><code>-(NSString *)stringToUpper:(NSString *)str{
+  for (NSInteger i = 0; i &lt; str.length; i++) {
+    if ([str characterAtIndex:i] &gt;= &apos;a&apos; &amp; [str characterAtIndex:i] &lt;= &apos;z&apos;) {
+    char  temp = [str characterAtIndex:i] - 32;
+    NSRange range = NSMakeRange(i, 1);
+    str = [str stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@&quot;%c&quot;,temp]];
+    }
+  }
+  return str;
+}
+</code></pre></li>
+</ul>
+<blockquote>
+<p>如果对您有帮助，帮忙点个❤️，^_^</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-102d8d9238eff084.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="_DSC1031.JPG"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/05/09/iOS__IPA包重签企业证书/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/05/09/iOS__IPA包重签企业证书/" class="post-title-link" itemprop="url">iOS_IPA包重签企业证书</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-05-09 15:36:03" itemprop="dateCreated datePublished" datetime="2018-05-09T15:36:03Z">2018-05-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:28:37" itemprop="dateModified" datetime="2019-05-07T07:28:37Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>苹果ipa包重签企业证书</p>
+</blockquote>
+<p>####1. 需要有有效企业证书和描述文件（xxx.mobileprovision）及对应的Bundle identifier<br><img src="http://upload-images.jianshu.io/upload_images/2148605-c3562afaaeaa11d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####2.将ipa包的文件后缀改为zip格式，在解压！<br><img src="http://upload-images.jianshu.io/upload_images/2148605-8879f6f270c679d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="http://upload-images.jianshu.io/upload_images/2148605-993e6483eb9e2cd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####3.打开Payload文件，右击选择显示包内容<br><img src="http://upload-images.jianshu.io/upload_images/2148605-8e9fd59979fc53f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####4.找到一个叫embedded.mobileprovision文件，用我们自己的描述文件进行替换（注意：自己的描述文件名字一定要改成embedded.mobileprovision）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-ded9671c32b0f8bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####5.使用embedded.mobileprovision制作entitlements.plist 文件，打开终端</p>
+<pre><code>xianghaodeMacBook-Pro:~ Johnhao$ security cms -D -i /Users/Johnhao/Downloads/Payload/LotteryProject.app/embedded.mobileprovision &gt; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements_full.plist
+xianghaodeMacBook-Pro:~ Johnhao$ /usr/libexec/PlistBuddy -x -c &apos;Print:Entitlements&apos; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements_full.plist  &gt; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements.plist 
+</code></pre><p>######security cms -D -i embedded.mobileprovision文件路径 &gt; 生成entitlements_full.plist文件的路径</p>
+<p> ######/usr/libexec/PlistBuddy -x -c ‘Print:Entitlements’  entitlements_full.plist文件的路径 &gt; 生成entitlements.plist文件的路径</p>
+<p>####6.完成以上步骤后，打开info.plist文件，更改我们自己描述文件对应的bundle id<br><img src="http://upload-images.jianshu.io/upload_images/2148605-55e0d75e794a0bc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####7.重签,安装一下步骤执行，出现replacing existing signature说明你成功了！就可以发布到蒲公英或者fir.im了。<br>    xianghaodeMacBook-Pro:~ Johnhao$ /usr/bin/codesign –continue -f -s “iPhone  Distribution: Xiaofu Ecommerce (Beijing) Co., Ltd.” –entitlements “/Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements.plist” “/Users/Johnhao/Downloads/Payload/LotteryProject.app”<br>/Users/Johnhao/Downloads/Payload/LotteryProject.app: replacing existing signature</p>
+<p>#####/usr/bin/codesign –continue -f -s “证书(在钥匙串访问中找到你的企业证书，在右击显示简介，拷贝组织)”   –entitlements “entitlements.plist路径” “app文件路径”</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-13392404ff56df8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>##最后：谢谢你的阅读，如果对你有帮助，请点击❤️，谢谢！</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/04/11/iOS__打越狱包/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/04/11/iOS__打越狱包/" class="post-title-link" itemprop="url">iOS_打越狱包</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-04-11 13:36:03" itemprop="dateCreated datePublished" datetime="2018-04-11T13:36:03Z">2018-04-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:23:43" itemprop="dateModified" datetime="2019-05-07T07:23:43Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>最近公司接的项目，客户要求打一个越狱包，然后度娘了一下，以下是我找到的方法：</p>
+</blockquote>
+<ul>
+<li><p>第一步： 首先将项目进行Archive，完成后；<br>点击<strong>Export…</strong>,如下图：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-32888effa72a05c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"><br>然后选择<strong>Save for Ad Hoc Deployment</strong>，<br><img src="http://upload-images.jianshu.io/upload_images/2148605-d09152579f53a43f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2.png"></p>
+</li>
+<li><p>第二步：将导出的ipa包，更改为zip压缩包。如图：</p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-33b76c9cf792300e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"></p>
+<ul>
+<li>第三步：在该文件夹内是一个用你BundleName命名的文件，鼠标对准，然后右击，选择“显示包内容”，这时会显示里面的所有内容，这些内容主要是你的资源文件，例如图片和nib文件等。</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-1b5a6a6da45952aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4.png"></p>
+<p>在这些文件中找到名为“info.plist”的文件，双击打开（用xcode或者文本编辑器），直接选择用xcode打开就可以了，然后再里面添加字段，其中Key是SignerIdentity，Value是Apple iPhone OS Application Signing。然后保存该文件。</p>
+<ul>
+<li>最后：将Payload压缩，将压缩后的文件后缀名改成ipa。这个ipa越狱包可以安装在没有证书的手机上。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/03/14/iOS-使用wkwebview加载本地html出现ajax错误/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/03/14/iOS-使用wkwebview加载本地html出现ajax错误/" class="post-title-link" itemprop="url">iOS_使用wkwebview加载本地html出现ajax错误</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-03-14 14:36:03" itemprop="dateCreated datePublished" datetime="2018-03-14T14:36:03Z">2018-03-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:16:49" itemprop="dateModified" datetime="2019-05-07T07:16:49Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>运行程序，模拟器一片空白，使用safari调试，出现以下问题：<br><img src="https://upload-images.jianshu.io/upload_images/2148605-943eb3f7ea1bfe71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>  <img src="https://upload-images.jianshu.io/upload_images/2148605-90ac6d9d008f5320.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>好像是跨域访问导致的。安卓中有个属性可以设置setAllowUniversalAccessFromFileURLs来允许跨域访问。<br>iOS 解决办法：</p>
+<pre><code>wkWebView.configuration.preferences.setValue(true, forKey: &quot;allowFileAccessFromFileURLs&quot;)
+</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/03/01/iOS__上传应用到AppStore出现Authenticating-with-the-iTunes-store/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/03/01/iOS__上传应用到AppStore出现Authenticating-with-the-iTunes-store/" class="post-title-link" itemprop="url">iOS_上传应用到AppStore出现Authenticating-with-the-iTunes-store</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-02-28 16:26:03" itemprop="dateCreated datePublished" datetime="2018-02-28T16:26:03Z">2018-02-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:26:43" itemprop="dateModified" datetime="2019-05-07T07:26:43Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://upload-images.jianshu.io/upload_images/2148605-b7bac6480ca2688e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-5c6b03fb1465bf07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="eV1e7.png"></p>
+<blockquote>
+<p>upload to App Store 出现一直在<strong>  Authenticating with the iTunes store</strong> 卡住</p>
+</blockquote>
+<p>######最近打包上传到App Store的时候，一直卡在验证App Store界面，一卡就是半个小时，然后提示请重试，然后在<a href="http://stackoverflow.com/questions/22443425/application-loader-stuck-at-authenticating-with-the-itunes-store-when-uploadin" target="_blank" rel="noopener">stackoverflow</a>找到解决的方法，如下：<br>   打开终端，依次输入，运行5分钟左右关闭，重启xcode，再重新upload！</p>
+<pre><code>cd ~
+mv .itmstransporter/ .old_itmstransporter/
+&quot;/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/itms/bin/iTMSTransporter&quot;
+</code></pre><p>如果对你有帮助，麻烦您点个❤️！^_^</p>
+<p>备注：如果还是不行，卸载xcode(一定要卸载干净), 重新安装xcode，再重复以上步骤！</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/02/19/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/02/19/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/" class="post-title-link" itemprop="url">iOS_播放mp3文件根据光线传感器设置外置或者听筒播放</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-02-19 14:36:03" itemprop="dateCreated datePublished" datetime="2018-02-19T14:36:03Z">2018-02-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:23:05" itemprop="dateModified" datetime="2019-05-07T07:23:05Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,
+                        sizeof(sessionCategory),
+                        &amp;sessionCategory);
+
+UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
+AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
+                         sizeof (audioRouteOverride),
+                         &amp;audioRouteOverride);
+
+AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+//默认情况下扬声器播放
+[audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+[audioSession setActive:YES error:nil];
+
+NSError *playerError;
+  //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[VoiceRecorderBaseVC getPathByFileName:recordedFile ofType:@&quot;aac&quot;]] error:&amp;playerError];
+self.player.meteringEnabled = YES;
+
+
+if (self.player == nil)
+{
+    NSLog(@&quot;ERror creating player: %@&quot;, [playerError description]);
+}
+
+[self handleNotification:YES];
+self.player.delegate = self;
+self.player.volume = 1;
+[self.player play];
+</code></pre><p>#pragma mark - 监听听筒or扬声器</p>
+<pre><code>- (void) handleNotification:(BOOL)state
+{
+[[UIDevice currentDevice] setProximityMonitoringEnabled:state]; //建议在播放之前设置yes，播放结束设置NO，这个功能是开启红外感应
+
+if(state)//添加监听
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(sensorStateChange:) name:@&quot;UIDeviceProximityStateDidChangeNotification&quot;
+                                               object:nil];
+else//移除监听
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;UIDeviceProximityStateDidChangeNotification&quot; object:nil];
+}
+</code></pre><p>//处理监听触发事件</p>
+<pre><code>-(void)sensorStateChange:(NSNotificationCenter *)notification;
+{
+  //如果此时手机靠近面部放在耳朵旁，那么声音将通过听筒输出，并将屏幕变暗（省电啊）
+    if ([[UIDevice currentDevice] proximityState] == YES)
+    {
+        NSLog(@&quot;Device is close to user&quot;);
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    }
+    else
+    {
+      NSLog(@&quot;Device is not close to user&quot;);
+      [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    }
+}
+</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/11/22/iOS__压缩视频/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/11/22/iOS__压缩视频/" class="post-title-link" itemprop="url">iOS_压缩视频</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2017-11-21 17:16:03" itemprop="dateCreated datePublished" datetime="2017-11-21T17:16:03Z">2017-11-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:26:01" itemprop="dateModified" datetime="2019-05-07T07:26:01Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>/// 压缩视频</p>
+<ul>
+<li><p>(void) convertVideoQuailtyWithInputURL:(NSURL*)inputURL</p>
+<pre><code>      outputURL:(NSURL*)outputURL
+completeHandler:(void (^)(AVAssetExportSession*))handler
+</code></pre><p>{<br>  AVURLAsset *avAsset = [AVURLAsset URLAssetWithURL:inputURL options:nil];</p>
+<p>  AVAssetExportSession *exportSession = [[AVAssetExportSession alloc] initWithAsset:avAsset presetName:AVAssetExportPresetMediumQuality];<br>  //  NSLog(resultPath);<br>  exportSession.outputURL = outputURL;<br>  exportSession.outputFileType = AVFileTypeMPEG4;<br>  exportSession.shouldOptimizeForNetworkUse= YES;<br>  [exportSession exportAsynchronouslyWithCompletionHandler:^(void)<br>   {</p>
+<pre><code>switch (exportSession.status) {
+    case AVAssetExportSessionStatusCancelled:
+        NSLog(@&quot;AVAssetExportSessionStatusCancelled&quot;);
+        break;
+    case AVAssetExportSessionStatusUnknown:
+        NSLog(@&quot;AVAssetExportSessionStatusUnknown&quot;);
+        break;
+    case AVAssetExportSessionStatusWaiting:
+        NSLog(@&quot;AVAssetExportSessionStatusWaiting&quot;);
+        break;
+    case AVAssetExportSessionStatusExporting:
+        NSLog(@&quot;AVAssetExportSessionStatusExporting&quot;);
+        break;
+    case AVAssetExportSessionStatusCompleted:
+        NSLog(@&quot;AVAssetExportSessionStatusCompleted&quot;);
+        NSLog(@&quot;%@&quot;,[NSString stringWithFormat:@&quot;%f s&quot;, [self getVideoLength:outputURL]]);
+        NSLog(@&quot;%@&quot;, [NSString stringWithFormat:@&quot;%.2f kb&quot;, [self getFileSize:[outputURL path]]]);
+
+        //UISaveVideoAtPathToSavedPhotosAlbum([outputURL path], self, nil, NULL);//这个是保存到手机相册
+
+        break;
+    case AVAssetExportSessionStatusFailed:
+        NSLog(@&quot;AVAssetExportSessionStatusFailed&quot;);
+        break;
+}
+</code></pre><p>   }];</p>
+</li>
+</ul>
+<p>}</p>
+<ul>
+<li><p>(CGFloat) getFileSize:(NSString <em>)path<br>{<br>  NSLog(@”%@”,path);<br>  NSFileManager </em>fileManager = [NSFileManager defaultManager];<br>  float filesize = -1.0;<br>  if ([fileManager fileExistsAtPath:path]) {</p>
+<pre><code>NSDictionary *fileDic = [fileManager attributesOfItemAtPath:path error:nil];//获取文件的属性
+unsigned long long size = [[fileDic objectForKey:NSFileSize] longLongValue];
+filesize = 1.0*size/1024;
+</code></pre><p>  }else{</p>
+<pre><code>NSLog(@&quot;找不到文件&quot;);
+</code></pre><p>  }<br>  return filesize;<br>}//此方法可以获取文件的大小，返回的是单位是KB。</p>
+</li>
+<li><p>(CGFloat) getVideoLength:(NSURL *)URL<br>{</p>
+<p>  AVURLAsset *avUrl = [AVURLAsset assetWithURL:URL];<br>  CMTime time = [avUrl duration];<br>  int second = ceil(time.value/time.timescale);<br>  return second;<br>}//此方法可以获取视频文件的时长。</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/11/18/iOS__3D-Touch实现UITableViewCell的预览和跳转/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/11/18/iOS__3D-Touch实现UITableViewCell的预览和跳转/" class="post-title-link" itemprop="url">iOS_3D-Touch实现UITableViewCell的预览和跳转</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2017-11-18 14:36:03" itemprop="dateCreated datePublished" datetime="2017-11-18T14:36:03Z">2017-11-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-07 07:30:35" itemprop="dateModified" datetime="2019-05-07T07:30:35Z">2019-05-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.<br>本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-758c4cab595ea923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.27.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-580e0c43a09514c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.40.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-d28f9d8b1425389b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.43.png"></p>
+<p>第一步:遵守UIViewControllerPreviewingDelegate协议<br><img src="http://upload-images.jianshu.io/upload_images/2148605-0529b2035862a6b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20161225-0@2x.png"></p>
+<p>第二步:设置代理,在UITableView的代理方法cellForRowAtIndexPath</p>
+<pre><code>// 对每个cell指定代理, 大致是这个意思
+[self registerForPreviewingWithDelegate:self sourceView:cell];
+</code></pre><p>第三步:实现UIViewControllerPreviewingDelegate代理方法</p>
+<ol>
+<li>-(UIViewController*)previewingContext:(id <uiviewcontrollerpreviewing>)previewingContext viewControllerForLocation:(CGPoint)location</uiviewcontrollerpreviewing></li>
+</ol>
+<p>2.-(void)previewingContext:(id<uiviewcontrollerpreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit</uiviewcontrollerpreviewing></p>
+<p>以上三步就可以实现uitableViewCell3D-Touch实现UITableViewCell的预览和跳转</p>
+<p>具体代码请跳转到我的github查看:<a href="https://github.com/Johnhao941026/3D-Touch_TabelViewCell" target="_blank" rel="noopener">https://github.com/Johnhao941026/3D-Touch_TabelViewCell</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/11/10/iOS__Cocoapods-安装第三方框架-pod-install-报Generating-Pods-project-Abort-trap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -672,1510 +2107,11 @@ Operation not permitted - /usr/bin/xcodeproj
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/10/10/iOS__获取项目下面的文件路径/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/10/10/iOS__获取项目下面的文件路径/" class="post-title-link" itemprop="url">iOS_获取项目下面的文件路径</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-10-10 11:36:03" itemprop="dateCreated datePublished" datetime="2017-10-10T11:36:03Z">2017-10-10</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:19:13" itemprop="dateModified" datetime="2019-05-07T07:19:13Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>获取工程项目中文件夹或者文件的路径</p>
-</blockquote>
-<ol>
-<li>将文件拖入项目中,选择Create Folder References，点击Finish(如下图)</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-6d6329e270b6b1bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p>
-<p>2.将拖入的文件添加到Copy Bundle Resource，具体步骤如下图:</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-79f44c63dd188361.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171010-105650@2x副本.png"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2148605-20fa0404c8129dcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171010-105748@2x.png"></p>
-<p>3.获取文件的代码：</p>
-<pre><code>// 获取文件路径
-NSString *filePath = [[NSBundle mainBundle] pathForResource:@&quot;文件名&quot;ofType:@&quot;文件类型&quot;];
-// 获取文件夹下的文件路径
-NSString *filePath = [[NSBundle mainBundle] pathForResource:@&quot;文件名&quot; ofType:@&quot;文件类型&quot; inDirectory:@&quot;文件夹名&quot;];
-</code></pre>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/08/08/iOS——socket适配ipv6，同时兼容ipv4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/08/08/iOS——socket适配ipv6，同时兼容ipv4/" class="post-title-link" itemprop="url">iOS_socket适配ipv6，同时兼容ipv4</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-08-08 09:36:03" itemprop="dateCreated datePublished" datetime="2017-08-08T09:36:03Z">2017-08-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:13:54" itemprop="dateModified" datetime="2019-05-07T07:13:54Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>由于<a href="http://lib.csdn.net/base/ios" target="_blank" rel="noopener">iOS</a>苹果审核需要支持ipv6，我公司手游用的socket底层调用的是C标准库，故在此记录下需要调整修改的地方<br>1、网络环境配置方面，具体参见这篇帖子，：<a href="http://www.code4app.com/thread-8513-1-1.html" target="_blank" rel="noopener">http://www.code4app.com/thread-8513-1-1.html</a><br>补充说明，由于IPV6需要设备支持，搭建好的IPV6的WIFI，可能电脑跟<a href="http://lib.csdn.net/base/android" target="_blank" rel="noopener">安卓</a>手机都连接不上，但用苹果手机连接却可以浏览上网，那证明网络OK，可以在真机上进行下一步的代码调试了。<br>2、原理说明：在访问服务器前，通过getaddrinfo创建对应的网络协议，ipv6网络下可以得到服务器的IPV6地址（其实是IPV4下IP的IPV6写法），通过IPV6地址去访问</p>
-<p>这里贴出主要的Connect方法，Connect能连接上了，后面send，recv都是可以的不用修改<br><a href="http://lib.csdn.net/base/android" target="_blank" rel="noopener">Android</a>、<a href="http://lib.csdn.net/base/ios" target="_blank" rel="noopener">ios</a>环境下代码，兼容IPV4跟IPV6：</p>
-<p><strong>[cpp]</strong> <a href="http://blog.csdn.net/xunmengdqingmao/article/details/51603825#" target="_blank" rel="noopener">view plain</a> <a href="http://blog.csdn.net/xunmengdqingmao/article/details/51603825#" target="_blank" rel="noopener">copy</a></p>
-<pre><code>bool ODSocket::Connect(const char* domain, unsigned short port)  
-{  
-//连接ip  
-char ip[128];  
-memset(ip, 0, sizeof(ip));  
-strcpy(ip, domain);  
-
-void* svraddr = nullptr;  
-int error=-1, svraddr_len;  
-bool ret = true;  
-struct sockaddr_in svraddr_4;  
-struct sockaddr_in6 svraddr_6;  
-
-//获取网络协议  
-struct addrinfo *result;  
-error = getaddrinfo(ip, NULL, NULL, &amp;result);  
-const struct sockaddr *sa = result-&gt;ai_addr;  
-socklen_t maxlen = 128;  
-switch(sa-&gt;sa_family) {  
-    case AF_INET://ipv4  
-        if ((m_sock = socket(AF_INET, SOCK_STREAM, 0)) &lt; 0) {  
-            perror(&quot;socket create failed&quot;);  
-            ret = false;  
-            break;  
-        }  
-        if(inet_ntop(AF_INET, &amp;(((struct sockaddr_in *)sa)-&gt;sin_addr),  
-                     ip, maxlen) &lt; 0){  
-            perror(ip);  
-            ret = false;  
-            break;  
-        }  
-        svraddr_4.sin_family = AF_INET;  
-        svraddr_4.sin_addr.s_addr = inet_addr(ip);  
-        svraddr_4.sin_port = htons(port);  
-        svraddr_len = sizeof(svraddr_4);  
-        svraddr = &amp;svraddr_4;  
-        break;  
-    case AF_INET6://ipv6  
-        if ((m_sock = socket(AF_INET6, SOCK_STREAM, 0)) &lt; 0) {  
-            perror(&quot;socket create failed&quot;);  
-            ret = false;  
-            break;  
-        }  
-        inet_ntop(AF_INET6, &amp;(((struct sockaddr_in6 *)sa)-&gt;sin6_addr),  
-                  ip, maxlen);  
-
-        printf(&quot;socket created ipv6/n&quot;);  
-
-        bzero(&amp;svraddr_6, sizeof(svraddr_6));  
-        svraddr_6.sin6_family = AF_INET6;  
-        svraddr_6.sin6_port = htons(port);  
-        if ( inet_pton(AF_INET6, ip, &amp;svraddr_6.sin6_addr) &lt; 0 ) {  
-            perror(ip);  
-            ret = false;  
-            break;  
-        }  
-        svraddr_len = sizeof(svraddr_6);  
-        svraddr = &amp;svraddr_6;  
-        break;  
-
-    default:  
-        printf(&quot;Unknown AF\ns&quot;);  
-        ret = false;  
-}  
-freeaddrinfo(result);  
-if(!ret)  
-{  
-    fprintf(stderr , &quot;Cannot Connect the server!n&quot;);  
-    return false;  
-}  
-int nret = connect(m_sock, (struct sockaddr*)svraddr, svraddr_len);  
-if(nret==SOCKET_ERROR )  
-{  
-    return false;  
-}  
-
-return true;  
-}  
-</code></pre>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/06/14/iOS后台如何保持socket长连接和数据传输/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/06/14/iOS后台如何保持socket长连接和数据传输/" class="post-title-link" itemprop="url">iOS_后台如何保持socket长连接和数据传输</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-06-14 14:04:03" itemprop="dateCreated datePublished" datetime="2017-06-14T14:04:03Z">2017-06-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:13:26" itemprop="dateModified" datetime="2019-05-07T07:13:26Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://blog.sina.com.cn/s/blog_af73e7a70102uzfr.html" target="_blank" rel="noopener">转载：一根火柴的博客</a><br>工程中使用tcp长连接来和服务端进行数据传输，在IOS平台上，由于苹果的后台机制，会有以下问题：<br>当程序退到后台的时候，所有线程被挂起，系统会回收所有的socket资源，那么socket连接就会被关闭，因此无法再进行数据的传输：</p>
-<p>解决方法：<br>通过设置以下属性可以保持socket连接和数据的继续传输<br>1.需要在Info.plist文件中添加UIBackgroundModes中的VOIP键值；<br>2.设置流属性<br>CFReadStreamRef和CFWriteStreamRef通过如下方法设置kCFStreamNetworkServiceType属性为kCFStreamNetworkServiceTypeVoIP；</p>
-<p>CFReadStreamSetProperty(theReadStream, kCFStreamNetworkServiceType, kCFStreamNetworkServiceTypeVoIP);<br>CFWriteStreamSetProperty(theWriteStream, kCFStreamNetworkServiceType, kCFStreamNetworkServiceTypeVoIP);</p>
-<p>NSInputStream 和NSOutputStream通过如下方法设置NSStreamNetworkServiceType属性为NSStreamNetworkServiceTypeVoIP；<br>[self.stream setProperty: NSStreamNetworkServiceTypeVoIP forKey:NSStreamNetworkServiceType];</p>
-<p>3.这里有一个问题，就是客户端是通过心跳来和服务端保持连接，心跳是由定时器触发的，当我退到后台以后，定时器方法被挂起，那么通过如下设置来在后台运行定时器</p>
-<pre><code>- (void)applicationDidEnterBackground:(UIApplication*)application{
-  UIApplication*  app = [UIApplication sharedApplication];
-  __block   UIBackgroundTaskIdentifier bgTask;
-  bgTask= [app beginBackgroundTaskWithExpirationHandler:^{
-  dispatch_async(dispatch_get_main_queue(),^{
-    if(bgTask != UIBackgroundTaskInvalid){
-      bgTask= UIBackgroundTaskInvalid;
-    }
-  });
-}];
-dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,  0  ),^{
-  dispatch_async(dispatch_get_main_queue(),^{
-  if  (bgTask != UIBackgroundTaskInvalid)  {
-      bgTask= UIBackgroundTaskInvalid;
-   }  
-  });
-});
-}
-</code></pre>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/06/08/iOS通过SignalR实现即时通讯/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/06/08/iOS通过SignalR实现即时通讯/" class="post-title-link" itemprop="url">iOS_通过SignalR实现即时通讯</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-06-08 10:36:03" itemprop="dateCreated datePublished" datetime="2017-06-08T10:36:03Z">2017-06-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:12:40" itemprop="dateModified" datetime="2019-05-07T07:12:40Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>瞎比比😁😁<blockquote>
-<p>在iOS开发中，经常会使用到即时通讯，通常我们会使用Socket，今天我介绍另外一种方法，就是SignalR！</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>SignalR简要介绍<blockquote>
-<p>SignalR 是为 ASP.NET 开发人员提供的一个库，可以简化开发人员将实时 Web 功能添加到应用程序的过程。实时 Web 功能是指这样一种功能：当所连接的客户端变得可用时服务器代码可以立即向其推送内容，而不是让服务器等待客户端请求新的数据。</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>集成步骤<blockquote>
-<p>iOS使用SignalR，要用到的第三方框架<strong><a href="https://github.com/DyKnow/SignalR-ObjC" target="_blank" rel="noopener">SignalR-ObjC</a></strong>(好像有一年左右没更新了😭😭 )<br>方法一： 通过 using CocoaPods</p>
-<pre><code>pod &apos;SignalR-ObjC&apos;
-</code></pre><p>方法二： 那就是自己到<strong><a href="https://github.com/DyKnow/SignalR-ObjC" target="_blank" rel="noopener">Gitgub SignalR-ObjC</a></strong>下载，再放入项目中！<br><strong>建议使用方法一：因为SignalR-ObjC会依赖<a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a>，<a href="https://github.com/square/SocketRocket" target="_blank" rel="noopener">SocketRocket</a> 两个框架</strong></p>
-</blockquote>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/05/05/swift__常用的第三方开源框架/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/05/05/swift__常用的第三方开源框架/" class="post-title-link" itemprop="url">iOS_Swift_常用的第三方开源框架</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-05-05 10:34:03" itemprop="dateCreated datePublished" datetime="2017-05-05T10:34:03Z">2017-05-05</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:10:31" itemprop="dateModified" datetime="2019-05-07T07:10:31Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>来自<a href="http://www.jianshu.com/u/43e90a4207ae" target="_blank" rel="noopener">良辰乐</a>(<a href="http://www.jianshu.com/p/3a3bf236e85e" target="_blank" rel="noopener">http://www.jianshu.com/p/3a3bf236e85e</a>)</p>
-<blockquote>
-<p>这些库的 TL;DR 列表，供快速查询：</p>
-</blockquote>
-<p>1.<a href="https://github.com/Instagram/IGListKit" target="_blank" rel="noopener">IGListKit</a> [UICollectionView 框架] -&gt; pod ‘IGListKit’, ‘~&gt; 2.0.0<br>2.<a href="https://github.com/realm/realm-cocoa" target="_blank" rel="noopener">Realm</a> [移动端数据库] -&gt; pod ‘RealmSwift’<br>3.<a href="https://github.com/Moya/Moya" target="_blank" rel="noopener">Moya</a> [抽象网络层] -&gt; pod ‘Moya’, ‘8.0.0’<br>4.<a href="https://github.com/SwiftyJSON/SwiftyJSON" target="_blank" rel="noopener">SwiftyJSON</a> [JSON 解析] -&gt; pod ‘SwiftyJSON’<br>5.<a href="https://github.com/square/Valet" target="_blank" rel="noopener">Valet</a> [钥匙串帮手] -&gt; pod ‘Valet’<br>6.<a href="https://firebase.google.com/docs/analytics/" target="_blank" rel="noopener">Firebase Analytics</a> [分析] -&gt; pod ‘Firebase/Core’<br>7.<a href="https://github.com/facebook/AsyncDisplayKit" target="_blank" rel="noopener">AsyncDisplayKit</a> [异步 UI SDK] -&gt; pod ‘AsyncDisplayKit’<br>8.<a href="https://github.com/dzenbot/DZNEmptyDataSet" target="_blank" rel="noopener">DZNEmptyDataSet</a> [空状态模式] -&gt; pod ‘DZNEmptyDataSet’<br>9.<a href="https://github.com/ViccAlexander/Chameleon" target="_blank" rel="noopener">Chameleon</a> [扁平化颜色框架] -&gt; pod ‘ChameleonFramework/Swift’, :<a href="http://lib.csdn.net/base/28" target="_blank" rel="noopener">Git</a> =&gt; ‘<a href="https://github.com/ViccAlexander/Chameleon.git" target="_blank" rel="noopener">https://github.com/ViccAlexander/Chameleon.git</a>‘<br>10.<a href="https://github.com/nickoneill/PermissionScope" target="_blank" rel="noopener">PermissionScope</a> [iOS 权限框架] -&gt; pod ‘PermissionScope’<br>11.<a href="https://github.com/nvzqz/FileKit" target="_blank" rel="noopener">FileKit</a> [文件管理] -&gt; pod ‘FileKit’, ‘~&gt; 4.0.0’<br>12.<a href="https://github.com/radex/SwiftyUserDefaults" target="_blank" rel="noopener">SwiftyUserDefaults</a> [user defaults 帮手] -&gt; pod ‘SwiftyUserDefaults’<br>13.<a href="https://github.com/onevcat/Kingfisher" target="_blank" rel="noopener">Kingfisher</a> [下载图片] -&gt; pod ‘Kingfisher’, ‘~&gt; 3.0’<br>14.<a href="https://github.com/lkzhao/Hero" target="_blank" rel="noopener">Hero</a> [自定义试图控制器过渡动画] -&gt; pod ‘Hero’<br>15.<a href="https://github.com/onevcat/Hedwig" target="_blank" rel="noopener">Hedwig</a> [发送 email]<br>16.<a href="https://github.com/dennisweissmann/DeviceKit" target="_blank" rel="noopener">DeviceKit</a> [设备信息] -&gt; pod ‘DeviceKit’, ‘~&gt; 1.0’<br>17.<a href="https://github.com/danielgindi/Charts" target="_blank" rel="noopener">Charts</a> [图表] -&gt; pod ‘Charts’<br>18.<a href="https://github.com/MortimerGoro/MGSwipeTableCell" target="_blank" rel="noopener">MGSwipeTableCell</a> [可以滑动的 table cells] -&gt; pod ‘MGSwipeTableCell’<br>19.<a href="https://github.com/nvzqz/RandomKit" target="_blank" rel="noopener">RandomKit</a> [随机生成数字] -&gt; pod ‘RandomKit’, ‘~&gt; 3.0.0’<br>20.<a href="https://github.com/netguru/ResponseDetective" target="_blank" rel="noopener">ResponseDetective</a> [调适网络请求] -&gt; pod ‘ResponseDetective’<br>21.<a href="https://github.com/mamaral/Onboard" target="_blank" rel="noopener">Onboard</a> [用户指导页] -&gt; pod ‘Onboard’<br>22.<a href="https://github.com/Quick/Quick" target="_blank" rel="noopener">Quick</a> + <a href="https://github.com/Quick/Nimble" target="_blank" rel="noopener">Nimble</a> [BDD 测试] -&gt; pod ‘Quick’pod ‘Nimble’<br>23.<a href="https://github.com/krzyzanowskim/Natalie" target="_blank" rel="noopener">Natalie</a> [从 storyboard 生成代码]<br>24.<a href="https://github.com/ReactiveX/RxSwift" target="_blank" rel="noopener">RxSwift</a> [reactive 编程] -&gt; pod ‘RxSwift’, ‘~&gt; 3.0’<br>25.<a href="https://github.com/dani-gavrilov/GDPerformanceView-Swift" target="_blank" rel="noopener">GDPerformanceView</a> [实时 FPS and CPU 用量] -&gt; pod ‘GDPerformanceView-Swift’, ‘~&gt; 1.1.0’<br>26.<a href="https://github.com/Alamofire/Alamofire" target="_blank" rel="noopener">Alamofire</a> [网络] -&gt; pod ‘Alamofire’, ‘~&gt; 4.3’<br>27.<a href="https://github.com/bizz84/SwiftyStoreKit" target="_blank" rel="noopener">SwiftyStoreKit</a> [app 内购] -&gt; pod ‘SwiftyStoreKit’<br>28.<a href="https://github.com/naoty/Timepiece" target="_blank" rel="noopener">Timepiece</a> [date 帮手] -&gt; pod ‘Timepiece’<br>29.<a href="https://github.com/krzyzanowskim/CryptoSwift" target="_blank" rel="noopener">CryptoSwift</a> [加密] -&gt; pod ‘CryptoSwift’<br>30.<a href="https://github.com/WenchaoD/FSCalendar" target="_blank" rel="noopener">FSCalendar</a> [日历] -&gt; pod ‘FSCalendar’<br>31.<a href="https://github.com/MailOnline/ImageViewer" target="_blank" rel="noopener">ImageViewer</a> [模仿 Twitter 的图片查看器] -&gt; pod ‘ImageViewer’<br>32.<a href="https://github.com/mxcl/PromiseKit" target="_blank" rel="noopener">PromiseKit</a> [promises] -&gt; pod ‘PromiseKit’, ‘~&gt; 4.0’<br>33.<a href="https://github.com/drewmccormack/ensembles" target="_blank" rel="noopener">Ensembles</a> [Core Data 同步] -&gt; pod ‘Ensembles’</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/04/18/iOS__-裁剪图片为正方形/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/04/18/iOS__-裁剪图片为正方形/" class="post-title-link" itemprop="url">iOS_裁剪图片为正方形</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-04-18 14:36:03" itemprop="dateCreated datePublished" datetime="2017-04-18T14:36:03Z">2017-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:31:37" itemprop="dateModified" datetime="2019-05-07T07:31:37Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><p>(UIImage <em>)squareImageFromImage:(UIImage </em>)image scaledToSize:(CGFloat)newSize {<br>  CGAffineTransform scaleTransform;<br>  CGPoint origin;</p>
-<p>  if (image.size.width &gt; image.size.height) {</p>
-<pre><code>CGFloat scaleRatio = newSize / image.size.height;
-scaleTransform = CGAffineTransformMakeScale(scaleRatio, scaleRatio);
-origin = CGPointMake(-(image.size.width - image.size.height) / 2.0f, 0);
-</code></pre><p>  } else {</p>
-<pre><code>CGFloat scaleRatio = newSize / image.size.width;
-scaleTransform = CGAffineTransformMakeScale(scaleRatio, scaleRatio);
-
-origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
-</code></pre><p>  }</p>
-<p>  CGSize size = CGSizeMake(newSize, newSize);<br>  //创建画板<br>  if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {</p>
-<pre><code>UIGraphicsBeginImageContextWithOptions(size, YES, 0);
-</code></pre><p>  } else {</p>
-<pre><code>UIGraphicsBeginImageContext(size);
-</code></pre><p>  }</p>
-<p>  CGContextRef context = UIGraphicsGetCurrentContext();<br>  //将image<br>  CGContextConcatCTM(context, scaleTransform);<br>  //origin<br>  [image drawAtPoint:origin];</p>
-<p>  //获取缩放后剪切的image图片<br>  image = UIGraphicsGetImageFromCurrentImageContext();</p>
-<p>  UIGraphicsEndImageContext();</p>
-<p>  return image;<br>}</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/02/24/iOS__监听webView的网络请求,并获取网络请求回来的数据/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/02/24/iOS__监听webView的网络请求,并获取网络请求回来的数据/" class="post-title-link" itemprop="url">iOS_监听webView的网络请求,并获取网络请求回来的数据</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-02-23 17:59:03" itemprop="dateCreated datePublished" datetime="2017-02-23T17:59:03Z">2017-02-23</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:20:07" itemprop="dateModified" datetime="2019-05-07T07:20:07Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>####导语:</p>
-<blockquote>
-<p>最近,webAPP比较火,公司也在用JS框架开发移动APP,web前端的同事负责用JS开发内容,负责iOS的我 和 负责Android的同事,就简单的搭建一个架子.<br> 但是,我在开发中就遇到一些问题,比如本篇文章要讲的webView获取网络请求返回的Session,开始我也是一头雾水,经过一番折腾,到百度,Google.还是找到了解决的办法.</p>
-</blockquote>
-<p>####第一步:创建一个继承NSURLProtocol的类<br>在.m文件中声明NSURLConnection的属性,而且遵守NSURLConnectionDelegate,代码如下:</p>
-<pre><code>#import &quot;CustomURLProtocol.h&quot;
-
-static NSString * const URLProtocolHandledKey =   @&quot;URLProtocolHandledKey&quot;;      
-@interface CustomURLProtocol ()&lt;NSURLConnectionDelegate&gt;
-@property (nonatomic, strong) NSURLConnection *connection
-@end
-</code></pre><ul>
-<li>NSURLConnection: 提供支持执行异步加载URL请求，向数据库提供数据客户提供的代理(<em>英语不好,找Google翻译的</em>)</li>
-</ul>
-<p>####第二步: 去重写NSURLProtocol的方法<br>代码如下:</p>
-<pre><code>//This method determines whether this protocol can handle the given request.
-+ (BOOL)canInitWithRequest:(NSURLRequest *)request
-{
-    //只处理http和https请求
-    NSString *scheme = [[request URL] scheme];
-    if ( ([scheme caseInsensitiveCompare:@&quot;http&quot;] == NSOrderedSame ||
-    [scheme caseInsensitiveCompare:@&quot;https&quot;] == NSOrderedSame)) {
-    //看看是否已经处理过了，防止无限循环
-    if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) {
-        return NO;
-    }
-    Log(@&quot;relativePath -- %@&quot;,request.URL.relativePath);
-    // 可以做一些网络请求的需要的事情(如:带cookie等等)
-    return YES;
-}
-
-//This method returns a canonical version of the given request.
-+ (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *)request {
-  return request;
-}
-
-//Compares two requests for equivalence with regard to caching.
-+ (BOOL)requestIsCacheEquivalent:(NSURLRequest *)a toRequest:(NSURLRequest *)b
-{
-   return [super requestIsCacheEquivalent:a toRequest:b];
-}
-
-//Starts protocol-specific loading of a request.
-- (void)startLoading
-{
-  NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
-  //打标签，防止无限循环
-  [NSURLProtocol setProperty:@YES forKey:URLProtocolHandledKey inRequest:mutableReqeust];
-  self.connection = [NSURLConnection connectionWithRequest:mutableReqeust delegate:self];
-}
-
-//tops protocol-specific loading of a request. 
-- (void)stopLoading
-{
-  [self.connection cancel];
-}
-</code></pre><p> ####第三步: 实现NSURLConnectionDelegate<br>的方法代码如下:</p>
-<pre><code>#pragma mark - NSURLConnectionDelegate
-/// 网络请求返回数据
-- (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-  NSHTTPURLResponse *httpresponse = (NSHTTPURLResponse *)response;
-  if([httpresponse respondsToSelector:@selector(allHeaderFields)]){
-    NSDictionary *di  = [httpresponse allHeaderFields];
-    NSArray *keys = [di allKeys];
-    for(int i=0; i&lt;di.count;i++){
-        NSString *key = [keys objectAtIndex:i];
-        NSString *value=[di objectForKey:key];
-        if([key rangeOfString:@&quot;Set-Cookie&quot;].location != NSNotFound)
-        {
-            Log(@&quot;response_header_value -- %@&quot;,value);
-            // 获取Session
-        }
-    }
-}
-
-  [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
-}
-
-- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-  [self.client URLProtocol:self didLoadData:data];
-}
-
-- (void) connectionDidFinishLoading:(NSURLConnection *)connection {
-  [self.client URLProtocolDidFinishLoading:self];
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-  [self.client URLProtocol:self didFailWithError:error];
-}
-</code></pre><p>####第四步:在AppDelegate.m中注册</p>
-<pre><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  //注册protocol
-  [NSURLProtocol registerClass:[CustomURLProtocol class]];
-  return YES;
-}
-</code></pre><p>####结语:</p>
-<blockquote>
-<p>也是第一次了解这方面的知识,对你有帮助就帮忙点个赞,有错误的地方望大家指出来,谢谢😁😁</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/02/12/iOS__【App-Store】2016年最新审核规则/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/02/12/iOS__【App-Store】2016年最新审核规则/" class="post-title-link" itemprop="url">iOS_【App-Store】2016年最新审核规则</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-02-11 19:36:03" itemprop="dateCreated datePublished" datetime="2017-02-11T19:36:03Z">2017-02-11</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-07 07:31:13" itemprop="dateModified" datetime="2019-05-07T07:31:13Z">2019-05-07</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>##[App Store2016年最新审核规则:<br>1<br>为App Store开发程序，开发者必须遵守 Program License Agreement (PLA)、人机交互指南(HIG)以及开发者和苹果签订的任何协议和合同。<br>2.1<br>崩溃的程序将会被拒绝。<br>2.2<br>存在错误的程序将会被拒绝。<br>2.3<br>跟开发者宣传不符的程序将会被拒绝。<br>2.4<br>无应用文档或隐藏功能与描述不符的程序将会被拒绝。<br>2.5<br>使用非公开API的程序将会被拒绝。<br>2.6<br>在指定容器范围外读写数据的程序将会被拒绝。<br>2.7<br>以任何方式或形式下载代码的程序将会被拒绝。<br>2.8<br>安装或运行其他可执行代码的程序将会被拒绝。<br>2.9<br>beta版、demo版、trial版和test版的程序将会被拒绝。<br>2.1<br>iPhone程序必须不经修改就能以iPhone分辨率和2倍 iPhone 3GS的分辨率在iPad上运行。<br>2.11<br>与App Store已有程序重复的应用可能会被拒绝，特别是数量很多的情况下，比如手电筒应用和爱经应用。<br>2.12<br>有用性不显著、不独特的应用或者与网站简单捆绑的应用有可能被拒;不提供任何持久娱乐价值的程序可能会被拒绝。<br>2.13<br>主要用于营销或广告的程序将会被拒绝。<br>2.14<br>提供欺骗或虚假功能，却有没有明确标示的应用程序将会被拒绝。<br>2.15<br>大于100MB(绿色原先是50MB)无法通过蜂窝网络下载的应用(App Store会自动禁止)。<br>2.16<br>多任务程序使用后台服务仅限于几种目的：VoIP，音频播放，地理位置，完成任务以及本地提醒等。<br>2.17<br>应用程序只允许使用ios WebKit框架和WebKit Javascript浏览web内容。<br>2.18<br>鼓励酗酒或使用违禁药物，或引诱青少年饮酒或吸烟的程序将会被拒绝。<br>2.19<br>提供错误的系统诊断或设备数据的应用将会被拒绝。<br>2.2<br>向App Store上传大量相似版本程序的开发者将会从iOS开发者计划中除名。<br>2.21<br>简单的歌曲或者影片应用要提交到iTunes store，书籍类应用应该提交到iBookstore。<br>2.22<br>武断地根据环境(如定位或者运营商)限制用户使用的应用会被拒。<br>2.23<br>应用必须遵守iOS数据储存指导方针(iOS Data Storage Guidelines )，否则应用将被拒。<br>2.24<br>存放在Newsstand的应用必须遵守开发者项目许可协议(Developer Program License Agreement)的表1、表2以及表3，否则应用将会被拒。<br>2.25<br>类似App Store，基于购买或者促销的目的而展示其他应用的应用将会被拒绝，除非是经过特殊审核批准(比如健康管理、航空以及其他无障碍需求等)，或者为特殊群体用户提供具有重大意义的附加值的应用。<br>2.26<br>只有当app采集是出于特殊审核需求时，app才可以展示和推荐自身以外的其他应用程序，比如健康管理、航空以及无障碍需求等，否则应用程序将会被拒绝。(新增)<br>3.1<br>应用或者元数据中提到其他任何移动平台将会被拒。<br>3.2<br>带有占位符文本的程序将会被拒绝<br>3.3<br>描述中有与程序内容和功能不相关的信息的应用将会被拒绝。<br>3.4<br>为了不混淆用户，iTunes Connect中的应用名称应该和展示在设备上的应用名称一致<br>3.5<br>不同尺寸的app icon要一致，否则会造成混淆。<br>3.6<br>程序图标和截图不符合4+年龄评级的程序将会被拒绝。<br>3.7<br>目录与类型不适合于程序内容的程序将会被拒绝。<br>3.8<br>开发者有责任为其程序指定适合的评级。不相称的评级可能会由苹果公司修改。<br>3.9<br>开发者有责任为其程序指定恰当的关键字。不恰当的关键词可能会被苹果公司修改/删除。<br>3.1<br>有以下行为的开发者将会被苹果从iOS开发者计划中除名：试图操纵或者欺骗用户评级，伪造或者付费评级，以及其他不相称的行为。<br>3.11<br>在安装下载之前推荐用户重启iOS设备的应用将会被拒。<br>3.12<br>在提交审核过程中，应用程序应包含能正常运行的URL，比如支持URL和隐私政策URL。<br>3.13<br>如果应用程序的截图和营销文本没有清晰地确定需要额外单独购买(比如使用IAP)的内容或者项目，那么应用程序将会被拒绝。<br>3.14<br>App预览可以仅使用从应用程序捕获的视频屏幕、旁白、文本以及design overlays，否则应用程序将会被拒绝。<br>3.15<br>添加App预览的应用程序，未经许可展示真人个人信息将会被拒绝。<br>3.16<br>App预览可能仅包括在所有选定地区内经过授权许可用于此目的的音乐。<br>3.17<br>App预览包含未经许可的通过app播放的内容(比如iTunes playlist和YouTube流媒体)的应用将会被拒绝。<br>4.1<br>在收集、传输或使用位置数据之前未通知并获得用户同意的程序将会被拒绝。<br>4.2<br>使用基于位置的API来自动控制车辆、飞机或其他设备的应用程序将会被拒绝。<br>4.3<br>使用基于位置的API用于调度、车队管理或应急服务的程序将会被拒绝。<br>4.4<br>当与应用功能或服务密切相关时可以使用位置数据，或者用于经过授权的广告。<br>5.1<br>不使用苹果推送通知 (APN)应用接口提供推送通知的程序将会被拒绝。<br>5.2<br>不使用苹果推送通知 (APN)应用接口提供推送通知的程序将会被拒绝。<br>5.3<br>在首次推送消息或者要求推送通知运行之前未获得用户许可的应用将会被拒绝。<br>5.4<br>使用推送通知发送敏感个人信息或机密信息的程序将会被拒绝。<br>5.5<br>使用推送通知发送非请求消息或用于钓鱼或群发垃圾邮件用途的程序将会被拒绝。<br>5.6<br>应用程序不可使用推送通知发送广告、促销或任何类型的直销信息。<br>5.7<br>应用程序不能向使用推送通知服务的用户收取费用。<br>5.8<br>使用推送通知会过多利用APN服务的网络流量或带宽或给设备带来过度负担的程序将会被拒绝。<br>5.9<br>如果应用程序传送病毒、文件、计算机代码或程序，并且对APN服务的正常运行造成损害或中断，那么该程序将会被拒绝。<br>6.1<br>向终端用户或任意第三方显示玩家ID的程序将会被拒绝。<br>6.2<br>将玩家ID用于任何未经游戏中心条款批准用途的程序将会被拒绝。<br>6.3<br>试图进行反向搜索、跟踪、关联、挖掘、获得或利用玩家ID、别名或通过游戏中心获得其他信息的开发者将会iOS开发者计划除名。<br>6.4<br>游戏中心信息(例如排行榜分数)只能通过游戏中心用于应用中。<br>6.5<br>利用游戏中心服务发送非请求信息或用于钓鱼或群发垃圾邮件的程序将会被拒绝。<br>6.6<br>使用游戏中心过多占用网络流量或带宽的程序将会被拒绝。<br>6.7<br>如果程序能够传送病毒、文件、计算机代码或程序，并且对游戏中心服务的正常运行造成损害或中断，该程序将会被拒绝。<br>7.1<br>人工刷广告浏览量或者广告点击率的应用程序将会被拒绝。<br>7.2<br>包含空iAd广告的应用程序将会被拒绝。<br>7.3<br>主要设计目的在于显示广告的应用程序将会被拒绝。<br>8.1<br>应用程序必须遵守”Guidelines for Using Apple Trademarks and Copyrights”和”Apple Trademark List”中说明的所有条款与条件。<br>8.2<br>任何误导和暗示苹果公司是该应用程序来源或提供商，或者苹果公司以任何形式表示认可其质量或功能的应用程序将会被拒绝。<br>8.3<br>与目前已有苹果产品或者广告主题外观相似或混淆的应用程序将会被拒绝。<br>8.4<br>在应用程序名称中将苹果产品名拼错的应用程序(例如，GPS for Iphone，iTunz)将会被拒绝。<br>8.5<br>使用受保护的第三方材料(商标、版权、商业机密、其他私有内容)在申请时需要提供一份文本形式的版权确认。<br>8.6<br>下载的音乐或视频如果没有获得授权使用了第三方提供的资源，(例如tube，soundcloud，vimeo等)的应用将会被拒绝。<br>9.1<br>不使用媒体播放器框架(MediaPlayer Framework)获取音乐库中媒体内容的应用程序将会被拒绝。<br>9.2<br>用户界面模仿任何iPod界面的应用程序将会被拒绝。<br>9.3<br>通过蜂窝网络传输的音频流内容每5分钟不得超过5MB。<br>9.4<br>通过蜂窝网络传输超过10分钟的视频流内容需要使用HTTP Live Streaming，并包含一个基准线为64kbps的音频HTTP Live Streaming。<br>10.1<br>应用程序必须遵守苹果的《iOS Human Interface Guidelines》中所有的条款和条件。<br>10.2<br>外观与与iPhone的自带应用(比如App Store、iTunes Store和iBookstore)相似的应用将会被拒绝。<br>10.3<br>未能按苹果《iOS Human Interface Guidelines》描述正确使用系统提供的项目(比如按钮、图标)的应用将会被拒绝。<br>10.4<br>创建多桌面/主屏幕环境或者模拟multi-App插件体验的应用程序将会被拒绝。<br>10.5<br>修改音量大小和铃声/静音开关等标准开关功能的应用程序将会被拒绝。<br>10.6<br>苹果和我们的客户高度推崇简单、精致、富有创造性以及经过精心设计的界面。虽然需要付出更多，但却非常值得。苹果设立了很高的门槛。如果你的用户界面太过复杂或者水准不高，可能会被拒绝。<br>10.7<br>主要功能只是看时间的应用将会被拒绝。<br>11.1<br>使用App Store以外的渠道解锁或开启附加属性和功能的应用程序将会被拒绝。<br>11.2<br>使用应用内支付系统(IAP)以外的系统购买内容、功能或服务的应用软件将会被拒绝。<br>11.3<br>使用IAP购买实物商品和并非用于该软件的服务的应用软件将会被拒绝。<br>11.4<br>应用程序使用IAP购买积分(Credit)或者其他的货币必须在本应用中消费。<br>11.5<br>使用IAP购买已过期积分(Credit)或者其他货币的应用软件将会被拒绝。<br>11.6<br>使用IAP订阅的内容至少要持续7天，而且允许在用户的其他iOS设备间共享。<br>11.7<br>应用程序使用IAP购买项目必须分派到正确的购买类型中。<br>11.8<br>使用IAP购买iOS内置功能(如照相机，陀螺仪)的应用程序将会被拒绝。<br>11.9<br>含有超过限定时间的内容或服务的应用程序将会被拒绝，除了特殊批准的内容(比如films、电视节目音乐以及书籍)。<br>11.1<br>保险类应用程序必须免费，遵守发布地区的法律，并且不能使用IAP。<br>11.11<br>一般而言，你的应用程序越贵，我们的评审越彻底。<br>11.12<br>提供订阅功能的应用必须使用IAP，苹果将会按照 Developer Program License Agreement 中的约定与开发者按30/70比例分成。<br>11.13<br>在应用内使用跳转至外部购买或订阅链接的应用将会被拒，比如”buy”按钮跳转至一个购买电子书的web页面。<br>11.14<br>只要应用内没有跳转至外部购买、订阅的按钮或链接，苹果允许这些应用读取或展示经批准的、在应用外购买或订阅内容(特别是杂志、报纸、书籍、音频、音乐、视频以及云存储内容)。苹果只能通过应用程序内的购买获得一部分收益。<br>11.15<br>应用程序可以只使用自动更新订阅期刊(报纸、杂志)、商业应用程序(企业类、效率类、专业创意类以及云存储类)和媒体应用程序(视频、音频、声音)，否则应用程序将被拒绝。<br>11.16<br>当与特定的经过审核的实体产品(比如玩具)结合使用时，应用程序可以使用获得批准的附件功能，只要附加功能完全依赖于该硬件产品(比如一款用于控制望远镜的应用程序)或者也可以在不使用实物产品的情况下使用应用程序，比如作为成功的奖励或者使用IAP。<br>11.17<br>如果应用功能遵照各州和联邦法律，那么应用可以用来促进被认可的虚拟货币的流通。(新增)<br>12.1<br>从苹果网站(例如<a href="//link.zhihu.com/?target=http%3A//apple.com">http://apple.com**</a>、iTunes Store、App Store、iTunes Connect以及Apple Developer Programs等)抓取任何信息或者使用苹果网站内容和服务进行排名的应用程序将会被拒绝。<br>12.2<br>应用软件可以使用获得批准的苹果RSS feeds，例如iTunes Store RSS feeds。<br>12.3<br>只是简单的网页剪切、内容整合或者收集链接的应用程序可能会被拒绝。<br>13.1<br>怂恿用户以可能造成损害的方式使用苹果设备的应用软件将会被拒绝。<br>13.2<br>快速耗光设备电量或产生过多热量的应用软件将会被拒绝。<br>13.3<br>能导致用户人身伤害的app将会被拒绝(新增)<br>14.1<br>涉及诽谤、人身攻击性质以及内容狭隘卑鄙的应用软件或者打击特定个人或组织的应用软件将会被拒绝。<br>14.2<br>职业政治讽刺家和幽默作家不受这一条款约束。<br>14.3<br>EULA：app凡是带有可随用户自行产生内容的,必须包含内容过滤功能,或者用户自行标记屏蔽功能,以及拉黑功能<br>15.1<br>应用程序中出现人或动物被杀、致残以及枪击、刺伤、拷打等受伤情形的真实画面将会被拒绝。<br>15.2<br>出现描绘暴力或虐待儿童等内容的应用程序将会被拒绝。<br>15.3<br>游戏中出现的”敌人”不可指向一个特定种族、文化、一个真实存在的政府、企业或者其他任何现实中的实体。<br>15.4<br>对武器进行真实描述以怂恿非法使用或滥用这些武器的应用程序将会被拒绝。<br>15.5<br>包含俄罗斯轮盘赌博内容的游戏将会被拒。<br>16.1<br>应用程序中出现过于令人反感或者低俗的内容将会被拒绝。<br>16.2<br>在设计上激怒用户或令人感到厌恶的应用程序将会被拒绝。<br>17.1<br>在未经用户事先许可，或未告知用户如何使用信息，在何处使用信息的情况下，应用程序不能传输用户数据。<br>17.2<br>要求用户提供电子邮箱地址和出生日期等私人信息才可使用其功能的应用程序将会被拒绝。<br>17.3<br>仅出于遵守适用的儿童隐私法规的目的，应用程序可以要求用户的出生日期(或者使用其他age-gating机制)，但是必须包括一些有用的功能或者娱乐价值，不管用户年龄大小。<br>17.4<br>应用程序收集、传输以及分享未成年用户个人信息(比如名字、地址、邮件、位置、照片、视频、绘画、聊天以及其他个人数据，或者与以上所述相关的永久性标示符)必须遵守应用儿童隐私法规，并且必须包含隐私条款。<br>17.5<br>包含账号注册或者访问用户现有账号的应用程序必须包含隐私策略，否则将会被拒绝。<br>18.1<br>含有色情素材，也就是《韦氏词典》中定义的”旨在激发情欲，对性器官或性行为的明确描述或展示，而无关美学或情绪感受”的程序将会被拒绝。<br>18.2<br>用户频繁提供生成色情内容的应用程序(比如以前的Chat Roulette程序)将会被拒绝。<br>19.1<br>涉及宗教、文化或种族群体的引用或评论包含诽谤性、攻击性或狭隘内容，或会使特定群体遭受伤害或暴力的应用程序将会被拒绝。<br>19.2<br>程序可以包含或引用宗教经文，程序所提供的引用或翻译必须准确且不会引起误导。评论应该有教育意义，可以令人开阔眼界，而不应有煽动性。<br>20.1<br>赌博和竞赛必须由应用程序的开发者或者app所属公司发起。<br>20.2<br>应用程序必须展示赌博和竞赛的正式规则，并声明苹果不是发起者，也没有以任何方式参与活动。<br>20.3<br>开发者运营一款具有抽奖性质的应用必须经过法律允许，并且抽奖应用必须具备以下特征：报酬、机会以及奖品。<br>20.4<br>允许用户在应用中直接购买彩票或彩券的应用将会被拒。<br>20.5<br>提供真钱游戏(比如体育博彩、扑克牌、赌场游戏以及赛马)的应用程序必须有应用使用区当地必要的许可和允许，必须限制在这些区域，必须可以从App Store免费下载。<br>20.6<br>使用IAP购买信誉或者货币，且结合真钱游戏的应用将会被拒绝。<br>21.1<br>包含可以向已认证的慈善组织捐赠功能的应用程序必须是免费的。<br>21.2<br>捐赠款项的募集必须通过Safari浏览器访问web页面或是手机短消息完成。<br>22.1<br>应用程序必须遵守所有发布地区当地法律，开发者有义务了解并遵守所有当地法<br>22.2<br>包含虚假，欺诈或误导性陈述的程序将会被拒绝。<br>22.3<br>任何招徕、促进或鼓励犯罪或明显鲁莽行为的程序将会被拒绝。<br>22.4<br>支持非法文件共享的程序将会被拒绝。<br>22.5<br>被设计用以非法赌博工具的应用程序(包括点算牌)将会被拒绝。<br>22.6<br>具有匿名或恶作剧拨打电话或发送类似短信/彩信功能的程序将会被拒绝。<br>22.7<br>任何开发暗中收集用户密码或用户私人数据程序的开发者将会从iOS开发者计划中除名。<br>22.8<br>包含非法律执行部分发布的DUI检查点信息，或者怂恿/协助酒后驾车的应用将会被拒绝。<br>22.9<br>任何计算药用剂量的应用必须提交药品制造商或者认可机构(比如医院、保险公司以及高校)。<br>22.1<br>在未授权的情况下使用iTunes音乐预览的应用程序将会被拒绝。<br>23.1<br>Passbook Passes可被用来支付或者接收支付，传递商业信息或者提供验证(比如电影票、飞机票、优惠券以及其他)，而把Passbook Passes用于其他用途的应用程序可能会遭到拒绝，并且会被撤销Passbook证书。<br>23.2<br>Passes必须包含有效的pass发行人有效的联系资料，否则app将会被拒绝，并且Passbook证书也会被取消。<br>23.3<br>Passes必须经过实体签名，并基于其名字、商标或者品牌进行分发，否则应用程序将会被拒绝，而Passbook证书也可能会被撤销。<br>24.1<br>主要供儿童使用的应用程序必须包含隐私政策，必须适用于应用程序的儿童隐私法。<br>24.2<br>主要供儿童使用的应用程序不允许包括行为广告(比如基于用户app内部活动的广告)，任何在应用程序中展示的上下文广告必须适合儿童。<br>24.3<br>主要供儿童使用的应用程序必须得到家长许可或使用parental gate才能链接至应用程序外部或进行交易。<br>24.4<br>儿童类别中的应用程序必须标明”5岁以下，6-8岁或者9-11岁”。<br>25.1<br>包含扩展的应用程序必须遵照 App Extension Programming Guide (中文版,英文版)要求。<br>25.2<br>包含扩展的应用程序必须提供某些功能(辅助屏幕，附加设置)否则将会被拒绝。<br>25.3<br>如果扩展的视图中包含营销推广、广告或者IAP内容，那么包含该扩展的应用将会被拒绝。<br>25.4<br>键盘扩展必须提供一个切换至下个键盘的方法。<br>25.5<br>键盘扩展必须具有离线访问功能，否则将会被拒绝。<br>25.6<br>键盘扩展必须提供和 App Extension Programming Guide 描述一致的数字和十进键盘类型，否则将会被拒绝。<br>25.7<br>提供键盘扩展的应用必须拥有基本的功能分类和隐私政策，否则将会被拒绝。<br>25.8<br>提供键盘扩展的应用程序只允许收集用户活动以增强键盘扩展在iOS设备上的功能，否则将会被拒绝。<br>26.1<br>使用HomeKit框架的应用程序必须有提供家庭自动化服务的主要目的。<br>26.2<br>使用HomeKit框架的应用程序必须在营销文本中说明用途，同时必须提供隐私政策，否则将会被拒绝。<br>26.3<br>应用程序不允许将从HomeKit API收集的数据用于广告宣传或者其他基于使用的数据挖掘。<br>26.4<br>出于其他目的使用从HomeKit API收集的数据，而不是用于提高用户体验或者家庭自动化功能中硬件/软件性能，这类应用将会被拒绝。<br>27.1<br>使用HealthKit框架的应用程序必须遵守其所在区域的适用法律，以及iOS Developer Program License Agreement中的3.3.28和3.39条款。<br>27.2<br>将虚假或者错误的数据写入HealthKit的应用程序将会被拒绝。<br>27.3<br>使用HealthKit框架iCloud中储存用户健康信息的应用程序将会被拒绝。<br>27.4<br>应用程序不允许将通过HealthKit API收集的用户数据用作广告宣传或者基于使用的数据挖掘目的，除了改善健康、医疗、健康管理以及医学研究目的。<br>27.5<br>27.5 未经用户许可与第三方分享通过HealthKit API获得的用户数据的应用程序将会被拒绝。<br>27.6<br>使用HealthKit框架的应用程序必须在营销文本中说明集成了Health app，同时必须在app用户界面清楚阐释HealthKit功能。<br>27.7<br>使用HealthKit框架的应用程序必须提供隐私政策，否则将会被拒绝。<br>27.8<br>提供诊断、治疗建议或者控制硬件以诊断或者治疗疾病的应用，若没有根据要求提供书面的监管审批，将会被拒绝。<br>27.9<br>应用关于人类健康的研究必须得到参与者的同意或是未成年人的父母或监护人的同意，包括(1)性质，目的和研究的时间期限;(2)程序，风险和参与者的利益;(3)信息的保密以及数据的处理(包括与第三方共享信息);(4)参与者问题联系(5)退出过程。<br>27.1<br>应用关于人类健康相关的研究必须得到伦理审查委员会的同意并提供证明。<br>28.1<br>应用程序仅能使用TestFlight对以公开发布为目的的应用进行beta版测试，且必须遵守完整的App Review Guidelines。<br>28.2<br>当版本中包含的内容或功能有重大变化时，使用TestFlight的应用程序必须提交审核。<br>28.3<br>使用TestFlight的应用程序不允许分发给测试者，以作为任何形式的补偿。<br>29.1<br>使用Apple Pay的应用程序必须在出售任何商品或者服务之前为用户提供所有材料的购买信息，否则将会被拒绝。<br>29.2<br>使用Apple Pay的应用程序必须正确使用 Apple Pay Human Interface Guidelines 中的Apple Pay标识和用户界面元素，否则将会被拒绝。<br>29.3<br>使用Apple Pay的应用程序不能提供触犯任何领域范围法律的用于交付的商品或者服务，也不能用作任何非法目的。<br>29.4<br>使用Apple Pay的应用程序必须提供隐私政策，否则将会被拒绝。<br>29.5<br>只有为了促进或提高商品和服务的交付，或者依照法律要求，使用Apple Pay的应用程序才能与第三方分享通过Apple Pay获得的数据。<br>x.2<br>“You” and “Your” 是指个人或者合法实体在本协议下(包括公司，组织，教育机构，或政府机构，部门)使用Apple 软件或行使权力。您可以授权您的合同商代表您开发应用，但是所开发的应用必须在您的开发者账户下进行提交。如果您代表客户发行应用，您的客户可以参加iOS开发者计划，把您加入进开发者团队，这一您就可以在他们的账户下提交应用。<br>x.3<br>如果您的应用(以及提供广告的第三方)要调用IDFA或包含IDFA相关信息，必须在应用里投放广告。如果用户重置IDFA，您不能将重置后的IDFA与重置前的IDFA相关联。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -2219,7 +2155,7 @@ static NSString * const URLProtocolHandledKey =   @&quot;URLProtocolHandledKey&q
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
