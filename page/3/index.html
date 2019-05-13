@@ -292,7 +292,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">10</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">11</span></a>
 
   </li>
         
@@ -2071,18 +2071,8 @@ Abort trap: 6
           
             <p><img src="http://upload-images.jianshu.io/upload_images/2148605-c815314135c9e9f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20170107-092051@2x.png"></p>
 <p>在AppDelegate.swift文件中自定义一个泛型函数如下:</p>
-<pre><code>func JHLog&lt;T&gt;(log: T, fileName: String = #file, methodName: String =   #function, lineNumber: Int = #line) {
-//        print(#file)    //获取当前print所在的文件路径
-//        print(#function)    //获取当前print所在的方法名称
-//        print(#line)    //获取当前print所在的行数
-///判断是否打印debug
-#if DEBUG
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">JHLog</span>&lt;T&gt;<span class="params">(log: T, fileName: String = #file, methodName: String =   #function, lineNumber: Int = #line)</span></span> &#123;</span><br><span class="line">  <span class="comment">//        print(#file)    //获取当前print所在的文件路径</span></span><br><span class="line">  <span class="comment">//        print(#function)    //获取当前print所在的方法名称</span></span><br><span class="line">  <span class="comment">//        print(#line)    //获取当前print所在的行数</span></span><br><span class="line">  <span class="comment">///判断是否打印debug</span></span><br><span class="line">  #<span class="keyword">if</span> <span class="type">DEBUG</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"\((fileName as NSString).pathComponents.last!)_\(methodName)[行: \(lineNumber)]: \(log)"</span>)    </span><br><span class="line">  #endif</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    print(&quot;\((fileName as NSString).pathComponents.last!)_\(methodName)[行: \(lineNumber)]: \(log)&quot;)
-
-#endif
-}
-</code></pre>
           
         
       
@@ -2237,7 +2227,9 @@ Abort trap: 6
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
