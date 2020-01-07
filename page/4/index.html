@@ -254,7 +254,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">52</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">53</span></a>
 
   </li>
         
@@ -273,7 +273,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">11</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">12</span></a>
 
   </li>
         
@@ -292,7 +292,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">22</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">23</span></a>
 
   </li>
         
@@ -376,6 +376,219 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2018/02/19/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="image" content="/uploads/header.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CoderJohnhao个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/02/19/iOS__播放mp3文件根据光线传感器设置外置或者听筒播放/" class="post-title-link" itemprop="url">iOS_播放mp3文件根据光线传感器设置外置或者听筒播放</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-02-19 14:36:03" itemprop="dateCreated datePublished" datetime="2018-02-19T14:36:03+08:00">2018-02-19</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<pre><code>UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,
+                        sizeof(sessionCategory),
+                        &amp;sessionCategory);
+
+UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
+AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
+                         sizeof (audioRouteOverride),
+                         &amp;audioRouteOverride);
+
+AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+//默认情况下扬声器播放
+[audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+[audioSession setActive:YES error:nil];
+
+NSError *playerError;
+  //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[VoiceRecorderBaseVC getPathByFileName:recordedFile ofType:@&quot;aac&quot;]] error:&amp;playerError];
+self.player.meteringEnabled = YES;
+
+
+if (self.player == nil)
+{
+    NSLog(@&quot;ERror creating player: %@&quot;, [playerError description]);
+}
+
+[self handleNotification:YES];
+self.player.delegate = self;
+self.player.volume = 1;
+[self.player play];
+</code></pre><p>#pragma mark - 监听听筒or扬声器</p>
+<pre><code>- (void) handleNotification:(BOOL)state
+{
+[[UIDevice currentDevice] setProximityMonitoringEnabled:state]; //建议在播放之前设置yes，播放结束设置NO，这个功能是开启红外感应
+
+if(state)//添加监听
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(sensorStateChange:) name:@&quot;UIDeviceProximityStateDidChangeNotification&quot;
+                                               object:nil];
+else//移除监听
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;UIDeviceProximityStateDidChangeNotification&quot; object:nil];
+}
+</code></pre><p>//处理监听触发事件</p>
+<pre><code>-(void)sensorStateChange:(NSNotificationCenter *)notification;
+{
+  //如果此时手机靠近面部放在耳朵旁，那么声音将通过听筒输出，并将屏幕变暗（省电啊）
+    if ([[UIDevice currentDevice] proximityState] == YES)
+    {
+        NSLog(@&quot;Device is close to user&quot;);
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    }
+    else
+    {
+      NSLog(@&quot;Device is not close to user&quot;);
+      [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    }
+}
+</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1924,185 +2137,6 @@ NSString *filePath = [[NSBundle mainBundle] pathForResource:@&quot;文件名&quo
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/04/18/iOS__-裁剪图片为正方形/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
-      <meta itemprop="image" content="/uploads/header.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CoderJohnhao个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/04/18/iOS__-裁剪图片为正方形/" class="post-title-link" itemprop="url">iOS_裁剪图片为正方形</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-04-18 14:36:03" itemprop="dateCreated datePublished" datetime="2017-04-18T14:36:03+08:00">2017-04-18</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><p>(UIImage <em>)squareImageFromImage:(UIImage </em>)image scaledToSize:(CGFloat)newSize {<br>  CGAffineTransform scaleTransform;<br>  CGPoint origin;</p>
-<p>  if (image.size.width &gt; image.size.height) {</p>
-<pre><code>CGFloat scaleRatio = newSize / image.size.height;
-scaleTransform = CGAffineTransformMakeScale(scaleRatio, scaleRatio);
-origin = CGPointMake(-(image.size.width - image.size.height) / 2.0f, 0);
-</code></pre><p>  } else {</p>
-<pre><code>CGFloat scaleRatio = newSize / image.size.width;
-scaleTransform = CGAffineTransformMakeScale(scaleRatio, scaleRatio);
-
-origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
-</code></pre><p>  }</p>
-<p>  CGSize size = CGSizeMake(newSize, newSize);<br>  //创建画板<br>  if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {</p>
-<pre><code>UIGraphicsBeginImageContextWithOptions(size, YES, 0);
-</code></pre><p>  } else {</p>
-<pre><code>UIGraphicsBeginImageContext(size);
-</code></pre><p>  }</p>
-<p>  CGContextRef context = UIGraphicsGetCurrentContext();<br>  //将image<br>  CGContextConcatCTM(context, scaleTransform);<br>  //origin<br>  [image drawAtPoint:origin];</p>
-<p>  //获取缩放后剪切的image图片<br>  image = UIGraphicsGetImageFromCurrentImageContext();</p>
-<p>  UIGraphicsEndImageContext();</p>
-<p>  return image;<br>}</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2151,7 +2185,7 @@ origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">52</span>
+                    <span class="site-state-item-count">53</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2190,7 +2224,9 @@ origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -2251,7 +2287,9 @@ origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
                     
                       
                     
-                    <span class="site-state-item-count">22</span>
+                      
+                    
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2341,7 +2379,7 @@ origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -2411,10 +2449,8 @@ origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
   
     
     
-      
-    
   
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="true"></script>
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -2829,9 +2865,5 @@ origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
 
   
 
-  
-  
-  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
 </body>
 </html>
