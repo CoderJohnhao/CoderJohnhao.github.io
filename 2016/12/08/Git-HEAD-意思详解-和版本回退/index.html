@@ -1,98 +1,24 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
-
-<link rel="stylesheet" href="/css/main.css?v=7.1.1"/>
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/header_32.png?v=7.1.1">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/header_32.png?v=7.1.1">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/header_16.png?v=7.1.1">
-
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '',
-    scheme: 'Gemini',
-    version: '7.1.1',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    back2top: true,
-    back2top_sidebar: false,
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"coderjohnhao.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
   <meta name="description" content="转自: http:&#x2F;&#x2F;www.liaoxuefeng.com&#x2F;wiki&#x2F;0013739516305929606dd18361248578c67b8067c8c017b000http:&#x2F;&#x2F;www.liaoxuefeng.com&#x2F;wiki&#x2F;0013739516305929606dd18361248578c67b8067c8c017b000&#x2F;0013744142037508cf42e51debf4966">
 <meta property="og:type" content="article">
@@ -111,19 +37,16 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2148605-817a7f06f14ba6d3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
+<link rel="canonical" href="https://coderjohnhao.github.io/2016/12/08/Git-HEAD-%E6%84%8F%E6%80%9D%E8%AF%A6%E8%A7%A3-%E5%92%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/">
 
 
-
-
-  
-  
-  <link rel="canonical" href="https://coderjohnhao.github.io/2016/12/08/Git-HEAD-%E6%84%8F%E6%80%9D%E8%AF%A6%E8%A7%A3-%E5%92%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/"/>
-
-
-
-<script id="page.configurations">
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
   };
 </script>
 
@@ -135,25 +58,8 @@
 
 
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?ada4b68410774c385e6d64c81a9ffe5f";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-
-
-
   <noscript>
   <style>
-  .use-motion .motion-element,
   .use-motion .brand,
   .use-motion .menu-item,
   .sidebar-inner,
@@ -162,9 +68,8 @@
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
+  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -176,193 +81,66 @@
   </style>
 </noscript>
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">JH📷个人博客</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    
-      
-        <p class="site-subtitle">一个热爱生活，热爱科技的程序猿！</p>
-      
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JH📷个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个热爱生活，热爱科技的程序猿！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
+
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
 
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-categories">
 
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;54&lt;&#x2F;span&gt;</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
+        <li class="menu-item menu-item-tags">
 
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;12&lt;&#x2F;span&gt;</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
+        <li class="menu-item menu-item-about">
 
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;23&lt;&#x2F;span&gt;</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
-
-  </li>
-
-      
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
-        </li>
-      
-    </ul>
-  
-
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-
-    </div>
-  
+  </ul>
 </nav>
 
-
-
-  
 
 
 
@@ -370,128 +148,75 @@
     </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
 
-    <main id="main" class="main">
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
           
+
+          <div class="content post posts-expand">
             
 
-          
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
     
-
-  
-
   
   
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2016/12/08/Git-HEAD-%E6%84%8F%E6%80%9D%E8%AF%A6%E8%A7%A3-%E5%92%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/"/>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://coderjohnhao.github.io/2016/12/08/Git-HEAD-%E6%84%8F%E6%80%9D%E8%AF%A6%E8%A7%A3-%E5%92%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CoderJohnhao"/>
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！"/>
-      <meta itemprop="image" content="/uploads/header.png"/>
+      <meta itemprop="image" content="/images/header.png">
+      <meta itemprop="name" content="CoderJohnhao">
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JH📷个人博客"/>
+      <meta itemprop="name" content="JH📷个人博客">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">Git-HEAD-意思详解-和版本回退
-
-              
-            
-          </h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          Git-HEAD-意思详解-和版本回退
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
+              <span class="post-meta-item-text">Posted on</span>
 
-              
-                
-              
-
-              <time title="创建时间：2016-12-08 14:36:03" itemprop="dateCreated datePublished" datetime="2016-12-08T14:36:03+08:00">2016-12-08</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a></span>
-
-                
-                
-              
+              <time title="Created: 2016-12-08 14:36:03" itemprop="dateCreated datePublished" datetime="2016-12-08T14:36:03+08:00">2016-12-08</time>
             </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-03-01 10:06:39" itemprop="dateModified" datetime="2023-03-01T10:06:39+08:00">2023-03-01</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+                </span>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
 
       
         <p>转自: <a target="_blank" rel="noopener" href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a><br><a target="_blank" rel="noopener" href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000</a><br>首先，<a target="_blank" rel="noopener" href="http://lib.csdn.net/base/28">Git</a>必须知道当前版本是哪个版本，在Git中，用HEAD<br>表示当前版本，也就是最新的提交3628164…882e1e0<br>（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^<br>，上上一个版本就是HEAD^^<br>，当然往上100个版本写100个^<br>比较容易数不过来，所以写成HEAD~100<br>。</p>
@@ -503,11 +228,11 @@
 <p>像这样，你不断对文件进行修改，然后不断提交修改到版本库里，就好比玩RPG游戏时，每通过一关就会自动把游戏状态存盘，如果某一关没过去，你还可以选择读取前一关的状态。有些时候，在打Boss之前，你会手动存盘，以便万一打Boss失败了，可以从最近的地方重新开始。Git也是一样，每当你觉得文件修改到一定程度的时候，就可以“保存一个快照”，这个快照在Git中被称为commit<br>。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit<br>恢复，然后继续工作，而不是把几个月的工作成果全部丢失。<br>现在，我们回顾一下readme.txt文件一共有几个版本被提交到Git仓库里了：<br>版本1：wrote a readme file<br>Git is a version control system.Git is free software.</p>
 <p>版本2：add distributed<br>Git is a distributed version control system.Git is free software.</p>
 <p>版本3：append GPL<br>Git is a distributed version control system.Git is free software distributed under the GPL.</p>
-<p>当然了，在实际工作中，我们脑子里怎么可能记得一个几千行的文件每次都改了什么内容，不然要<a target="_blank" rel="noopener" href="http://lib.csdn.net/base/28">版本控制</a>系统干什么。版本控制系统肯定有某个命令可以告诉我们历史记录，在Git中，我们用git log<br>命令查看：<br>$ git logcommit 3628164fb26d48395383f8f31179f24e0882e1e0Author: Michael Liao <a href="mailto:&#97;&#115;&#107;&#x78;&#117;&#101;&#102;&#x65;&#x6e;&#103;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#97;&#115;&#107;&#x78;&#117;&#101;&#102;&#x65;&#x6e;&#103;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;</a>Date: Tue Aug 20 15:11:49 2013 +0800 append GPLcommit ea34578d5496d7dd233c827ed32a8cd576c5ee85Author: Michael Liao <a href="mailto:&#x61;&#115;&#107;&#120;&#117;&#101;&#x66;&#101;&#110;&#103;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#109;">&#x61;&#115;&#107;&#120;&#117;&#101;&#x66;&#101;&#110;&#103;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#109;</a>Date: Tue Aug 20 14:53:12 2013 +0800 add distributedcommit cb926e7ea50ad11b8f9e909c05226233bf755030Author: Michael Liao <a href="mailto:&#97;&#x73;&#107;&#x78;&#x75;&#101;&#102;&#101;&#x6e;&#103;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#x73;&#107;&#x78;&#x75;&#101;&#102;&#101;&#x6e;&#103;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;</a>Date: Mon Aug 19 17:51:55 2013 +0800 wrote a readme file</p>
+<p>当然了，在实际工作中，我们脑子里怎么可能记得一个几千行的文件每次都改了什么内容，不然要<a target="_blank" rel="noopener" href="http://lib.csdn.net/base/28">版本控制</a>系统干什么。版本控制系统肯定有某个命令可以告诉我们历史记录，在Git中，我们用git log<br>命令查看：<br>$ git logcommit 3628164fb26d48395383f8f31179f24e0882e1e0Author: Michael Liao <a href="mailto:&#x61;&#115;&#107;&#x78;&#117;&#x65;&#102;&#x65;&#110;&#x67;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;">&#x61;&#115;&#107;&#x78;&#117;&#x65;&#102;&#x65;&#110;&#x67;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;</a>Date: Tue Aug 20 15:11:49 2013 +0800 append GPLcommit ea34578d5496d7dd233c827ed32a8cd576c5ee85Author: Michael Liao <a href="mailto:&#x61;&#x73;&#x6b;&#x78;&#117;&#x65;&#x66;&#x65;&#110;&#103;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#x61;&#x73;&#x6b;&#x78;&#117;&#x65;&#x66;&#x65;&#110;&#103;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a>Date: Tue Aug 20 14:53:12 2013 +0800 add distributedcommit cb926e7ea50ad11b8f9e909c05226233bf755030Author: Michael Liao <a href="mailto:&#x61;&#x73;&#x6b;&#120;&#x75;&#x65;&#102;&#x65;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#x61;&#x73;&#x6b;&#120;&#x75;&#x65;&#102;&#x65;&#x6e;&#x67;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a>Date: Mon Aug 19 17:51:55 2013 +0800 wrote a readme file</p>
 <p>git log<br>命令显示从最近到最远的提交日志，我们可以看到3次提交，最近的一次是append GPL<br>，上一次是add distributed<br>，最早的一次是wrote a readme file<br>。如果嫌输出信息太多，看得眼花缭乱的，可以试试加上–pretty&#x3D;oneline<br>参数：<br>$ git log –pretty&#x3D;oneline3628164fb26d48395383f8f31179f24e0882e1e0 append GPLea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributedcb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file</p>
 <p>需要友情提示的是，你看到的一大串类似3628164…882e1e0<br>的是commit id<br>（版本号），和SVN不一样，Git的commit id<br>不是1，2，3……递增的数字，而是一个SHA1计算出来的一个非常大的数字，用十六进制表示，而且你看到的commit id<br>和我的肯定不一样，以你自己的为准。为什么commit id<br>需要用这么一大串数字表示呢？因为Git是分布式的版本控制系统，后面我们还要研究多人在同一个版本库里工作，如果大家都用1，2，3……作为版本号，那肯定就冲突了。<br>每提交一个新版本，实际上Git就会把它们自动串成一条时间线。如果使用可视化工具查看Git历史，就可以更清楚地看到提交历史的时间线：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-817a7f06f14ba6d3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git-log-timeline"><br>好了，现在我们启动时光穿梭机，准备把readme.txt回退到上一个版本，也就是“add distributed”的那个版本，怎么做呢？<br>首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD<br>表示当前版本，也就是最新的提交3628164…882e1e0<br>（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^<br>，上上一个版本就是HEAD^^<br>，当然往上100个版本写100个^<br>比较容易数不过来，所以写成HEAD~100<br>。<br>现在，我们要把当前版本“append GPL”回退到上一个版本“add distributed”，就可以使用git reset<br>命令：<br>$ git reset –hard HEAD^HEAD is now at ea34578 add distributed</p>
 <p>–hard<br>参数有啥意义？这个后面再讲，现在你先放心使用。<br>看看readme.txt的内容是不是版本add distributed<br>：<br>$ cat readme.txtGit is a distributed version control system.Git is free software.</p>
-<p>果然。<br>还可以继续回退到上一个版本wrote a readme file<br>，不过且慢，然我们用git log<br>再看看现在版本库的状态：<br>$ git logcommit ea34578d5496d7dd233c827ed32a8cd576c5ee85Author: Michael Liao <a href="mailto:&#x61;&#x73;&#107;&#120;&#117;&#101;&#x66;&#101;&#110;&#103;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#x61;&#x73;&#107;&#120;&#117;&#101;&#x66;&#101;&#110;&#103;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>Date: Tue Aug 20 14:53:12 2013 +0800 add distributedcommit cb926e7ea50ad11b8f9e909c05226233bf755030Author: Michael Liao <a href="mailto:&#97;&#x73;&#x6b;&#x78;&#117;&#x65;&#102;&#x65;&#110;&#x67;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;">&#97;&#x73;&#x6b;&#x78;&#117;&#x65;&#102;&#x65;&#110;&#x67;&#64;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;</a>Date: Mon Aug 19 17:51:55 2013 +0800 wrote a readme file</p>
+<p>果然。<br>还可以继续回退到上一个版本wrote a readme file<br>，不过且慢，然我们用git log<br>再看看现在版本库的状态：<br>$ git logcommit ea34578d5496d7dd233c827ed32a8cd576c5ee85Author: Michael Liao <a href="mailto:&#97;&#x73;&#x6b;&#120;&#x75;&#x65;&#102;&#x65;&#110;&#103;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#97;&#x73;&#x6b;&#120;&#x75;&#x65;&#102;&#x65;&#110;&#103;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>Date: Tue Aug 20 14:53:12 2013 +0800 add distributedcommit cb926e7ea50ad11b8f9e909c05226233bf755030Author: Michael Liao <a href="mailto:&#x61;&#x73;&#107;&#120;&#x75;&#101;&#102;&#101;&#x6e;&#103;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;">&#x61;&#x73;&#107;&#120;&#x75;&#101;&#102;&#101;&#x6e;&#103;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a>Date: Mon Aug 19 17:51:55 2013 +0800 wrote a readme file</p>
 <p>最新的那个版本append GPL<br>已经看不到了！好比你从21世纪坐时光穿梭机来到了19世纪，想再回去已经回不去了，肿么办？<br>办法其实还是有的，只要上面的命令行窗口还没有被关掉，你就可以顺着往上找啊找啊，找到那个append GPL<br>的commit id<br>是3628164…<br>，于是就可以指定回到未来的某个版本：<br>$ git reset –hard 3628164HEAD is now at 3628164 append GPL</p>
 <p>版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。<br>再小心翼翼地看看readme.txt的内容：<br>$ cat readme.txtGit is a distributed version control system.Git is free software distributed under the GPL.</p>
 <p>果然，我胡汉三又回来了。<br>Git的版本回退速度非常快，因为Git在内部有个指向当前版本的HEAD<br>指针，当你回退版本的时候，Git仅仅是把HEAD从指向append GPL<br>：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-b27c9a9a73d615f7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git-head"><br>改为指向add distributed<br>：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-f4074f0399057e34?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git-head-move"><br>然后顺便把工作区的文件更新了。所以你让HEAD<br>指向哪个版本号，你就把当前版本定位在哪。<br>现在，你回退到了某个版本，关掉了电脑，第二天早上就后悔了，想恢复到新版本怎么办？找不到新版本的commit id<br>怎么办？<br>在Git中，总是有后悔药可以吃的。当你用$ git reset –hard HEAD^<br>回退到add distributed<br>版本时，再想恢复到append GPL<br>，就必须找到append GPL<br>的commit id。Git提供了一个命令git reflog<br>用来记录你的每一次命令：<br>$ git reflogea34578 HEAD@{0}: reset: moving to HEAD^3628164 HEAD@{1}: commit: append GPLea34578 HEAD@{2}: commit: add distributedcb926e7 HEAD@{3}: commit (initial): wrote a readme file</p>
@@ -515,329 +240,150 @@
 <p>穿梭前，用git log<br>可以查看提交历史，以便确定要回退到哪个版本。</p>
 <p>要重返未来，用git reflog<br>查看命令历史，以便确定要回到未来的哪个版本。</p>
 
-      
     </div>
 
     
-
-    
-    
-    
-
-    
-
-    
-      
     
     
 
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Git/" rel="tag"># Git</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/12/08/ios-%E6%A8%AA%E7%AB%96%E5%B1%8F%E5%88%87%E6%8D%A2/" rel="next" title="iOS_横竖屏切换">
-                <i class="fa fa-chevron-left"></i> iOS_横竖屏切换
-              </a>
-            
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
           </div>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/08/-iOS__%E6%B8%85%E9%99%A4cell%E7%9A%84%E6%89%80%E6%9C%89%E5%AD%90%E6%8E%A7%E4%BB%B6/" rel="prev" title="iOS__清除cell的所有子控件">
-                iOS__清除cell的所有子控件 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-
-
-
-        </div>
         
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/12/08/ios-%E6%A8%AA%E7%AB%96%E5%B1%8F%E5%88%87%E6%8D%A2/" rel="prev" title="iOS_横竖屏切换">
+      <i class="fa fa-chevron-left"></i> iOS_横竖屏切换
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2016/12/08/-iOS__%E6%B8%85%E9%99%A4cell%E7%9A%84%E6%89%80%E6%9C%89%E5%AD%90%E6%8E%A7%E4%BB%B6/" rel="next" title="iOS__清除cell的所有子控件">
+      iOS__清除cell的所有子控件 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/uploads/header.png"
-                alt="CoderJohnhao"/>
-            
-              <p class="site-author-name" itemprop="name">CoderJohnhao</p>
-              <div class="site-description motion-element" itemprop="description">一个热爱生活，热爱科技的程序猿！</div>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/%20%7C%7C%20archive">
-                
-                    <span class="site-state-item-count">54</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                      <a href="/categories/%20%7C%7C%20th">
-                    
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">12</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                      <a href="/tags/%20%7C%7C%20tags">
-                    
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">23</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/CoderJohnhao" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;CoderJohnhao" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-GitHub&quot;&gt;&lt;&#x2F;i&gt;GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.jianshu.com/u/7a77960c6664" title="简书 &amp;rarr; https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;7a77960c6664" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-简书&quot;&gt;&lt;&#x2F;i&gt;简书</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://juejin.im/user/5847b9908e450a006c1cf570" title="掘金 &amp;rarr; https:&#x2F;&#x2F;juejin.im&#x2F;user&#x2F;5847b9908e450a006c1cf570" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-掘金&quot;&gt;&lt;&#x2F;i&gt;掘金</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.zhihu.com/people/johnhao-11/activities" title="知乎 &amp;rarr; https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;johnhao-11&#x2F;activities" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-知乎&quot;&gt;&lt;&#x2F;i&gt;知乎</a>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
       </div>
+      <!--/noindex-->
 
-      
-
-      
-
-    </div>
-  </aside>
-  
-
-
-        
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CoderJohnhao"
+      src="/images/header.png">
+  <p class="site-author-name" itemprop="name">CoderJohnhao</p>
+  <div class="site-description" itemprop="description">一个热爱生活，热爱科技的程序猿！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
       </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2023</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">CoderJohnhao</span>
-
-  
-
-  
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
 </div>
 
 
 
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
 
 
+      </div>
+    </main>
 
+    <footer class="footer">
+      <div class="footer-inner">
+        
 
+        
 
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JH📷</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
 
         
 
@@ -848,465 +394,43 @@
 
 
 
-        
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-    
-
-    
   </div>
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
+<script src="/js/utils.js"></script>
 
-
-
+<script src="/js/motion.js"></script>
 
 
+<script src="/js/schemes/pisces.js"></script>
 
 
-
-
-
-
-
-
-
-  
-    
-    
-  
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
-
-
-
-
-
-
-
-
-
+<script src="/js/next-boot.js"></script>
 
 
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
-  
 
 
-  <script src="/js/utils.js?v=7.1.1"></script>
 
-  <script src="/js/motion.js?v=7.1.1"></script>
 
 
 
-  
-  
 
 
-  <script src="/js/affix.js?v=7.1.1"></script>
 
-  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
 
-
-
-
-  
-  <script src="/js/scrollspy.js?v=7.1.1"></script>
-<script src="/js/post-details.js?v=7.1.1"></script>
-
-
-
-  
-
-
-  <script src="/js/next-boot.js?v=7.1.1"></script>
-
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-
-  
-  <script>
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 
