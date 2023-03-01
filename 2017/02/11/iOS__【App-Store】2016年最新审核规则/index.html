@@ -1,24 +1,98 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"coderjohnhao.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/header_32.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/header_32.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/header_16.png?v=7.1.1">
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
 
   <meta name="description" content="##[App Store2016年最新审核规则:1为App Store开发程序，开发者必须遵守 Program License Agreement (PLA)、人机交互指南(HIG)以及开发者和苹果签订的任何协议和合同。2.1崩溃的程序将会被拒绝。2.2存在错误的程序将会被拒绝。2.3跟开发者宣传不符的程序将会被拒绝。">
 <meta property="og:type" content="article">
@@ -33,16 +107,19 @@
 <meta property="article:tag" content="iOS">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://coderjohnhao.github.io/2017/02/11/iOS__%E3%80%90App-Store%E3%80%912016%E5%B9%B4%E6%9C%80%E6%96%B0%E5%AE%A1%E6%A0%B8%E8%A7%84%E5%88%99/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
+
+
+  
+  
+  <link rel="canonical" href="https://coderjohnhao.github.io/2017/02/11/iOS__%E3%80%90App-Store%E3%80%912016%E5%B9%B4%E6%9C%80%E6%96%B0%E5%AE%A1%E6%A0%B8%E8%A7%84%E5%88%99/"/>
+
+
+
+<script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-Hans'
   };
 </script>
 
@@ -54,8 +131,25 @@
 
 
 
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ada4b68410774c385e6d64c81a9ffe5f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
   <noscript>
   <style>
+  .use-motion .motion-element,
   .use-motion .brand,
   .use-motion .menu-item,
   .sidebar-inner,
@@ -64,8 +158,9 @@
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-title { opacity: initial; }
 
+  .use-motion .logo,
   .use-motion .site-title,
   .use-motion .site-subtitle {
     opacity: initial;
@@ -77,66 +172,193 @@
   </style>
 </noscript>
 
-</head>
+<meta name="generator" content="Hexo 6.3.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
+    
 
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JH📷个人博客</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">一个热爱生活，热爱科技的程序猿！</p>
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JH📷个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">一个热爱生活，热爱科技的程序猿！</p>
+      
+    
+    
   </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
 
   </li>
-        <li class="menu-item menu-item-categories">
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;54&lt;&#x2F;span&gt;</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;12&lt;&#x2F;span&gt;</a>
 
   </li>
-        <li class="menu-item menu-item-about">
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;23&lt;&#x2F;span&gt;</a>
 
   </li>
-  </ul>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
 </nav>
 
+
+
+  
 
 
 
@@ -144,70 +366,120 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
-    <main class="main">
+    <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
           
-
-          <div class="content post posts-expand">
             
 
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
+
+  
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="https://coderjohnhao.github.io/2017/02/11/iOS__%E3%80%90App-Store%E3%80%912016%E5%B9%B4%E6%9C%80%E6%96%B0%E5%AE%A1%E6%A0%B8%E8%A7%84%E5%88%99/">
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2017/02/11/iOS__%E3%80%90App-Store%E3%80%912016%E5%B9%B4%E6%9C%80%E6%96%B0%E5%AE%A1%E6%A0%B8%E8%A7%84%E5%88%99/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.png">
-      <meta itemprop="name" content="CoderJohnhao">
-      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！">
+      <meta itemprop="name" content="CoderJohnhao"/>
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！"/>
+      <meta itemprop="image" content="/uploads/header.png"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JH📷个人博客">
+      <meta itemprop="name" content="JH📷个人博客"/>
     </span>
+
+    
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          iOS_【App-Store】2016年最新审核规则
-        </h1>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">iOS_【App-Store】2016年最新审核规则
+
+              
+            
+          </h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
+          <span class="post-time">
 
-              <time title="Created: 2017-02-11 19:36:03" itemprop="dateCreated datePublished" datetime="2017-02-11T19:36:03+08:00">2017-02-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-03-01 10:06:39" itemprop="dateModified" datetime="2023-03-01T10:06:39+08:00">2023-03-01</time>
-              </span>
-            <span class="post-meta-item">
+            
+            
+            
+
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a>
-                </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-02-11 19:36:03" itemprop="dateCreated datePublished" datetime="2017-02-11T19:36:03+08:00">2017-02-11</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -215,154 +487,336 @@
     <div class="post-body" itemprop="articleBody">
 
       
+      
+
+      
         <p>##[App Store2016年最新审核规则:<br>1<br>为App Store开发程序，开发者必须遵守 Program License Agreement (PLA)、人机交互指南(HIG)以及开发者和苹果签订的任何协议和合同。<br>2.1<br>崩溃的程序将会被拒绝。<br>2.2<br>存在错误的程序将会被拒绝。<br>2.3<br>跟开发者宣传不符的程序将会被拒绝。</p>
 <span id="more"></span>
 <p>2.4<br>无应用文档或隐藏功能与描述不符的程序将会被拒绝。<br>2.5<br>使用非公开API的程序将会被拒绝。<br>2.6<br>在指定容器范围外读写数据的程序将会被拒绝。<br>2.7<br>以任何方式或形式下载代码的程序将会被拒绝。<br>2.8<br>安装或运行其他可执行代码的程序将会被拒绝。<br>2.9<br>beta版、demo版、trial版和test版的程序将会被拒绝。<br>2.1<br>iPhone程序必须不经修改就能以iPhone分辨率和2倍 iPhone 3GS的分辨率在iPad上运行。<br>2.11<br>与App Store已有程序重复的应用可能会被拒绝，特别是数量很多的情况下，比如手电筒应用和爱经应用。<br>2.12<br>有用性不显著、不独特的应用或者与网站简单捆绑的应用有可能被拒;不提供任何持久娱乐价值的程序可能会被拒绝。<br>2.13<br>主要用于营销或广告的程序将会被拒绝。<br>2.14<br>提供欺骗或虚假功能，却有没有明确标示的应用程序将会被拒绝。<br>2.15<br>大于100MB(绿色原先是50MB)无法通过蜂窝网络下载的应用(App Store会自动禁止)。<br>2.16<br>多任务程序使用后台服务仅限于几种目的：VoIP，音频播放，地理位置，完成任务以及本地提醒等。<br>2.17<br>应用程序只允许使用ios WebKit框架和WebKit Javascript浏览web内容。<br>2.18<br>鼓励酗酒或使用违禁药物，或引诱青少年饮酒或吸烟的程序将会被拒绝。<br>2.19<br>提供错误的系统诊断或设备数据的应用将会被拒绝。<br>2.2<br>向App Store上传大量相似版本程序的开发者将会从iOS开发者计划中除名。<br>2.21<br>简单的歌曲或者影片应用要提交到iTunes store，书籍类应用应该提交到iBookstore。<br>2.22<br>武断地根据环境(如定位或者运营商)限制用户使用的应用会被拒。<br>2.23<br>应用必须遵守iOS数据储存指导方针(iOS Data Storage Guidelines )，否则应用将被拒。<br>2.24<br>存放在Newsstand的应用必须遵守开发者项目许可协议(Developer Program License Agreement)的表1、表2以及表3，否则应用将会被拒。<br>2.25<br>类似App Store，基于购买或者促销的目的而展示其他应用的应用将会被拒绝，除非是经过特殊审核批准(比如健康管理、航空以及其他无障碍需求等)，或者为特殊群体用户提供具有重大意义的附加值的应用。<br>2.26<br>只有当app采集是出于特殊审核需求时，app才可以展示和推荐自身以外的其他应用程序，比如健康管理、航空以及无障碍需求等，否则应用程序将会被拒绝。(新增)<br>3.1<br>应用或者元数据中提到其他任何移动平台将会被拒。<br>3.2<br>带有占位符文本的程序将会被拒绝<br>3.3<br>描述中有与程序内容和功能不相关的信息的应用将会被拒绝。<br>3.4<br>为了不混淆用户，iTunes Connect中的应用名称应该和展示在设备上的应用名称一致<br>3.5<br>不同尺寸的app icon要一致，否则会造成混淆。<br>3.6<br>程序图标和截图不符合4+年龄评级的程序将会被拒绝。<br>3.7<br>目录与类型不适合于程序内容的程序将会被拒绝。<br>3.8<br>开发者有责任为其程序指定适合的评级。不相称的评级可能会由苹果公司修改。<br>3.9<br>开发者有责任为其程序指定恰当的关键字。不恰当的关键词可能会被苹果公司修改&#x2F;删除。<br>3.1<br>有以下行为的开发者将会被苹果从iOS开发者计划中除名：试图操纵或者欺骗用户评级，伪造或者付费评级，以及其他不相称的行为。<br>3.11<br>在安装下载之前推荐用户重启iOS设备的应用将会被拒。<br>3.12<br>在提交审核过程中，应用程序应包含能正常运行的URL，比如支持URL和隐私政策URL。<br>3.13<br>如果应用程序的截图和营销文本没有清晰地确定需要额外单独购买(比如使用IAP)的内容或者项目，那么应用程序将会被拒绝。<br>3.14<br>App预览可以仅使用从应用程序捕获的视频屏幕、旁白、文本以及design overlays，否则应用程序将会被拒绝。<br>3.15<br>添加App预览的应用程序，未经许可展示真人个人信息将会被拒绝。<br>3.16<br>App预览可能仅包括在所有选定地区内经过授权许可用于此目的的音乐。<br>3.17<br>App预览包含未经许可的通过app播放的内容(比如iTunes playlist和YouTube流媒体)的应用将会被拒绝。<br>4.1<br>在收集、传输或使用位置数据之前未通知并获得用户同意的程序将会被拒绝。<br>4.2<br>使用基于位置的API来自动控制车辆、飞机或其他设备的应用程序将会被拒绝。<br>4.3<br>使用基于位置的API用于调度、车队管理或应急服务的程序将会被拒绝。<br>4.4<br>当与应用功能或服务密切相关时可以使用位置数据，或者用于经过授权的广告。<br>5.1<br>不使用苹果推送通知 (APN)应用接口提供推送通知的程序将会被拒绝。<br>5.2<br>不使用苹果推送通知 (APN)应用接口提供推送通知的程序将会被拒绝。<br>5.3<br>在首次推送消息或者要求推送通知运行之前未获得用户许可的应用将会被拒绝。<br>5.4<br>使用推送通知发送敏感个人信息或机密信息的程序将会被拒绝。<br>5.5<br>使用推送通知发送非请求消息或用于钓鱼或群发垃圾邮件用途的程序将会被拒绝。<br>5.6<br>应用程序不可使用推送通知发送广告、促销或任何类型的直销信息。<br>5.7<br>应用程序不能向使用推送通知服务的用户收取费用。<br>5.8<br>使用推送通知会过多利用APN服务的网络流量或带宽或给设备带来过度负担的程序将会被拒绝。<br>5.9<br>如果应用程序传送病毒、文件、计算机代码或程序，并且对APN服务的正常运行造成损害或中断，那么该程序将会被拒绝。<br>6.1<br>向终端用户或任意第三方显示玩家ID的程序将会被拒绝。<br>6.2<br>将玩家ID用于任何未经游戏中心条款批准用途的程序将会被拒绝。<br>6.3<br>试图进行反向搜索、跟踪、关联、挖掘、获得或利用玩家ID、别名或通过游戏中心获得其他信息的开发者将会iOS开发者计划除名。<br>6.4<br>游戏中心信息(例如排行榜分数)只能通过游戏中心用于应用中。<br>6.5<br>利用游戏中心服务发送非请求信息或用于钓鱼或群发垃圾邮件的程序将会被拒绝。<br>6.6<br>使用游戏中心过多占用网络流量或带宽的程序将会被拒绝。<br>6.7<br>如果程序能够传送病毒、文件、计算机代码或程序，并且对游戏中心服务的正常运行造成损害或中断，该程序将会被拒绝。<br>7.1<br>人工刷广告浏览量或者广告点击率的应用程序将会被拒绝。<br>7.2<br>包含空iAd广告的应用程序将会被拒绝。<br>7.3<br>主要设计目的在于显示广告的应用程序将会被拒绝。<br>8.1<br>应用程序必须遵守”Guidelines for Using Apple Trademarks and Copyrights”和”Apple Trademark List”中说明的所有条款与条件。<br>8.2<br>任何误导和暗示苹果公司是该应用程序来源或提供商，或者苹果公司以任何形式表示认可其质量或功能的应用程序将会被拒绝。<br>8.3<br>与目前已有苹果产品或者广告主题外观相似或混淆的应用程序将会被拒绝。<br>8.4<br>在应用程序名称中将苹果产品名拼错的应用程序(例如，GPS for Iphone，iTunz)将会被拒绝。<br>8.5<br>使用受保护的第三方材料(商标、版权、商业机密、其他私有内容)在申请时需要提供一份文本形式的版权确认。<br>8.6<br>下载的音乐或视频如果没有获得授权使用了第三方提供的资源，(例如tube，soundcloud，vimeo等)的应用将会被拒绝。<br>9.1<br>不使用媒体播放器框架(MediaPlayer Framework)获取音乐库中媒体内容的应用程序将会被拒绝。<br>9.2<br>用户界面模仿任何iPod界面的应用程序将会被拒绝。<br>9.3<br>通过蜂窝网络传输的音频流内容每5分钟不得超过5MB。<br>9.4<br>通过蜂窝网络传输超过10分钟的视频流内容需要使用HTTP Live Streaming，并包含一个基准线为64kbps的音频HTTP Live Streaming。<br>10.1<br>应用程序必须遵守苹果的《iOS Human Interface Guidelines》中所有的条款和条件。<br>10.2<br>外观与与iPhone的自带应用(比如App Store、iTunes Store和iBookstore)相似的应用将会被拒绝。<br>10.3<br>未能按苹果《iOS Human Interface Guidelines》描述正确使用系统提供的项目(比如按钮、图标)的应用将会被拒绝。<br>10.4<br>创建多桌面&#x2F;主屏幕环境或者模拟multi-App插件体验的应用程序将会被拒绝。<br>10.5<br>修改音量大小和铃声&#x2F;静音开关等标准开关功能的应用程序将会被拒绝。<br>10.6<br>苹果和我们的客户高度推崇简单、精致、富有创造性以及经过精心设计的界面。虽然需要付出更多，但却非常值得。苹果设立了很高的门槛。如果你的用户界面太过复杂或者水准不高，可能会被拒绝。<br>10.7<br>主要功能只是看时间的应用将会被拒绝。<br>11.1<br>使用App Store以外的渠道解锁或开启附加属性和功能的应用程序将会被拒绝。<br>11.2<br>使用应用内支付系统(IAP)以外的系统购买内容、功能或服务的应用软件将会被拒绝。<br>11.3<br>使用IAP购买实物商品和并非用于该软件的服务的应用软件将会被拒绝。<br>11.4<br>应用程序使用IAP购买积分(Credit)或者其他的货币必须在本应用中消费。<br>11.5<br>使用IAP购买已过期积分(Credit)或者其他货币的应用软件将会被拒绝。<br>11.6<br>使用IAP订阅的内容至少要持续7天，而且允许在用户的其他iOS设备间共享。<br>11.7<br>应用程序使用IAP购买项目必须分派到正确的购买类型中。<br>11.8<br>使用IAP购买iOS内置功能(如照相机，陀螺仪)的应用程序将会被拒绝。<br>11.9<br>含有超过限定时间的内容或服务的应用程序将会被拒绝，除了特殊批准的内容(比如films、电视节目音乐以及书籍)。<br>11.1<br>保险类应用程序必须免费，遵守发布地区的法律，并且不能使用IAP。<br>11.11<br>一般而言，你的应用程序越贵，我们的评审越彻底。<br>11.12<br>提供订阅功能的应用必须使用IAP，苹果将会按照 Developer Program License Agreement 中的约定与开发者按30&#x2F;70比例分成。<br>11.13<br>在应用内使用跳转至外部购买或订阅链接的应用将会被拒，比如”buy”按钮跳转至一个购买电子书的web页面。<br>11.14<br>只要应用内没有跳转至外部购买、订阅的按钮或链接，苹果允许这些应用读取或展示经批准的、在应用外购买或订阅内容(特别是杂志、报纸、书籍、音频、音乐、视频以及云存储内容)。苹果只能通过应用程序内的购买获得一部分收益。<br>11.15<br>应用程序可以只使用自动更新订阅期刊(报纸、杂志)、商业应用程序(企业类、效率类、专业创意类以及云存储类)和媒体应用程序(视频、音频、声音)，否则应用程序将被拒绝。<br>11.16<br>当与特定的经过审核的实体产品(比如玩具)结合使用时，应用程序可以使用获得批准的附件功能，只要附加功能完全依赖于该硬件产品(比如一款用于控制望远镜的应用程序)或者也可以在不使用实物产品的情况下使用应用程序，比如作为成功的奖励或者使用IAP。<br>11.17<br>如果应用功能遵照各州和联邦法律，那么应用可以用来促进被认可的虚拟货币的流通。(新增)<br>12.1<br>从苹果网站(例如<a href="//link.zhihu.com/?target=http://apple.com">http://apple.com**</a>、iTunes Store、App Store、iTunes Connect以及Apple Developer Programs等)抓取任何信息或者使用苹果网站内容和服务进行排名的应用程序将会被拒绝。<br>12.2<br>应用软件可以使用获得批准的苹果RSS feeds，例如iTunes Store RSS feeds。<br>12.3<br>只是简单的网页剪切、内容整合或者收集链接的应用程序可能会被拒绝。<br>13.1<br>怂恿用户以可能造成损害的方式使用苹果设备的应用软件将会被拒绝。<br>13.2<br>快速耗光设备电量或产生过多热量的应用软件将会被拒绝。<br>13.3<br>能导致用户人身伤害的app将会被拒绝(新增)<br>14.1<br>涉及诽谤、人身攻击性质以及内容狭隘卑鄙的应用软件或者打击特定个人或组织的应用软件将会被拒绝。<br>14.2<br>职业政治讽刺家和幽默作家不受这一条款约束。<br>14.3<br>EULA：app凡是带有可随用户自行产生内容的,必须包含内容过滤功能,或者用户自行标记屏蔽功能,以及拉黑功能<br>15.1<br>应用程序中出现人或动物被杀、致残以及枪击、刺伤、拷打等受伤情形的真实画面将会被拒绝。<br>15.2<br>出现描绘暴力或虐待儿童等内容的应用程序将会被拒绝。<br>15.3<br>游戏中出现的”敌人”不可指向一个特定种族、文化、一个真实存在的政府、企业或者其他任何现实中的实体。<br>15.4<br>对武器进行真实描述以怂恿非法使用或滥用这些武器的应用程序将会被拒绝。<br>15.5<br>包含俄罗斯轮盘赌博内容的游戏将会被拒。<br>16.1<br>应用程序中出现过于令人反感或者低俗的内容将会被拒绝。<br>16.2<br>在设计上激怒用户或令人感到厌恶的应用程序将会被拒绝。<br>17.1<br>在未经用户事先许可，或未告知用户如何使用信息，在何处使用信息的情况下，应用程序不能传输用户数据。<br>17.2<br>要求用户提供电子邮箱地址和出生日期等私人信息才可使用其功能的应用程序将会被拒绝。<br>17.3<br>仅出于遵守适用的儿童隐私法规的目的，应用程序可以要求用户的出生日期(或者使用其他age-gating机制)，但是必须包括一些有用的功能或者娱乐价值，不管用户年龄大小。<br>17.4<br>应用程序收集、传输以及分享未成年用户个人信息(比如名字、地址、邮件、位置、照片、视频、绘画、聊天以及其他个人数据，或者与以上所述相关的永久性标示符)必须遵守应用儿童隐私法规，并且必须包含隐私条款。<br>17.5<br>包含账号注册或者访问用户现有账号的应用程序必须包含隐私策略，否则将会被拒绝。<br>18.1<br>含有色情素材，也就是《韦氏词典》中定义的”旨在激发情欲，对性器官或性行为的明确描述或展示，而无关美学或情绪感受”的程序将会被拒绝。<br>18.2<br>用户频繁提供生成色情内容的应用程序(比如以前的Chat Roulette程序)将会被拒绝。<br>19.1<br>涉及宗教、文化或种族群体的引用或评论包含诽谤性、攻击性或狭隘内容，或会使特定群体遭受伤害或暴力的应用程序将会被拒绝。<br>19.2<br>程序可以包含或引用宗教经文，程序所提供的引用或翻译必须准确且不会引起误导。评论应该有教育意义，可以令人开阔眼界，而不应有煽动性。<br>20.1<br>赌博和竞赛必须由应用程序的开发者或者app所属公司发起。<br>20.2<br>应用程序必须展示赌博和竞赛的正式规则，并声明苹果不是发起者，也没有以任何方式参与活动。<br>20.3<br>开发者运营一款具有抽奖性质的应用必须经过法律允许，并且抽奖应用必须具备以下特征：报酬、机会以及奖品。<br>20.4<br>允许用户在应用中直接购买彩票或彩券的应用将会被拒。<br>20.5<br>提供真钱游戏(比如体育博彩、扑克牌、赌场游戏以及赛马)的应用程序必须有应用使用区当地必要的许可和允许，必须限制在这些区域，必须可以从App Store免费下载。<br>20.6<br>使用IAP购买信誉或者货币，且结合真钱游戏的应用将会被拒绝。<br>21.1<br>包含可以向已认证的慈善组织捐赠功能的应用程序必须是免费的。<br>21.2<br>捐赠款项的募集必须通过Safari浏览器访问web页面或是手机短消息完成。<br>22.1<br>应用程序必须遵守所有发布地区当地法律，开发者有义务了解并遵守所有当地法<br>22.2<br>包含虚假，欺诈或误导性陈述的程序将会被拒绝。<br>22.3<br>任何招徕、促进或鼓励犯罪或明显鲁莽行为的程序将会被拒绝。<br>22.4<br>支持非法文件共享的程序将会被拒绝。<br>22.5<br>被设计用以非法赌博工具的应用程序(包括点算牌)将会被拒绝。<br>22.6<br>具有匿名或恶作剧拨打电话或发送类似短信&#x2F;彩信功能的程序将会被拒绝。<br>22.7<br>任何开发暗中收集用户密码或用户私人数据程序的开发者将会从iOS开发者计划中除名。<br>22.8<br>包含非法律执行部分发布的DUI检查点信息，或者怂恿&#x2F;协助酒后驾车的应用将会被拒绝。<br>22.9<br>任何计算药用剂量的应用必须提交药品制造商或者认可机构(比如医院、保险公司以及高校)。<br>22.1<br>在未授权的情况下使用iTunes音乐预览的应用程序将会被拒绝。<br>23.1<br>Passbook Passes可被用来支付或者接收支付，传递商业信息或者提供验证(比如电影票、飞机票、优惠券以及其他)，而把Passbook Passes用于其他用途的应用程序可能会遭到拒绝，并且会被撤销Passbook证书。<br>23.2<br>Passes必须包含有效的pass发行人有效的联系资料，否则app将会被拒绝，并且Passbook证书也会被取消。<br>23.3<br>Passes必须经过实体签名，并基于其名字、商标或者品牌进行分发，否则应用程序将会被拒绝，而Passbook证书也可能会被撤销。<br>24.1<br>主要供儿童使用的应用程序必须包含隐私政策，必须适用于应用程序的儿童隐私法。<br>24.2<br>主要供儿童使用的应用程序不允许包括行为广告(比如基于用户app内部活动的广告)，任何在应用程序中展示的上下文广告必须适合儿童。<br>24.3<br>主要供儿童使用的应用程序必须得到家长许可或使用parental gate才能链接至应用程序外部或进行交易。<br>24.4<br>儿童类别中的应用程序必须标明”5岁以下，6-8岁或者9-11岁”。<br>25.1<br>包含扩展的应用程序必须遵照 App Extension Programming Guide (中文版,英文版)要求。<br>25.2<br>包含扩展的应用程序必须提供某些功能(辅助屏幕，附加设置)否则将会被拒绝。<br>25.3<br>如果扩展的视图中包含营销推广、广告或者IAP内容，那么包含该扩展的应用将会被拒绝。<br>25.4<br>键盘扩展必须提供一个切换至下个键盘的方法。<br>25.5<br>键盘扩展必须具有离线访问功能，否则将会被拒绝。<br>25.6<br>键盘扩展必须提供和 App Extension Programming Guide 描述一致的数字和十进键盘类型，否则将会被拒绝。<br>25.7<br>提供键盘扩展的应用必须拥有基本的功能分类和隐私政策，否则将会被拒绝。<br>25.8<br>提供键盘扩展的应用程序只允许收集用户活动以增强键盘扩展在iOS设备上的功能，否则将会被拒绝。<br>26.1<br>使用HomeKit框架的应用程序必须有提供家庭自动化服务的主要目的。<br>26.2<br>使用HomeKit框架的应用程序必须在营销文本中说明用途，同时必须提供隐私政策，否则将会被拒绝。<br>26.3<br>应用程序不允许将从HomeKit API收集的数据用于广告宣传或者其他基于使用的数据挖掘。<br>26.4<br>出于其他目的使用从HomeKit API收集的数据，而不是用于提高用户体验或者家庭自动化功能中硬件&#x2F;软件性能，这类应用将会被拒绝。<br>27.1<br>使用HealthKit框架的应用程序必须遵守其所在区域的适用法律，以及iOS Developer Program License Agreement中的3.3.28和3.39条款。<br>27.2<br>将虚假或者错误的数据写入HealthKit的应用程序将会被拒绝。<br>27.3<br>使用HealthKit框架iCloud中储存用户健康信息的应用程序将会被拒绝。<br>27.4<br>应用程序不允许将通过HealthKit API收集的用户数据用作广告宣传或者基于使用的数据挖掘目的，除了改善健康、医疗、健康管理以及医学研究目的。<br>27.5<br>27.5 未经用户许可与第三方分享通过HealthKit API获得的用户数据的应用程序将会被拒绝。<br>27.6<br>使用HealthKit框架的应用程序必须在营销文本中说明集成了Health app，同时必须在app用户界面清楚阐释HealthKit功能。<br>27.7<br>使用HealthKit框架的应用程序必须提供隐私政策，否则将会被拒绝。<br>27.8<br>提供诊断、治疗建议或者控制硬件以诊断或者治疗疾病的应用，若没有根据要求提供书面的监管审批，将会被拒绝。<br>27.9<br>应用关于人类健康的研究必须得到参与者的同意或是未成年人的父母或监护人的同意，包括(1)性质，目的和研究的时间期限;(2)程序，风险和参与者的利益;(3)信息的保密以及数据的处理(包括与第三方共享信息);(4)参与者问题联系(5)退出过程。<br>27.1<br>应用关于人类健康相关的研究必须得到伦理审查委员会的同意并提供证明。<br>28.1<br>应用程序仅能使用TestFlight对以公开发布为目的的应用进行beta版测试，且必须遵守完整的App Review Guidelines。<br>28.2<br>当版本中包含的内容或功能有重大变化时，使用TestFlight的应用程序必须提交审核。<br>28.3<br>使用TestFlight的应用程序不允许分发给测试者，以作为任何形式的补偿。<br>29.1<br>使用Apple Pay的应用程序必须在出售任何商品或者服务之前为用户提供所有材料的购买信息，否则将会被拒绝。<br>29.2<br>使用Apple Pay的应用程序必须正确使用 Apple Pay Human Interface Guidelines 中的Apple Pay标识和用户界面元素，否则将会被拒绝。<br>29.3<br>使用Apple Pay的应用程序不能提供触犯任何领域范围法律的用于交付的商品或者服务，也不能用作任何非法目的。<br>29.4<br>使用Apple Pay的应用程序必须提供隐私政策，否则将会被拒绝。<br>29.5<br>只有为了促进或提高商品和服务的交付，或者依照法律要求，使用Apple Pay的应用程序才能与第三方分享通过Apple Pay获得的数据。<br>x.2<br>“You” and “Your” 是指个人或者合法实体在本协议下(包括公司，组织，教育机构，或政府机构，部门)使用Apple 软件或行使权力。您可以授权您的合同商代表您开发应用，但是所开发的应用必须在您的开发者账户下进行提交。如果您代表客户发行应用，您的客户可以参加iOS开发者计划，把您加入进开发者团队，这一您就可以在他们的账户下提交应用。<br>x.3<br>如果您的应用(以及提供广告的第三方)要调用IDFA或包含IDFA相关信息，必须在应用里投放广告。如果用户重置IDFA，您不能将重置后的IDFA与重置前的IDFA相关联。</p>
 
+      
     </div>
 
     
+
+    
+    
+    
+
+    
+
+    
+      
     
     
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/iOS/" rel="tag"># iOS</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2017/02/11/XCode-%E6%8A%A5file-missing-%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%81/" rel="prev" title="iOS_XCode-报file-missing-错误，解决办法！">
-      <i class="fa fa-chevron-left"></i> iOS_XCode-报file-missing-错误，解决办法！
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2017/02/23/iOS__%E7%9B%91%E5%90%ACwebView%E7%9A%84%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82,%E5%B9%B6%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E5%9B%9E%E6%9D%A5%E7%9A%84%E6%95%B0%E6%8D%AE/" rel="next" title="iOS_监听webView的网络请求,并获取网络请求回来的数据">
-      iOS_监听webView的网络请求,并获取网络请求回来的数据 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
     
-  </article>
-  
-  
-  
 
-
-
-          </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
           
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
         </div>
-          
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/11/XCode-%E6%8A%A5file-missing-%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%81/" rel="next" title="iOS_XCode-报file-missing-错误，解决办法！">
+                <i class="fa fa-chevron-left"></i> iOS_XCode-报file-missing-错误，解决办法！
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/23/iOS__%E7%9B%91%E5%90%ACwebView%E7%9A%84%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82,%E5%B9%B6%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E5%9B%9E%E6%9D%A5%E7%9A%84%E6%95%B0%E6%8D%AE/" rel="prev" title="iOS_监听webView的网络请求,并获取网络请求回来的数据">
+                iOS_监听webView的网络请求,并获取网络请求回来的数据 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+  
+  
+  </article>
+
+
   </div>
 
-  <aside class="sidebar">
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
+      
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
+      
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="CoderJohnhao"
-      src="/images/header.png">
-  <p class="site-author-name" itemprop="name">CoderJohnhao</p>
-  <div class="site-description" itemprop="description">一个热爱生活，热爱科技的程序猿！</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">52</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/header.png"
+                alt="CoderJohnhao"/>
+            
+              <p class="site-author-name" itemprop="name">CoderJohnhao</p>
+              <div class="site-description motion-element" itemprop="description">一个热爱生活，热爱科技的程序猿！</div>
+          </div>
+
           
-        <span class="site-state-item-count">11</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">54</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/%20%7C%7C%20th">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/%20%7C%7C%20tags">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
           
-        <span class="site-state-item-count">22</span>
-        <span class="site-state-item-name">tags</span></a>
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/CoderJohnhao" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;CoderJohnhao" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-GitHub&quot;&gt;&lt;&#x2F;i&gt;GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.jianshu.com/u/7a77960c6664" title="简书 &amp;rarr; https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;7a77960c6664" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-简书&quot;&gt;&lt;&#x2F;i&gt;简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://juejin.im/user/5847b9908e450a006c1cf570" title="掘金 &amp;rarr; https:&#x2F;&#x2F;juejin.im&#x2F;user&#x2F;5847b9908e450a006c1cf570" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-掘金&quot;&gt;&lt;&#x2F;i&gt;掘金</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.zhihu.com/people/johnhao-11/activities" title="知乎 &amp;rarr; https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;johnhao-11&#x2F;activities" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-知乎&quot;&gt;&lt;&#x2F;i&gt;知乎</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
       </div>
-  </nav>
-</div>
 
+      
 
-
-      </div>
+      
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  
 
 
+        
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2023</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">JH📷</span>
+  <span class="author" itemprop="copyrightHolder">CoderJohnhao</span>
+
+  
+
+  
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
+
+
+
+
+
+
+
+
 
         
 
@@ -373,43 +827,465 @@
 
 
 
+        
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
-<script src="/js/next-boot.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
 
 
 
   
 
 
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
 
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
 
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
