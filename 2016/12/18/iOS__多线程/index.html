@@ -1,23 +1,1325 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
-{% block title %}{{ page.title }} | {{ title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
 
-{% block content %}
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/header_32.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/header_32.png?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/header_16.png?v=7.1.1">
+
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="##多线程技术 1234567891011121314151617181920212223术语:进程Process: 已经启动的应用程序叫进程线程Thread: 一段可执行的代码序列(任务&#x2F;代码)进程和线程的区别:    一个进程可以包含一个线程    进程分配资源,线程执行任务主线程: 如果xcode启动时候,自动创建一个线程,该线程才称为主线程子线程; 使用代码来创建子线程主线程和子线程的责任">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS_多线程">
+<meta property="og:url" content="https://coderjohnhao.github.io/2016/12/18/iOS__%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.html">
+<meta property="og:site_name" content="JH📷个人博客">
+<meta property="og:description" content="##多线程技术 1234567891011121314151617181920212223术语:进程Process: 已经启动的应用程序叫进程线程Thread: 一段可执行的代码序列(任务&#x2F;代码)进程和线程的区别:    一个进程可以包含一个线程    进程分配资源,线程执行任务主线程: 如果xcode启动时候,自动创建一个线程,该线程才称为主线程子线程; 使用代码来创建子线程主线程和子线程的责任">
+<meta property="og:locale">
+<meta property="og:image" content="https://coderjohnhao.github.io/HTTP.png">
+<meta property="article:published_time" content="2016-12-18T07:32:03.000Z">
+<meta property="article:modified_time" content="2023-03-01T02:06:39.704Z">
+<meta property="article:author" content="CoderJohnhao">
+<meta property="article:tag" content="iOS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://coderjohnhao.github.io/HTTP.png">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://coderjohnhao.github.io/2016/12/18/iOS__%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>iOS_多线程 | JH📷个人博客</title>
+  
+
+
+
+
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ada4b68410774c385e6d64c81a9ffe5f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JH📷个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">一个热爱生活，热爱科技的程序猿！</p>
+      
+    
+    
   </div>
 
-{% endblock %}
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档&lt;span class&#x3D;&quot;badge&quot;&gt;54&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类&lt;span class&#x3D;&quot;badge&quot;&gt;12&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签&lt;span class&#x3D;&quot;badge&quot;&gt;23&lt;&#x2F;span&gt;</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-user&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://CoderJohnhao.github.io/2016/12/18/iOS__%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CoderJohnhao"/>
+      <meta itemprop="description" content="一个热爱生活，热爱科技的程序猿！"/>
+      <meta itemprop="image" content="/uploads/header.png"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JH📷个人博客"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">iOS_多线程
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-12-18 15:32:03" itemprop="dateCreated datePublished" datetime="2016-12-18T15:32:03+08:00">2016-12-18</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>##多线程技术</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">术语:</span><br><span class="line">进程Process: 已经启动的应用程序叫进程</span><br><span class="line">线程Thread: 一段可执行的代码序列(任务/代码)</span><br><span class="line"></span><br><span class="line">进程和线程的区别:</span><br><span class="line">    一个进程可以包含一个线程</span><br><span class="line">    进程分配资源,线程执行任务</span><br><span class="line"></span><br><span class="line">主线程: 如果xcode启动时候,自动创建一个线程,该线程才称为主线程</span><br><span class="line">子线程; 使用代码来创建子线程</span><br><span class="line"></span><br><span class="line">主线程和子线程的责任分工</span><br><span class="line">主线程责任(用户/交互):</span><br><span class="line">    所有和界面相关的逻辑由主线程执行(UIKit Framework)</span><br><span class="line">    响应用户事件(滚动/拖拽/点击...)</span><br><span class="line">子线程责任(耗时操作):</span><br><span class="line">    下载图片/音频文件/for循环(耗时操作)</span><br><span class="line"></span><br><span class="line">iOS提供多少个创建子线程技术</span><br><span class="line">分析:</span><br><span class="line">主线程阻塞:有其他的耗时操作占用着主线程</span><br><span class="line">所有的事件/任务都会放到队列中(主线程的队列叫做主队列);队列中的任务以FIFO(先进先出)方式响应(执行)</span><br><span class="line">让子线程执行耗时操作就不会造成主线程阻塞</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li>1.pathread</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">POSIX(Portable Operation System Interface) Thread :可移植的操作系统接口</span><br><span class="line">特点:</span><br><span class="line">    优点: 可移植性</span><br><span class="line">    缺点: 基于C语言,底层,功能少</span><br><span class="line">样例: 代码创建一个子线程,给定子线程的任务Task;</span><br><span class="line">代码:</span><br><span class="line"><span class="comment">//void *(void *)</span></span><br><span class="line"><span class="type">void</span> *task(<span class="type">void</span> *data)&#123;</span><br><span class="line">    <span class="comment">//验证传过来的参数</span></span><br><span class="line">    printf(<span class="string">&quot;验证传过来的值:%s&quot;</span>,(<span class="type">char</span> *)data);</span><br><span class="line">    <span class="comment">//耗时操作</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;<span class="number">20000</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@&quot;执行次数:%d&quot;</span>,i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//主线程MainThread</span></span><br><span class="line">- (<span class="keyword">IBAction</span>)executeTimingOperation:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;<span class="number">20000</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@&quot;执行次数:%d&quot;</span>,i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子线程</span></span><br><span class="line">- (<span class="keyword">IBAction</span>)executeTimimngOpertionByPathread:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1.创建子线程对象</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *参数一: 指定pathread_t类型的子线程地址</span></span><br><span class="line"><span class="comment">     *参数二: 指定线程特定属性(占用内存空间)</span></span><br><span class="line"><span class="comment">     *参数三: 函数声明</span></span><br><span class="line"><span class="comment">     *参数四: 传给上面函数的参数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    pthread_t pathread;</span><br><span class="line">    <span class="type">char</span> *data = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">    pthread_create(&amp;pathread, <span class="literal">NULL</span>, task, data);</span><br><span class="line">    <span class="comment">//2.把耗时操作给子线程执行</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>2.NSThread</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSThread</span>特点:</span><br><span class="line">优点: 基于OC语言;</span><br><span class="line">缺点: 需要知道线程的生命周期;锁/开锁;</span><br><span class="line">如何使用?</span><br><span class="line">如何创建<span class="built_in">NSThread</span>类型子线程方式(alloc/init)</span><br><span class="line">如何去调用<span class="built_in">NSThread</span>方法.来判断代码是由主线程还是子线程执行的</span><br><span class="line">&#123;number = <span class="number">1</span>, name = main&#125;</span><br><span class="line">&#123;number = <span class="number">2</span>, name = (null)&#125;</span><br><span class="line">通过[<span class="built_in">NSThread</span> currentThread]的返回值判定由子线程还是子线程执行</span><br><span class="line">样例:创建<span class="built_in">NSThread</span>类型子线程,执行耗时操作</span><br><span class="line">代码:</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//1.创建一个NSThread对象</span></span><br><span class="line">    <span class="built_in">NSThread</span> *thread = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(downloadImage:) object:<span class="string">@&quot;hello&quot;</span>];</span><br><span class="line">    <span class="comment">//3.启动子线程的任务Task</span></span><br><span class="line">    [thread start];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;由主线程执行如下代码:%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//2.将耗时操作指定给子线程方法(对象)</span></span><br><span class="line">- (<span class="type">void</span>)downloadImage:(<span class="built_in">NSString</span> *)string</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//由子线程执行</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;由子线程执行如下代码:%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@&quot;执行--&gt;%d&quot;</span>,i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">前提:知道图片的地址(URL)</span><br><span class="line">下载图片方式一: <span class="built_in">NSString</span> -&gt; <span class="built_in">NSRUL</span>(网址特点类) -&gt; <span class="built_in">NSData</span> -&gt; <span class="built_in">UIImage</span></span><br><span class="line">界面: <span class="built_in">UIImageView</span> + <span class="built_in">UIButton</span></span><br><span class="line">样例: 创建<span class="built_in">NSThread</span>类型子线程,执行下载图片的操作</span><br><span class="line">代码:</span><br><span class="line">- (<span class="keyword">IBAction</span>)downloadButton:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1.创建NSThread对象</span></span><br><span class="line">    <span class="built_in">NSThread</span> *thread = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(downloadImage) object:<span class="literal">nil</span>];</span><br><span class="line">    <span class="comment">//执行下载逻辑</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//启动子线程</span></span><br><span class="line">    [thread start];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)downloadImage&#123;</span><br><span class="line">    <span class="comment">//NSString -&gt; NSURL -&gt; NSData -&gt; UIImage</span></span><br><span class="line">    <span class="built_in">NSString</span> *imageStr = <span class="string">@&quot;http://f.hiphotos.baidu.com/image/h%3D200/sign=66e8237adac451dae9f60beb86fd52a5/4bed2e738bd4b31cfa3c2f9f80d6277f9e2ff896.jpg&quot;</span>;</span><br><span class="line">    <span class="built_in">NSURL</span> *imageUrl = [<span class="built_in">NSURL</span> URLWithString:imageStr];</span><br><span class="line">    <span class="comment">//如下方法是耗时的</span></span><br><span class="line">    <span class="built_in">NSData</span> *imageData = [<span class="built_in">NSData</span> dataWithContentsOfURL:imageUrl];</span><br><span class="line">    <span class="built_in">UIImage</span> *image = [<span class="built_in">UIImage</span> imageWithData:imageData];</span><br><span class="line">    <span class="comment">//要由子线程回到主线程,赋值给imageview</span></span><br><span class="line">    <span class="comment">//主要线程执行任务的优先级高于子线程任务</span></span><br><span class="line">    <span class="comment">//子线程回到主线程方式一</span></span><br><span class="line">    [<span class="keyword">self</span> performSelectorOnMainThread:<span class="keyword">@selector</span>(returnMainThread:) withObject:image waitUntilDone:<span class="literal">YES</span>];<span class="comment">//waitUntilDone:表示该方法执行完后是否执行下面的代码</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;----&gt;&gt;&gt;&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>苹果默认不允许http,要在info改设置,如下:<br><img src="/HTTP.png"><br>和UIKit相关的操作需要从子线程回到主线程(原理)</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//子线程回到主线程</span></span><br><span class="line">    [<span class="keyword">self</span> performSelectorOnMainThread:<span class="keyword">@selector</span>(returnMainThread:) withObject:image waitUntilDone:<span class="literal">YES</span>];</span><br></pre></td></tr></table></figure>
+<p>##多线程</p>
+<ul>
+<li>问题: 多个子线程同时修改&#x2F;更新同一个变量的值时,会造成数据不一致现象</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">样例: 实现上面问题逻辑(如:两个窗口同时卖北京到深圳的票)</span><br><span class="line">-&gt; 两个窗口 -&gt; 两个<span class="built_in">NSThread</span>对象</span><br><span class="line">卖票 - &gt; 总票数为<span class="number">60</span>;对总票数减减</span><br><span class="line">分析问题: 多个子线程同时修改同一个值</span><br><span class="line">解决方案: 适当的时候<span class="string">&quot;加锁&quot;</span>;适当的时候<span class="string">&quot;解锁&quot;</span>;</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">ViewController</span> ()</span></span><br><span class="line"><span class="comment">/** 剩余的票数 */</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">assign</span>) <span class="type">int</span> leftTicketCount;</span><br><span class="line"><span class="comment">/** 互斥锁属性 */</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSLock</span> *lock;</span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line">    - (<span class="type">void</span>)viewDidLoad &#123;</span><br><span class="line">    [<span class="variable language_">super</span> viewDidLoad];</span><br><span class="line">    <span class="comment">//初始化lock对象</span></span><br><span class="line">    <span class="keyword">self</span>.lock = [[<span class="built_in">NSLock</span> alloc] init];</span><br><span class="line">    <span class="comment">//给定一个初始值 总票数60</span></span><br><span class="line">    <span class="built_in">NSNumber</span> *totalTicketCount = @<span class="number">60</span>;</span><br><span class="line">    <span class="keyword">self</span>.leftTicketCount = [totalTicketCount intValue];</span><br><span class="line">    <span class="comment">//1.创建两个NSTread对象</span></span><br><span class="line">    <span class="built_in">NSThread</span> *firstThreadWindow = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(sellTicket) object:<span class="literal">nil</span>];</span><br><span class="line">    firstThreadWindow.name = <span class="string">@&quot;窗口一&quot;</span>;</span><br><span class="line">    <span class="built_in">NSThread</span> *secondThreadWindow = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(sellTicket) object:<span class="literal">nil</span>];</span><br><span class="line">    secondThreadWindow.name = <span class="string">@&quot;窗口二&quot;</span>;</span><br><span class="line">    <span class="comment">//2.在子线程执行卖票的逻辑</span></span><br><span class="line">    <span class="comment">//3.启动卖票动作</span></span><br><span class="line">    [firstThreadWindow start];</span><br><span class="line">    [secondThreadWindow start];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)sellTicket&#123;</span><br><span class="line">    <span class="comment">//在子线程执行 --&gt;卖票</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">//加锁</span></span><br><span class="line">        [<span class="keyword">self</span>.lock lock];</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">self</span>.leftTicketCount &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="comment">//模拟延时操作</span></span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">0.1</span>];</span><br><span class="line">            <span class="keyword">self</span>.leftTicketCount--;</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;窗口:%@;剩余票数:%d&quot;</span>,[<span class="built_in">NSThread</span> currentThread],<span class="keyword">self</span>.leftTicketCount);</span><br><span class="line">            <span class="comment">//解锁</span></span><br><span class="line">            [<span class="keyword">self</span>.lock unlock];</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;票已经卖完!&quot;</span>);</span><br><span class="line">            <span class="comment">//解锁</span></span><br><span class="line">            [<span class="keyword">self</span>.lock unlock];</span><br><span class="line">            <span class="keyword">break</span>;<span class="comment">//跳出当前循环</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>需求: 多个耗时任务同时执行</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-&gt; 创建多个子线程同时执行耗时任务</span><br><span class="line">-&gt; performSelectorOnMAainThread回到主线程</span><br></pre></td></tr></table></figure>
+<p>##GCD(Grand Central Dispath)</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>是什么?</span><br><span class="line">    易用的多线程的解决方案</span><br><span class="line"><span class="number">2.</span>为什么提出GCD</span><br><span class="line">    提供比较方便,好用多线程调度方案</span><br><span class="line"><span class="number">3.</span>如何使用?</span><br><span class="line">    一般的<span class="built_in">CGD</span>的执行任务流程</span><br><span class="line">        a. 创建队列</span><br><span class="line">        b.给执行任务,放到队列中</span><br><span class="line">        c.执行队列中的任务</span><br><span class="line">    <span class="number">3.1</span> 队列类型</span><br><span class="line">        串行队列(Serial Queue): 顺序执行</span><br><span class="line">        并行队列(Concurrent Queue): 同步执行</span><br><span class="line">        系统默认创建主队列(Main Queue): 主线程顺序执行 -&gt; 由主线程执行的串行队列</span><br><span class="line">        系统默认创建全局队列(Global Queue): 同时执行 -&gt; 已经创建好的并行队列</span><br><span class="line">    <span class="number">3.2</span> 执行任务的方式</span><br><span class="line">        同步执行(Synchronous): 当前线程执行 + 等待任务执行完毕</span><br><span class="line">        注意: 一般不使用同步执行,会造成阻塞</span><br><span class="line">        异步执行(Asynchronous): 子线程执行 + 立即返回(不等待任务)</span><br><span class="line">    <span class="number">3.3</span> 明确知道两点:</span><br><span class="line">        a. 任务的执行顺序: 打印log,看时间</span><br><span class="line">        b. 有谁执行任务(主线程还是子线程): [<span class="built_in">NSTread</span> currentThread]</span><br><span class="line">    <span class="number">3.4</span> 从多个排列组合中,寻找可以完成需求的组合</span><br><span class="line">        -&gt; 子线程执行的组合</span><br><span class="line">        -&gt; 回到主线程的组合</span><br><span class="line">样例: 实现四种排列组合</span><br><span class="line"></span><br><span class="line">    串行队列同步执行</span><br><span class="line">    代码:</span><br><span class="line"></span><br><span class="line">     <span class="comment">//明确点: 任务执行的顺序; 主线程还是子线程执行</span></span><br><span class="line">    <span class="comment">//1.创建一个串行队列</span></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  参数一: 给定名字</span></span><br><span class="line"><span class="comment">     *  参数二: 指定的队列类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span>  queue = dispatch_queue_create(<span class="string">&quot;FirstSerialQueue&quot;</span>,DISPATCH_QUEUE_SERIAL);</span><br><span class="line">    <span class="comment">//2.添加两个任务到串行队列中(BLOCK)</span></span><br><span class="line">    <span class="comment">//3.同步执行两个任务</span></span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加第一个任务(耗时操作)</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;+++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加第二个任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;-----------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line">    串行队列异步执行</span><br><span class="line">    代码:</span><br><span class="line">    <span class="comment">//明确点:任务的执行顺序;</span></span><br><span class="line">    <span class="comment">//1.创建一个串行队列</span></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  参数一: 给定名称</span></span><br><span class="line"><span class="comment">     *  参数二: 指定的队列类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_queue_create(<span class="string">&quot;secondSerialQueue&quot;</span>, DISPATCH_QUEUE_SERIAL);</span><br><span class="line">    <span class="comment">//添加两个任务到串行队列中并异步执行两个任务</span></span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加到队列中的任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span>  sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;++++++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加第二个任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;--------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line">    并行队列同步执行</span><br><span class="line">    注意:</span><br><span class="line">        一般在主线程中不会用,因为不能实现并行执行</span><br><span class="line">    代码:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  并行队列: 同时的执行</span></span><br><span class="line"><span class="comment">     *  同步执行: 当前线程 + 等待任务执行完毕</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_queue_create(<span class="string">&quot;FirstConcurrent&quot;</span>, DISPATCH_QUEUE_CONCURRENT);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">        <span class="comment">//</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;++++++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;--------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line">    并行队列异步执行</span><br><span class="line">    代码:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  并行队列: 同时执行</span></span><br><span class="line"><span class="comment">     *  异步执行: 子线程 + 立即返回(不等待任务)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_queue_create(<span class="string">&quot;SecondConcurrent&quot;</span>, DISPATCH_QUEUE_CONCURRENT);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;+++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;-----------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//全局队列异步执行</span></span><br><span class="line">    - (<span class="keyword">IBAction</span>)globalQueueAsync:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//结论和并行队列异步执行一样</span></span><br><span class="line">    <span class="comment">//1.获取全局队列(只有这一步不同)</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    *  参数一: 指定全局队列的优先级(主队列优先级最高)</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_HIGH</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_DEFAULT</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_LOW</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_BACKGROUND</span></span><br><span class="line"><span class="comment">    *  参数二: 0</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, <span class="number">0</span>);</span><br><span class="line">    <span class="comment">//2.添加任务</span></span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">//3.异步执行</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;-------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//主队列异步执行</span></span><br><span class="line">    - (<span class="keyword">IBAction</span>)mainQueueAsync:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1. 获取主队列</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_get_main_queue();</span><br><span class="line">    <span class="comment">//2. 添加任务</span></span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;+++++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;-------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//主队列同步执行</span></span><br><span class="line">    - (<span class="keyword">IBAction</span>)mainQueueSync:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1.获取主队列</span></span><br><span class="line">    <span class="comment">//    dispatch_queue_t queue = dispatch_get_main_queue();</span></span><br><span class="line">    <span class="comment">//添加任务</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;任务一&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(dispatch_get_main_queue(), ^&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;任务二&quot;</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;任务三&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>GCD底层实现原理:</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.底层维护一个线程池,自动从线程池中找空闲的子线程</span><br><span class="line">2.不需要创建子线程对象</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/18/%E4%BD%BF%E7%94%A8cocoapods%E3%80%81brew%E3%80%81%E7%AD%89%E6%8A%A5%E7%BD%91%E7%BB%9C%E9%94%99%E8%AF%AF/" rel="next" title="Cocoapods_使用cocoapods、brew、等报网络错误">
+                <i class="fa fa-chevron-left"></i> Cocoapods_使用cocoapods、brew、等报网络错误
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/11/XCode-%E6%8A%A5file-missing-%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%81/" rel="prev" title="iOS_XCode-报file-missing-错误，解决办法！">
+                iOS_XCode-报file-missing-错误，解决办法！ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/header.png"
+                alt="CoderJohnhao"/>
+            
+              <p class="site-author-name" itemprop="name">CoderJohnhao</p>
+              <div class="site-description motion-element" itemprop="description">一个热爱生活，热爱科技的程序猿！</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/%20%7C%7C%20archive">
+                
+                    <span class="site-state-item-count">54</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/%20%7C%7C%20th">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/%20%7C%7C%20tags">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/CoderJohnhao" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;CoderJohnhao" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-GitHub&quot;&gt;&lt;&#x2F;i&gt;GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.jianshu.com/u/7a77960c6664" title="简书 &amp;rarr; https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;7a77960c6664" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-简书&quot;&gt;&lt;&#x2F;i&gt;简书</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://juejin.im/user/5847b9908e450a006c1cf570" title="掘金 &amp;rarr; https:&#x2F;&#x2F;juejin.im&#x2F;user&#x2F;5847b9908e450a006c1cf570" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-掘金&quot;&gt;&lt;&#x2F;i&gt;掘金</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.zhihu.com/people/johnhao-11/activities" title="知乎 &amp;rarr; https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;johnhao-11&#x2F;activities" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-知乎&quot;&gt;&lt;&#x2F;i&gt;知乎</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2023</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CoderJohnhao</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.1"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
