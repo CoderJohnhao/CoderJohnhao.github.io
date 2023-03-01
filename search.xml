@@ -1,0 +1,2050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>iOS__清除cell的所有子控件</title>
+    <url>/2016/12/08/-iOS__%E6%B8%85%E9%99%A4cell%E7%9A%84%E6%89%80%E6%9C%89%E5%AD%90%E6%8E%A7%E4%BB%B6/</url>
+    <content><![CDATA[<p>[cell.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Alfred_使用技巧</title>
+    <url>/2019/05/22/Alfred-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>百度一下：<a href="https://www.baidu.com/s?wd=%7Bquery%7D">https://www.baidu.com/s?wd={query}</a></p>
+<p>Google翻译英文：<a href="https://translate.google.cn/?hl=zh-CN#view=home&op=translate&sl=en&tl=zh-CN&text={query}">https://translate.google.cn/?hl=zh-CN#view=home&amp;op=translate&amp;sl=en&amp;tl=zh-CN&amp;text={query}</a></p>
+<p>Google翻译中文：<a href="https://translate.google.cn/?hl=zh-CN#view=home&op=translate&sl=zh-CN&tl=en&text={query}">https://translate.google.cn/?hl=zh-CN#view=home&amp;op=translate&amp;sl=zh-CN&amp;tl=en&amp;text={query}</a></p>
+<p>GitHub：<a href="https://github.com/search?utf8=%E2%9C%93&q=%7Bquery%7D">https://github.com/search?utf8=%E2%9C%93&amp;q={query}</a></p>
+<p>Stackoverflow：<a href="http://www.stackoverflow.com/search?q=%7Bquery%7D">http://www.stackoverflow.com/search?q={query}</a></p>
+]]></content>
+      <categories>
+        <category>MacOS工具</category>
+      </categories>
+      <tags>
+        <tag>MacOS工具</tag>
+        <tag>Alfred</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS__更改选择图片控制器的NavitionBarItem字体颜色</title>
+    <url>/2016/10/08/-iOS__%E6%9B%B4%E6%94%B9%E9%80%89%E6%8B%A9%E5%9B%BE%E7%89%87%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84NavitionBarItem%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2/</url>
+    <content><![CDATA[<ul>
+<li>(void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated<br>{<br>    viewController.navigationItem.rightBarButtonItem.tintColor &#x3D; [UIColor blackColor];<br>    viewController.navigationItem.leftBarButtonItem.tintColor &#x3D; [UIColor blackColor];<br>}</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL语句</title>
+    <url>/2019/08/11/SQL%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<p>SQL语句的种类<br>    数据库定义语句：<br>        包括creat和drop等操作<br>        在数据创建表和删除表（creat table和drop table）<br>    数据库操作语句：<br>        包括insert、update、delete等操作<br>        分别用于插入、更新、删除表中数据<br>    数据库查询语句：<br>        可用于查询数据库数据<br>        关键字select是SQL用的最多语句<br>        其他还有where、order by、group by、having</p>
+]]></content>
+      <categories>
+        <category>SQL</category>
+      </categories>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Macos系统文件制作</title>
+    <url>/2018/05/07/Macos%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2148605-42e68970ab3c769e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="{A8E6F204-FA15-86B7-828B-89D2A8B47641}.png"></p>
+<span id="more"></span>
+<blockquote>
+<p>MacOS High Sierra 12.13 已经发布快一个月了，最近为了给公司的电脑装最新的系统，在网上找了资料如何将App Store下载的系统转成dmg格式的系统文件。</p>
+</blockquote>
+<ul>
+<li>首先在App Store商店下载最新的MacOS High Sierra 12.13，下载时间比较久，请慢慢等待！</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-7f5c34e9549d612f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<ul>
+<li>下载完成后，在Finder中的应用程序可以找到</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-43dab2e52e46333c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-172511@2x.png"></p>
+<ul>
+<li><p>在桌面新建一个文件夹改名为macOS High Sierra 10.13<br><img src="http://upload-images.jianshu.io/upload_images/2148605-c9f65cb16211d4cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-172641@2x.png"></p>
+</li>
+<li><p>将应用程序中的【安装 macOS High Sierra】按住command键将安装程序拖入到新建的macOS High Sierra 10.13中，会提示输入密码<br><img src="http://upload-images.jianshu.io/upload_images/2148605-7ffd953b035f1d3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-172856@2x.png"></p>
+</li>
+<li><p>【重要】打开磁盘管理工具，点击文件 &gt;&gt;&gt; 新建映像 &gt;&gt;&gt; 来自文件夹的映像<br><img src="http://upload-images.jianshu.io/upload_images/2148605-1fae94f72a28a2d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-174046@2x.png"></p>
+</li>
+<li><p>选择刚新建的文件夹macOS High Sierra 10.13，点击打开<br><img src="http://upload-images.jianshu.io/upload_images/2148605-337ad059db0ed7f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-174420@2x.png"></p>
+</li>
+<li><p>存储为名macOS.dmg，存储位置桌面，映像格式为读写，再点击存储，等待完成后生成一个macOS.dmg文件，走到这里说明你成功一大半了！</p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-a574701f0e3e7573.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-174720@2x.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-1a7b1650fbd853d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175034@2x.png"></p>
+<ul>
+<li><p>双击打开桌面创建的macOS.dmg，出现macOS High Sierra 10.13 卷，在终端里输入：</p>
+<pre><code>sudo ~/Desktop/macOS\ High\ Sierra\ 10.13/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/macOS\ High\ Sierra\ 10.13 --applicationpath ~/Desktop/macOS\ High\ Sierra\ 10.13/Install\ macOS\ High\ Sierra.app --nointeraction
+</code></pre>
+</li>
+<li><p>在终端中，<br><img src="http://upload-images.jianshu.io/upload_images/2148605-fed22f3ffe55f913.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175239@2x.png"></p>
+</li>
+<li><p>推出刚刚创建的 Install macOS Sierra 卷。删除桌面上的 macOS High Sierra 10.13 文件夹。</p>
+</li>
+<li><p>打开磁盘工具，菜单：镜像 -&gt; 转换…，在出现的窗口里选择桌面的macOS.dmg，存储为: macOS High Sierra 10.13.dmg、位置桌面、映像格式压缩，点“存储”按钮。转换成功后删除桌面上的macOS.dmg。<br><img src="http://upload-images.jianshu.io/upload_images/2148605-2997d279f9f49471.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175550@2x.png"></p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-584e6bae5899a51f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175628@2x.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-76bce00e637e4b3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175723@2x.png"></p>
+<ul>
+<li>macOS High Sierra 10.13dmg 是我们要的最终文件。</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-d7dca1196a09ba7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171013-175812@2x.png"></p>
+<ul>
+<li>最后，感谢你的认真阅读，如果对你有帮助请点个❤️，谢谢！</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Macos</category>
+      </categories>
+      <tags>
+        <tag>Macos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo使用</title>
+    <url>/2019/08/01/hexo%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h4 id="个人博客搭建"><a href="#个人博客搭建" class="headerlink" title="个人博客搭建"></a>个人博客搭建</h4><p><a href="https://hexo.io/zh-cn/docs/commands">hexo官方文档</a></p>
+<p><a href="http://theme-next.iissnan.com/">NexT官方文档</a></p>
+<ol>
+<li><p>cd到博客目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd /博客目录</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新建文章</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;文章名称&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p>生成静态文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate，可以简写 hexo g</span><br></pre></td></tr></table></figure></li>
+<li><p>部署到服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></li>
+<li><p>本地服务器浏览</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人博客建设</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_XCode-报file-missing-错误，解决办法！</title>
+    <url>/2017/02/11/XCode-%E6%8A%A5file-missing-%E9%94%99%E8%AF%AF%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%81/</url>
+    <content><![CDATA[<p><a href="http://www.cnblogs.com/leehongee/p/3990315.html"><a href="http://www.cnblogs.com/leehongee/">天落恒星</a>处转载：解决Xcode删除文件后missing file警告</a></p>
+<p>在用xcode开发的时候，删除不用的文件后， 编译的时候会有missing file的警告，原因是由于SVN或git造成的，有几种方法可以解决。<br><strong>1.命令行进入missing file目录，然后运行</strong><br>svn delete file.cpp<br>或者<br>git rm file.cpp<br><strong>2.删除隐藏的.svn文件,命令行运行</strong><br>defaults write com.apple.finder AppleShowAllFiles TRUE<br>killall Finder<br>开启显示隐藏文件，然后到工程目录下删除.svn文件，然后再恢复<br>defaults write com.apple.finder AppleShowAllFiles FALSE<br>killall Finder<br><strong>3.进入工程目录，运行下面命令删除隐藏文件</strong><br>find . -name .svn -exec rm -rf { } ;  <br>报警是因为，先在文件夹中删除工程中引用的文件，工程引用的路径还存在，删掉也还会报错，怀疑是bug</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Block</title>
+    <url>/2018/12/14/iOS-Block/</url>
+    <content><![CDATA[<ol>
+<li><p>block本质</p>
+<ul>
+<li>block本质上也是一个OC对象，它内部也有个isa指针</li>
+<li>block是封装了函数调用以及函数调用环境的OC对象</li>
+<li>block的底层结构如下图所示<span id="more"></span>
+<img src="/images/15446896296684.jpg" alt="-w398"></li>
+</ul>
+</li>
+<li><p>block的变量捕获（capture）</p>
+<ul>
+<li>为了保证block内部能够正常访问外部的变量，block有个变量捕获机制<br> <img src="/images/15446904849165.jpg" alt="-w613"></li>
+</ul>
+</li>
+<li><p>auto变量的捕获<br><img src="/images/15446905206504.jpg" alt="-w721"></p>
+</li>
+<li><p>block的类型</p>
+<ul>
+<li>block有3种类型，可以通过调用class方法或者isa指针查看具体类型，最终都是继承自NSBlock类型<ul>
+<li>“<strong>NSGlobalBlock</strong>“ （ _NSConcreteGlobalBlock ）</li>
+<li>“<strong>NSStackBlock</strong>“ （ _NSConcreteStackBlock ）</li>
+<li>“<strong>NSMallocBlock</strong>“ （ _NSConcreteMallocBlock ）<br> <img src="/images/15446906626349.jpg" alt="-w395"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>block的类型<br> <img src="/images/15446940530279.jpg" alt="-w458"></p>
+<ul>
+<li>每一种类型的block调用copy后的结果如下所示<br> <img src="/images/15446941082275.jpg" alt="-w516"></li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_KVO</title>
+    <url>/2018/12/08/iOS-KVO/</url>
+    <content><![CDATA[<ol>
+<li>KVO<ul>
+<li>KVO的全称是Key-Value Obsering，俗称“键值监听”，可以用于监听某个对象属性值的改变</li>
+<li>KVO底层实现:<ul>
+<li><p>当对某个对象的属性值进行监听时，runtime会动态创建一个继承class的子类NSKVONotifying_类</p>
+</li>
+<li><p>set方法实现是_NSSet(*)ValueAndNotify</p>
+<ul>
+<li>_NSSet*ValueAndNofify的内部实现：</li>
+</ul>
+ <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">[<span class="keyword">self</span> willChangeValueForKey:<span class="string">@&quot;age&quot;</span>];</span><br><span class="line">[<span class="variable language_">super</span> setAge:age];</span><br><span class="line">[<span class="keyword">self</span> didChangeValueForKey:<span class="string">@&quot;age&quot;</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>先调用willChangeVlaueKey</li>
+<li>再调用原来的set方法实现</li>
+<li>最调用didChangeValueKey<ul>
+<li>didChangeValueKey内部会调用obser的obserValueForKeyPath:ofObject:change:context:方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<span id="more"></span>   
+<ol>
+<li><p>iOS用什么方法实现对一个对象的KVO?(KVO本质)</p>
+<ul>
+<li>利用runtimeAPI动态生成一个子类，并且对instance对象的isa指向这个全新的子类</li>
+<li>当修改instance对象的属性时，会调用Foundation的_NNSet**ValueAndNotify函数<ul>
+<li>先调用willChangeVlaueKey</li>
+<li>再调用原来的set方法实现</li>
+<li>最调用didChangeValueKey<ul>
+<li>didChangeValueKey内部会调用obser的obserValueForKeyPath:ofObject:change:context:方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>如何手动触发KVO<br> [self willChangeValueForKey:@”age”];<br> [self didChangeValueForKey:@”age”];</p>
+</li>
+<li><p>KVO实现的原理图<br> <img src="/images/15440175838777.jpg"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>底层原理</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>KVO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git-HEAD-意思详解-和版本回退</title>
+    <url>/2016/12/08/Git-HEAD-%E6%84%8F%E6%80%9D%E8%AF%A6%E8%A7%A3-%E5%92%8C%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</url>
+    <content><![CDATA[<p>转自: <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a><br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013744142037508cf42e51debf49668810645e02887691000</a><br>首先，<a href="http://lib.csdn.net/base/28">Git</a>必须知道当前版本是哪个版本，在Git中，用HEAD<br>表示当前版本，也就是最新的提交3628164…882e1e0<br>（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^<br>，上上一个版本就是HEAD^^<br>，当然往上100个版本写100个^<br>比较容易数不过来，所以写成HEAD~100<br>。</p>
+<p>HEAD<br>指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id<br>。</p>
+<p>穿梭前，用git log<br>可以查看提交历史，以便确定要回退到哪个版本。</p>
+<p>要重返未来，用git reflog<br>查看命令历史，以便确定要回到未来的哪个版本。</p>
+<p>现在，你已经学会了修改文件，然后把修改提交到Git版本库，现在，再练习一次，修改readme.txt文件如下：<br>Git is a distributed version control system.Git is free software distributed under the GPL.</p>
+<p>然后尝试提交：<br>$ git add readme.txt$ git commit -m “append GPL”[master 3628164] append GPL 1 file changed, 1 insertion(+), 1 deletion(-)</p>
+<p>像这样，你不断对文件进行修改，然后不断提交修改到版本库里，就好比玩RPG游戏时，每通过一关就会自动把游戏状态存盘，如果某一关没过去，你还可以选择读取前一关的状态。有些时候，在打Boss之前，你会手动存盘，以便万一打Boss失败了，可以从最近的地方重新开始。Git也是一样，每当你觉得文件修改到一定程度的时候，就可以“保存一个快照”，这个快照在Git中被称为commit<br>。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit<br>恢复，然后继续工作，而不是把几个月的工作成果全部丢失。<br>现在，我们回顾一下readme.txt文件一共有几个版本被提交到Git仓库里了：<br>版本1：wrote a readme file<br>Git is a version control system.Git is free software.</p>
+<p>版本2：add distributed<br>Git is a distributed version control system.Git is free software.</p>
+<p>版本3：append GPL<br>Git is a distributed version control system.Git is free software distributed under the GPL.</p>
+<p>当然了，在实际工作中，我们脑子里怎么可能记得一个几千行的文件每次都改了什么内容，不然要<a href="http://lib.csdn.net/base/28">版本控制</a>系统干什么。版本控制系统肯定有某个命令可以告诉我们历史记录，在Git中，我们用git log<br>命令查看：<br>$ git logcommit 3628164fb26d48395383f8f31179f24e0882e1e0Author: Michael Liao <a href="mailto:&#97;&#115;&#x6b;&#120;&#x75;&#x65;&#102;&#x65;&#110;&#103;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#97;&#115;&#x6b;&#120;&#x75;&#x65;&#102;&#x65;&#110;&#103;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>Date: Tue Aug 20 15:11:49 2013 +0800 append GPLcommit ea34578d5496d7dd233c827ed32a8cd576c5ee85Author: Michael Liao <a href="mailto:&#x61;&#x73;&#107;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x61;&#x73;&#107;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a>Date: Tue Aug 20 14:53:12 2013 +0800 add distributedcommit cb926e7ea50ad11b8f9e909c05226233bf755030Author: Michael Liao <a href="mailto:&#97;&#115;&#x6b;&#120;&#117;&#101;&#x66;&#x65;&#110;&#103;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#97;&#115;&#x6b;&#120;&#117;&#101;&#x66;&#x65;&#110;&#103;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>Date: Mon Aug 19 17:51:55 2013 +0800 wrote a readme file</p>
+<p>git log<br>命令显示从最近到最远的提交日志，我们可以看到3次提交，最近的一次是append GPL<br>，上一次是add distributed<br>，最早的一次是wrote a readme file<br>。如果嫌输出信息太多，看得眼花缭乱的，可以试试加上–pretty&#x3D;oneline<br>参数：<br>$ git log –pretty&#x3D;oneline3628164fb26d48395383f8f31179f24e0882e1e0 append GPLea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributedcb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file</p>
+<p>需要友情提示的是，你看到的一大串类似3628164…882e1e0<br>的是commit id<br>（版本号），和SVN不一样，Git的commit id<br>不是1，2，3……递增的数字，而是一个SHA1计算出来的一个非常大的数字，用十六进制表示，而且你看到的commit id<br>和我的肯定不一样，以你自己的为准。为什么commit id<br>需要用这么一大串数字表示呢？因为Git是分布式的版本控制系统，后面我们还要研究多人在同一个版本库里工作，如果大家都用1，2，3……作为版本号，那肯定就冲突了。<br>每提交一个新版本，实际上Git就会把它们自动串成一条时间线。如果使用可视化工具查看Git历史，就可以更清楚地看到提交历史的时间线：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-817a7f06f14ba6d3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git-log-timeline"><br>好了，现在我们启动时光穿梭机，准备把readme.txt回退到上一个版本，也就是“add distributed”的那个版本，怎么做呢？<br>首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD<br>表示当前版本，也就是最新的提交3628164…882e1e0<br>（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^<br>，上上一个版本就是HEAD^^<br>，当然往上100个版本写100个^<br>比较容易数不过来，所以写成HEAD~100<br>。<br>现在，我们要把当前版本“append GPL”回退到上一个版本“add distributed”，就可以使用git reset<br>命令：<br>$ git reset –hard HEAD^HEAD is now at ea34578 add distributed</p>
+<p>–hard<br>参数有啥意义？这个后面再讲，现在你先放心使用。<br>看看readme.txt的内容是不是版本add distributed<br>：<br>$ cat readme.txtGit is a distributed version control system.Git is free software.</p>
+<p>果然。<br>还可以继续回退到上一个版本wrote a readme file<br>，不过且慢，然我们用git log<br>再看看现在版本库的状态：<br>$ git logcommit ea34578d5496d7dd233c827ed32a8cd576c5ee85Author: Michael Liao <a href="mailto:&#x61;&#115;&#x6b;&#x78;&#117;&#101;&#102;&#101;&#110;&#103;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#109;">&#x61;&#115;&#x6b;&#x78;&#117;&#101;&#102;&#101;&#110;&#103;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#109;</a>Date: Tue Aug 20 14:53:12 2013 +0800 add distributedcommit cb926e7ea50ad11b8f9e909c05226233bf755030Author: Michael Liao <a href="mailto:&#97;&#115;&#x6b;&#x78;&#x75;&#101;&#x66;&#x65;&#x6e;&#103;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;">&#97;&#115;&#x6b;&#x78;&#x75;&#101;&#x66;&#x65;&#x6e;&#103;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;</a>Date: Mon Aug 19 17:51:55 2013 +0800 wrote a readme file</p>
+<p>最新的那个版本append GPL<br>已经看不到了！好比你从21世纪坐时光穿梭机来到了19世纪，想再回去已经回不去了，肿么办？<br>办法其实还是有的，只要上面的命令行窗口还没有被关掉，你就可以顺着往上找啊找啊，找到那个append GPL<br>的commit id<br>是3628164…<br>，于是就可以指定回到未来的某个版本：<br>$ git reset –hard 3628164HEAD is now at 3628164 append GPL</p>
+<p>版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。<br>再小心翼翼地看看readme.txt的内容：<br>$ cat readme.txtGit is a distributed version control system.Git is free software distributed under the GPL.</p>
+<p>果然，我胡汉三又回来了。<br>Git的版本回退速度非常快，因为Git在内部有个指向当前版本的HEAD<br>指针，当你回退版本的时候，Git仅仅是把HEAD从指向append GPL<br>：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-b27c9a9a73d615f7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git-head"><br>改为指向add distributed<br>：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-f4074f0399057e34?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="git-head-move"><br>然后顺便把工作区的文件更新了。所以你让HEAD<br>指向哪个版本号，你就把当前版本定位在哪。<br>现在，你回退到了某个版本，关掉了电脑，第二天早上就后悔了，想恢复到新版本怎么办？找不到新版本的commit id<br>怎么办？<br>在Git中，总是有后悔药可以吃的。当你用$ git reset –hard HEAD^<br>回退到add distributed<br>版本时，再想恢复到append GPL<br>，就必须找到append GPL<br>的commit id。Git提供了一个命令git reflog<br>用来记录你的每一次命令：<br>$ git reflogea34578 HEAD@{0}: reset: moving to HEAD^3628164 HEAD@{1}: commit: append GPLea34578 HEAD@{2}: commit: add distributedcb926e7 HEAD@{3}: commit (initial): wrote a readme file</p>
+<p>终于舒了口气，第二行显示append GPL<br>的commit id是3628164<br>，现在，你又可以乘坐时光机回到未来了。<br>小结<br>现在总结一下：<br>HEAD<br>指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset –hard commit_id<br>。</p>
+<p>穿梭前，用git log<br>可以查看提交历史，以便确定要回退到哪个版本。</p>
+<p>要重返未来，用git reflog<br>查看命令历史，以便确定要回到未来的哪个版本。</p>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_KVC</title>
+    <url>/2018/12/08/iOS-KVC/</url>
+    <content><![CDATA[<ol>
+<li><p>KVC的全称是Key-Value Coding，俗称“键值编码”，可以通过一个key来访问某个属性</p>
+<ul>
+<li>常见的API有：</li>
+</ul>
+ <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="type">void</span>)setValue:(<span class="type">id</span>)value forKeyPath:(<span class="built_in">NSString</span> *)keyPath;</span><br><span class="line">- (<span class="type">void</span>)setValue:(<span class="type">id</span>)value forKey:(<span class="built_in">NSString</span> *)key;</span><br><span class="line">- (<span class="type">id</span>)valueForKeyPath:(<span class="built_in">NSString</span> *)keyPath;</span><br><span class="line">- (<span class="type">id</span>)valueForKey:(<span class="built_in">NSString</span> *)key;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<span id="more"></span>
+<ol start="2">
+<li><p>setValue:forKey:原理</p>
+<ul>
+<li>如图：<br> <img src="/images/15440176236438.jpg"></li>
+</ul>
+</li>
+<li><p>valueForKey:原理</p>
+<ul>
+<li>如图<br> <img src="/images/15440176309152.jpg"></li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS, KVC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Category分类</title>
+    <url>/2018/12/13/iOS-Category%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[<ol>
+<li>Category的底层结构<ul>
+<li>定义在objc-runtime-new.h中<br>  <img src="/images/15446847762319.jpg" alt="-w1275"></li>
+</ul>
+</li>
+</ol>
+<span id="more"></span>
+<ol start="2">
+<li><p>Category的加载处理过程</p>
+<ul>
+<li>通过Runtime加载某个类的所有Category数据</li>
+<li>把所有Category的方法、属性、协议数据，合并到一个大数组中, 后面参与编译的Category数据，会在数组的前面</li>
+<li>将合并后的分类数据（方法、属性、协议），插入到类原来数据的前面</li>
+<li>源码解读顺序：<br>  <img src="/images/15446848147585.jpg" alt="-w252"></li>
+</ul>
+</li>
+<li><p>+load方法</p>
+<ul>
+<li>+load方法会在runtime加载类、分类时调用</li>
+<li>每个类、分类的+load，在程序运行过程中只调用一次</li>
+<li>调用顺序：<ul>
+<li><p>先调用类的+load<br>  按照编译先后顺序调用（先编译，先调用）<br>  调用子类的+load之前会先调用父类的+load</p>
+</li>
+<li><p>再调用分类的+load<br>  按照编译先后顺序调用（先编译，先调用</p>
+</li>
+</ul>
+</li>
+<li>源码解析：<br>  <img src="/images/15446850024669.jpg" alt="-w362"></li>
+</ul>
+</li>
+<li><p>+initialize方法</p>
+<ul>
+<li>+initialize方法会在类第一次接收到消息时调用</li>
+<li>调用顺序：<ul>
+<li>先调用父类的+initialize，再调用子类的+initialize</li>
+<li>先初始化父类，再初始化子类，每个类只会初始化1次</li>
+</ul>
+</li>
+<li>+initialize和+load的很大区别是，+initialize是通过objc_msgSend进行调用的，所以有以下特点：<ul>
+<li>如果子类没有实现+initialize，会调用父类的+initialize（所以父类的+initialize可能会被调用多次）</li>
+<li>如果分类实现了+initialize，就覆盖类本身的+initialize调用</li>
+</ul>
+</li>
+<li>源码解析：<br>   <img src="/images/15446855680272.jpg" alt="-w269"></li>
+</ul>
+</li>
+<li><p>关联对象</p>
+<ul>
+<li>关联对象提供了以下API<ul>
+<li>添加关联对象  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void objc_setAssociatedObject(id object, const void * key,</span><br><span class="line">                        id value, objc_AssociationPolicy policy)</span><br></pre></td></tr></table></figure></li>
+<li>获得关联对象  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">id objc_getAssociatedObject(id object, const void * key)</span><br></pre></td></tr></table></figure></li>
+<li>移除所有的关联对象  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void objc_removeAssociatedObjects(id object)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>关联对象的原理</p>
+<ul>
+<li><p>实现关联对象技术的核心对象有</p>
+<ul>
+<li>AssociationsManager</li>
+<li>AssociationsHashMap</li>
+<li>ObjectAssociationMap</li>
+<li>ObjcAssociation</li>
+</ul>
+</li>
+<li><p>源代码解释：<br><img src="/images/15446872662845.jpg" alt="-w829"></p>
+</li>
+<li><p>实现原理<br> <img src="/images/15446881744038.jpg" alt="-w855"></p>
+</li>
+</ul>
+</li>
+</ol>
+<p>​        </p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_OC对象的分类</title>
+    <url>/2018/12/06/iOS-OC%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[<ol>
+<li><p>Object-C中的对象，简称OC对象，主要可以分为3类:</p>
+<ul>
+<li>instance对象（实例对象）</li>
+<li>class对象（类对象）</li>
+<li>meta-class对象（元类对象）<span id="more"></span></li>
+</ul>
+</li>
+<li><p>instance对象</p>
+<ul>
+<li>instance对象就是通过alloc出来的对象，每次调用alloc都会产生新的instance对象 <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="built_in">NSObject</span> *obj1 = [[<span class="built_in">NSObject</span> alloc] init];</span><br><span class="line"><span class="built_in">NSObject</span> *obj2 = [[<span class="built_in">NSObject</span> alloc] init];</span><br></pre></td></tr></table></figure></li>
+<li>obj1,obj2是NSObject的instance对象（实例对象）</li>
+<li>它们是不同的两个对象，分别占据着两块内存</li>
+<li>instance对象在内存中存储的信息包括:<ul>
+<li>isa指针 </li>
+<li>其他成员变量</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>class对象</p>
+ <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="built_in">NSObject</span> *obj = [[<span class="built_in">NSObject</span> alloc] init];</span><br><span class="line">Class objClass = [obj <span class="keyword">class</span>];</span><br><span class="line">Class obj2Class = [<span class="built_in">NSObject</span> <span class="keyword">class</span>];</span><br><span class="line">Class obj3Class = object_getClass(obj);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>objClass~obj3Class都是NSObject的calss对象（类对象）</li>
+<li>它们都是同一个对象，每个类在内存中有且只有一个class对象</li>
+<li>class对象在内存中存储的信息主要有：<ul>
+<li>isa指针</li>
+<li>superclass指针</li>
+<li>类的属性信息、类的对象方法信息</li>
+<li>类的协议信息、类的成员变量信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>meta-class对象</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">Class objMetaClass = object_getClass([<span class="built_in">NSObject</span> <span class="keyword">class</span>]);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>objMetaClass是NSObject的meta-class对象（元类对象）</li>
+<li>每个类在内存中有且只有一个meta-class对象</li>
+<li>meta-class对象和class对象的内存结构是一样的，但是用途不一样，在内存中存储的信息主要包括：<ul>
+<li>isa指针</li>
+<li>superclass指针</li>
+<li>类的类方法信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>runtime两个函数</p>
+<ul>
+<li><p>objc_getClass(const char *aClassName)</p>
+<ul>
+<li>传入字符串类名，返回对应的类对象</li>
+</ul>
+</li>
+<li><p>object_getClass(id obj)</p>
+<ul>
+<li>传入的obj是instance，返回类对象（class）</li>
+<li>传入的obj是class，返回元类对象 （meta-class）</li>
+<li>传入的obj是meta-class，返回NSObject的meta-class对象</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Rumtime_isa详解-位域</title>
+    <url>/2019/03/01/iOS-Rumtime-isa%E8%AF%A6%E8%A7%A3-%E4%BD%8D%E5%9F%9F/</url>
+    <content><![CDATA[<h2 id="isa详解-位域"><a href="#isa详解-位域" class="headerlink" title="isa详解-位域"></a>isa详解-位域</h2><blockquote>
+<p>接isa的详解</p>
+</blockquote>
+<ul>
+<li>nopointer</li>
+<li>0，代表普通的指针，存储着Class、Meta-Class对象的内存地址</li>
+<li>1，代表优化过嘛，使用位域存储更多的信息</li>
+<li>has_assoc</li>
+<li>是否有设置过关联对象，如果没有，释放时会更快</li>
+<li>has_cxx_dtor</li>
+<li>是否有c++的析构函数（.cxx_destruct），如果没有，释放时会更快</li>
+<li>shiftcls</li>
+<li>存储着Class、Meta-Class对象的内存地址信息</li>
+<li>magic</li>
+<li>用于在调试时分辨对象释放未完成初始化</li>
+<li>weakly_referenced</li>
+<li>是否有被弱引用指向过，如果没有，释放时会更快</li>
+<li>deallocating</li>
+<li>对象是否正在释放</li>
+<li>extra_rc</li>
+<li>里面存储的值是引用计数器减1</li>
+<li>has_sidetable_rc</li>
+<li>引用计数器是否过大无法存储在isa中</li>
+<li>如果为1，那么引用计数会存储在一个叫SideTable的类的属性中</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>底层原理</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_isa的详解</title>
+    <url>/2019/03/04/iOS-Runtime-isa%E7%9A%84%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<h2 id="isa的详解"><a href="#isa的详解" class="headerlink" title="isa的详解"></a>isa的详解</h2><ul>
+<li>想要学习Runtime，首先要了解它的底层的一些常用数据结构，比如isa指针</li>
+<li>在arm64架构之前，isa就是一个普通的指针，存储着Class、Meta-Class对象的内存地址</li>
+<li>从arm64架构开始，对isa进行了优化，变成一个共用体（union）结构，还是使用位域来存储更多的信息</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">union</span> <span class="title">isa_t</span> &#123;</span></span><br><span class="line">    Class cls;</span><br><span class="line">    <span class="type">uintptr_t</span> bits;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">      <span class="type">uintptr_t</span> nonpointer 				: <span class="number">1</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> has_assoc  				: <span class="number">1</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> has_cxx_dtor			: <span class="number">1</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> shiftcls 					: <span class="number">33</span>; <span class="comment">// Class对象和Meta-Class对象的地址值</span></span><br><span class="line">      <span class="type">uintptr_t</span> magic 						: <span class="number">6</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> weakly_referenced : <span class="number">1</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> deallocating 			: <span class="number">1</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> has_sidetable_rc 	: <span class="number">1</span>;</span><br><span class="line">      <span class="type">uintptr_t</span> extra_rc 					: <span class="number">19</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS, Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_Type Encodeing</title>
+    <url>/2019/03/10/iOS-Runtime-Type-Encodeing/</url>
+    <content><![CDATA[<h2 id="Type-Encodeing"><a href="#Type-Encodeing" class="headerlink" title="Type Encodeing"></a>Type Encodeing</h2><p>iOS中提供一个叫做@encode的指令，可以将具体的类型表示成字符串编码</p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">c</td>
+<td>A char</td>
+</tr>
+<tr>
+<td align="left">i</td>
+<td>An int</td>
+</tr>
+<tr>
+<td align="left">s</td>
+<td>A short</td>
+</tr>
+<tr>
+<td align="left">l</td>
+<td>A long     l is treated as a 32-bit quantity on 64-bit programs</td>
+</tr>
+<tr>
+<td align="left">q</td>
+<td>A long long</td>
+</tr>
+<tr>
+<td align="left">C</td>
+<td>An unsigned char</td>
+</tr>
+<tr>
+<td align="left">I(大写的i)</td>
+<td>An unsigned int</td>
+</tr>
+<tr>
+<td align="left">S</td>
+<td>An unsigned short</td>
+</tr>
+<tr>
+<td align="left">L</td>
+<td>An unsigned long</td>
+</tr>
+<tr>
+<td align="left">Q</td>
+<td>An unsigned long long</td>
+</tr>
+<tr>
+<td align="left">f</td>
+<td>A float</td>
+</tr>
+<tr>
+<td align="left">d</td>
+<td>A double</td>
+</tr>
+<tr>
+<td align="left">B</td>
+<td>A c++ bool or a C99 _Bool</td>
+</tr>
+<tr>
+<td align="left">v</td>
+<td>A void</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td>A character string (char*)</td>
+</tr>
+<tr>
+<td align="left">@</td>
+<td>An object(where statically typed or typed id)</td>
+</tr>
+<tr>
+<td align="left">#</td>
+<td>A class object(Class)</td>
+</tr>
+<tr>
+<td align="left">:</td>
+<td>A method selector(SEL)</td>
+</tr>
+<tr>
+<td align="left">[array type]</td>
+<td>An array</td>
+</tr>
+<tr>
+<td align="left">{name&#x3D;type…}</td>
+<td>A structure</td>
+</tr>
+<tr>
+<td align="left">(name&#x3D;type…)</td>
+<td>A union</td>
+</tr>
+<tr>
+<td align="left">bnum</td>
+<td>A bit field of num bits</td>
+</tr>
+<tr>
+<td align="left">^type</td>
+<td>A pointer to type</td>
+</tr>
+<tr>
+<td align="left">?</td>
+<td>An unknown type(among other things, this code is used for function pointers)</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS, Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_Class的结构</title>
+    <url>/2019/03/03/iOS-Runtime-Class%E7%9A%84%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="Class的结构"><a href="#Class的结构" class="headerlink" title="Class的结构"></a>Class的结构</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">struct objc_class &#123;</span><br><span class="line">  	Class isa;</span><br><span class="line">  	Class superclass;</span><br><span class="line">  	cache_t cache; //方法缓存</span><br><span class="line">  	class_data_bits_t bits; // 用于获取具体的类信息</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><em>bits</em> <strong>&amp;</strong> <em>FAST_DATA_MASK</em> 得到下面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">struct class_rw_t &#123;</span><br><span class="line">  	uint32_t flags;</span><br><span class="line">  	uint32_t version;</span><br><span class="line">  	const class_ro_t *ro;</span><br><span class="line">  	method_array_t *methods; // 方法列表</span><br><span class="line">  	property_array_t *properties; // 属性列表</span><br><span class="line">  	const protocol_array_t *protocols; // 协议列表</span><br><span class="line">  	Class firstSubClass; </span><br><span class="line">  	Class nextSiblingClass;</span><br><span class="line">  	char *demangledName;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS, Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_动态添加方法</title>
+    <url>/2019/03/12/iOS-Runtime-%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="动态添加方法"><a href="#动态添加方法" class="headerlink" title="动态添加方法"></a>动态添加方法</h2><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">+ (<span class="type">BOOL</span>)resolveInstanceMethod:(SEL)sel &#123;</span><br><span class="line">    <span class="keyword">if</span> (sel == <span class="keyword">@selector</span>(test)) &#123;</span><br><span class="line">        <span class="comment">// 获取其他方法</span></span><br><span class="line">        Method method = class_getInstanceMethod(<span class="keyword">self</span>, <span class="keyword">@selector</span>(other));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 动态添加test实现方法</span></span><br><span class="line">        class_addMethod(<span class="keyword">self</span>, </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 返回true代表有动态方法添加</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> [<span class="variable language_">super</span> resolveInstanceMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line">+ (<span class="type">BOOL</span>)resolveClassMethod:(SEL)sel &#123;</span><br><span class="line">    <span class="keyword">if</span> (sel == <span class="keyword">@selector</span>(test)) &#123;</span><br><span class="line">        Method method = class_getClassMethod(object_getClass(<span class="keyword">self</span>), <span class="keyword">@selector</span>(other));</span><br><span class="line">        class_addMethod(object_getClass(<span class="keyword">self</span>), </span><br><span class="line">                        sel, </span><br><span class="line">                        method_getImplementation(method), </span><br><span class="line">                        method_getTypeEncoding(method));</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> [<span class="variable language_">super</span> resolveClassMethod:sel];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)other &#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;%s&quot;</span>, __func__);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (<span class="type">void</span>)other &#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;%s&quot;</span>, __func__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>底层原理</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_objc_msgSend执行流程</title>
+    <url>/2019/03/07/iOS-Runtime-objc-msgSend%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="objc-msgSend执行流程"><a href="#objc-msgSend执行流程" class="headerlink" title="objc_msgSend执行流程"></a>objc_msgSend执行流程</h2><ul>
+<li><p>OC中方法的调用，其实都是转换为objc_msgSend函数调用</p>
+</li>
+<li><p>objc_msgSend的执行流程可以分为3个阶段</p>
+<ul>
+<li><p>消息发送</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">objc_msgSend(id receiver, SEL selector);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>动态方法解析</p>
+</li>
+<li><p>消息转发</p>
+</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="objc-msgSend执行流程01-消息发送"><a href="#objc-msgSend执行流程01-消息发送" class="headerlink" title="objc_msgSend执行流程01-消息发送"></a>objc_msgSend执行流程01-消息发送</h2><p><img src="/images/image-20190422110657828.png" alt="image-20190422110657828"></p>
+<ul>
+<li><p>如果是从class_rw_t中查找方法</p>
+<ul>
+<li>已经排序的，二分查找</li>
+<li>没有排序的，遍历查找</li>
+</ul>
+</li>
+<li><p>receiver通过isa指针找到receiverClass</p>
+</li>
+<li><p>receiverClass通过superClass指针找到superClass</p>
+</li>
+</ul>
+<h2 id="objc-msgSend执行流程02-方法动态解析"><a href="#objc-msgSend执行流程02-方法动态解析" class="headerlink" title="objc_msgSend执行流程02-方法动态解析"></a>objc_msgSend执行流程02-方法动态解析</h2><p><img src="/images/image-20190422145550890.png" alt="image-20190422145550890"></p>
+<ul>
+<li><p>开发者可以实现以下方法，来动态添加方法实现：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">+(BOOL)resolveInstanceMehtod：(SEL)sel;</span><br><span class="line">+(BOOL)resolveClassMehtod：(SEL)sel;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>动态解析过后，会重新走”消息发送流程”</p>
+<ul>
+<li>“从receiverClass的cache中查找方法”这一步开始执行</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>底层原理</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_class_rw_t</title>
+    <url>/2019/03/02/iOS-Runtime-class-rw-t/</url>
+    <content><![CDATA[<h2 id="class-rw-t"><a href="#class-rw-t" class="headerlink" title="class_rw_t"></a>class_rw_t</h2><ul>
+<li><p>class_rw_t里面的methods、properties、protocols是二维数组，是可读可写，包含了类的初始化内容、分类的内容 </p>
+<p><img src="/images/image-20190418145911298.png" alt="image-20190418145911298"></p>
+</li>
+</ul>
+<span id="more"></span>
+<h2 id="class-ro-t"><a href="#class-ro-t" class="headerlink" title="class_ro_t"></a>class_ro_t</h2><p>class_ro_t里面的baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始化内容</p>
+<h2 id="method-t"><a href="#method-t" class="headerlink" title="method_t"></a>method_t</h2><ul>
+<li><p>method_t是对方法&#x2F;函数的封装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">struct method_t &#123;</span><br><span class="line">  	SEL name; // 函数名</span><br><span class="line">  	const char *types; // 编码（返回值类型、参数类型）</span><br><span class="line">  	IMP imp; // 指向函数指针（函数地址）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li><p>IMP代表函数的具体实现</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef id _Nullable (*IMP)(id _Nonnull, SEL _Nonnull, ...);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>SEL代表方法&#x2F;函数名，一般叫做选择器，底层结构跟char *类似</p>
+<ul>
+<li><p>可以通过@selector()和sel_registerName()获得</p>
+</li>
+<li><p>可以通过sel_getName()和NSStringFromSelector()转成字符串</p>
+</li>
+<li><p>不同类中相同方法&#x2F;函数名，所对应的方法&#x2F;函数选择器是相同的</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">typedef struct objc_selector *SEL;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>types包含了函数返回值、参数编码的字符串</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>底层原理</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_isa和superClass</title>
+    <url>/2018/12/07/iOS-isa%E5%92%8CsuperClass/</url>
+    <content><![CDATA[<ol>
+<li><p>isa指针</p>
+<ul>
+<li>instance的isa指向类对象<ul>
+<li>当调用对象方法时，通过instance的isa找到class，最后找到对象方法的实现进行调用</li>
+</ul>
+</li>
+<li>class的isa指向meta-class<ul>
+<li>当调用类方法时，通过class的isa找到meta-class，最后找到类方法的实现进行调用</li>
+</ul>
+</li>
+<li>meta-class的isa指向基类meta-class</li>
+</ul>
+</li>
+</ol>
+<span id="more"></span>
+<pre><code>![](/images/15440171778157.jpg)
+</code></pre>
+<ol start="2">
+<li><p>class的superclass指针</p>
+<ul>
+<li>class对象的superclass指向父类class对象<br> <img src="/images/15440171899637.jpg"></li>
+</ul>
+</li>
+<li><p>meta-class对象的superclass指针</p>
+<ul>
+<li>meta-class对象的superclass指向父类meta-class对象<br> <img src="/images/15440171987884.jpg"></li>
+</ul>
+</li>
+<li><p>总结</p>
+<ul>
+<li><p>instance的isa指向class</p>
+</li>
+<li><p>class的isa指向meta-class</p>
+</li>
+<li><p>meta-class的isa指向基类的meta-class</p>
+</li>
+<li><p>class的superclass指向父类的class</p>
+<ul>
+<li>如果没有父类，superclass指针为nil</li>
+</ul>
+</li>
+<li><p>meta-class的superclass指向父类的meta-class</p>
+<ul>
+<li>基类的meta-class的superclass指向基类的class</li>
+</ul>
+</li>
+<li><p>instance调用对象方法的轨迹</p>
+<ul>
+<li>isa找到class，方法不存在，就通过superclass找父类</li>
+</ul>
+</li>
+<li><p>class调用类方法的轨迹</p>
+<ul>
+<li>isa找meta-class，方法不存在，就通过superclass找父类</li>
+</ul>
+</li>
+</ul>
+<p> <img src="/images/15440172111877.jpg"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_OC对象的本质</title>
+    <url>/2018/12/05/iOS-OC%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%9C%AC%E8%B4%A8/</url>
+    <content><![CDATA[<ol>
+<li>NSObject的内存本质<ul>
+<li><p>将OC代码转成C++代码终端命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">clang -rewrite-objc main.m -o main.cpp</span><br><span class="line">// 生成arm64架构环境下的c++代码</span><br><span class="line">xcrun -sdk iphoneos clang -rewrite-objc main.m -o main-arm64.cpp</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>NSObject的底层实现</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">NSObject</span> </span>&#123;</span><br><span class="line">  Class isa;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> objc_class *Class;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 底层实现 -&gt; 结构体</span></span><br><span class="line"><span class="keyword">struct</span> <span class="built_in">NSObject_IMPL</span> &#123;</span><br><span class="line">  Class isa;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<span id="more"></span>
+<ol start="2">
+<li><p>一个NSObject对象占用多少内存？</p>
+<ul>
+<li><p>系统分配了16个字节给NSObject对象（实际系统分配的内存空间）</p>
+   <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="built_in">NSObject</span> *str = [[<span class="built_in">NSObject</span> alloc] init];</span><br><span class="line"><span class="comment">// 获得str指针指向内存的大小，iOS系统默认是16字节内存对齐</span></span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%zd&quot;</span>, malloc_size((__bridge <span class="keyword">const</span> <span class="type">void</span> *)str));</span><br><span class="line">&gt;&gt; <span class="number">16</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>但NSObject对象内部只使用了8个字节的空间（实际使用得到的内存空间）</p>
+   <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 获得NSObject类的实例对象的大小，结构体默认时8个字节内存对齐</span></span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%zd&quot;</span>, class_getInstanceSize([<span class="built_in">NSObject</span> <span class="keyword">class</span>]));</span><br><span class="line">&gt;&gt; <span class="number">8</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>对象的isa指向哪里？</p>
+<ul>
+<li>实例对象的isa指向Class对象</li>
+<li>class对象的isa指向mete-class对象</li>
+<li>meta-class对象的isa指向基类meta-clas对象</li>
+</ul>
+<p> 如图<br> <img src="/images/15440166439159.jpg" alt="-w781"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_使用wkwebview加载本地html出现ajax错误</title>
+    <url>/2018/03/14/iOS-%E4%BD%BF%E7%94%A8wkwebview%E5%8A%A0%E8%BD%BD%E6%9C%AC%E5%9C%B0html%E5%87%BA%E7%8E%B0ajax%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<p>运行程序，模拟器一片空白，使用safari调试，出现以下问题：<br><img src="https://upload-images.jianshu.io/upload_images/2148605-943eb3f7ea1bfe71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>  <img src="https://upload-images.jianshu.io/upload_images/2148605-90ac6d9d008f5320.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>好像是跨域访问导致的。安卓中有个属性可以设置setAllowUniversalAccessFromFileURLs来允许跨域访问。<br>iOS 解决办法：</p>
+<pre><code>wkWebView.configuration.preferences.setValue(true, forKey: &quot;allowFileAccessFromFileURLs&quot;)
+</code></pre>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_使用WKWebView出现input键盘将页面上顶不下移</title>
+    <url>/2019/01/07/iOS-%E4%BD%BF%E7%94%A8WKWebView%E5%87%BA%E7%8E%B0input%E9%94%AE%E7%9B%98%E5%B0%86%E9%A1%B5%E9%9D%A2%E4%B8%8A%E9%A1%B6%E4%B8%8D%E4%B8%8B%E7%A7%BB/</url>
+    <content><![CDATA[<ul>
+<li>实际情况如下图</li>
+</ul>
+<p>键盘弹起<br><img src="https://user-gold-cdn.xitu.io/2018/11/27/167533ee5b59f5d1?w=383&h=758&f=png&s=124689"> </p>
+<span id="more"></span>
+<p>键盘收起<br><img src="https://user-gold-cdn.xitu.io/2018/11/27/167533f2e80779dc?w=383&h=758&f=png&s=84707"></p>
+<ul>
+<li><p>解决办法：</p>
+<ul>
+<li><p>监听键盘的谈起和隐藏</p>
+  <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">/// 监听将要弹起</span></span><br><span class="line">[[<span class="built_in">NSNotificationCenter</span> defaultCenter] addObserver:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(keyBoardShow) name:<span class="built_in">UIKeyboardWillShowNotification</span> object:<span class="literal">nil</span>];</span><br><span class="line"><span class="comment">/// 监听将要隐藏</span></span><br><span class="line">[[<span class="built_in">NSNotificationCenter</span> defaultCenter] addObserver:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(keyBoardHidden) name:<span class="built_in">UIKeyboardWillHideNotification</span> object:<span class="literal">nil</span>];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>监听方法中设置WKWebView的scrollview的contentOffset</p>
+  <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 键盘谈起屏幕偏移量 */</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">CGPoint</span> keyBoardPoint;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> mark - addObserverKeyboard</span></span><br><span class="line"><span class="comment">/// 键盘将要弹起</span></span><br><span class="line">- (<span class="type">void</span>)keyBoardShow &#123;</span><br><span class="line">    <span class="built_in">CGPoint</span> point = <span class="keyword">self</span>.webView.scrollView.contentOffset;</span><br><span class="line">    <span class="keyword">self</span>.keyBoardPoint = point;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/// 键盘将要隐藏</span></span><br><span class="line">- (<span class="type">void</span>)keyBoardHidden &#123;</span><br><span class="line">    <span class="keyword">self</span>.webView.scrollView.contentOffset = <span class="keyword">self</span>.keyBoardPoint;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>解决后效果</p>
+</li>
+</ul>
+<p><img src="https://user-gold-cdn.xitu.io/2018/11/27/167534e299bf89cc?w=377&h=716&f=gif&s=535925"></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Runtime_方法缓存</title>
+    <url>/2019/03/11/iOS-Runtime-%E6%96%B9%E6%B3%95%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<h2 id="方法缓存"><a href="#方法缓存" class="headerlink" title="方法缓存"></a>方法缓存</h2><ul>
+<li>Class 内部结构中有个方法缓存（cache_t）,用散列表来缓存曾经调用过的方法，可以提高方法查找速度</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">cache_t</span> &#123;</span></span><br><span class="line">  	<span class="class"><span class="keyword">struct</span> <span class="title">bucket_t</span> *_<span class="title">buckets</span>;</span> <span class="comment">// 散列表</span></span><br><span class="line">  	<span class="type">mask_t</span> _mask; <span class="comment">// 散列表的长度-1</span></span><br><span class="line">  	<span class="type">mask_t</span> _occipied; <span class="comment">// 已经缓存的方法数量</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">bucket_t</span> &#123;</span></span><br><span class="line">  	<span class="type">cache_key_t</span> _key; <span class="comment">// SEL作为key</span></span><br><span class="line">  	IMP _imp; <span class="comment">// 函数的内存地址</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<ul>
+<li><p>每次散列表扩容，都会先清除所有缓存，在重新存储新的缓存方法</p>
+</li>
+<li><p>通过方法的SEL &amp; cache._mask 可以直接取出对应的方法</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Person *person = [[Person alloc] init];</span><br><span class="line">mj_objc_class *personClas = (__bridge mj_objc_class*)[Person class];</span><br><span class="line">[person personTest];</span><br><span class="line">// 获取缓存</span><br><span class="line">cache_t cache = personClas-&gt;cache;</span><br><span class="line">// 存储方法的散列表</span><br><span class="line">bucket_t *buckets = cache._buckets;</span><br><span class="line">// 根据方法SEL &amp; cache._mask 可以直接取出对应的方法</span><br><span class="line">bucket_t bucket = buckets[(long long)@selector(personTest) &amp; cache._mask];</span><br><span class="line">NSLog(@&quot;%s %p&quot;, bucket._key, bucket._imp);</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS, Runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_架构设计</title>
+    <url>/2019/04/23/iOS-%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h3 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h3><ul>
+<li>软件开发中的设计方案</li>
+<li>类与类之间的关系、模块与模块之间的关系、客户端和服务端的关系</li>
+</ul>
+<h3 id="常见的架构名词"><a href="#常见的架构名词" class="headerlink" title="常见的架构名词"></a>常见的架构名词</h3><ul>
+<li>MVC、MVP、MVVM、VIPER、CDD</li>
+<li>三层架构、四层架构</li>
+</ul>
+<span id="more"></span>
+
+<h3 id="Apple版MVC"><a href="#Apple版MVC" class="headerlink" title="Apple版MVC"></a>Apple版MVC</h3><ul>
+<li>Model -&gt; Controller -&gt;View</li>
+</ul>
+<p><img src="/images/MVC_01.png" alt="View-Model-Controller"></p>
+<ul>
+<li><p>优点</p>
+<ul>
+<li>View、Model可以重复利用、独立使用</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>Controller代码过于臃肿</li>
+</ul>
+</li>
+</ul>
+<h3 id="Apple版变种MVC"><a href="#Apple版变种MVC" class="headerlink" title="Apple版变种MVC"></a>Apple版变种MVC</h3><p><img src="/images/MVC_02.png" alt="mvc变种"></p>
+<ul>
+<li>优点<ul>
+<li>将Controller代码写到View中，减少Controller代码量</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>View必须依赖Model</li>
+</ul>
+</li>
+</ul>
+<h3 id="MVP"><a href="#MVP" class="headerlink" title="MVP"></a>MVP</h3><p><img src="/images/mvp_01.png" alt="mvp"></p>
+<ul>
+<li>优点<ul>
+<li>Model和View完全分离</li>
+<li>彻底简化Controller中代码，业务逻辑全交给Presenter</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>由于对视图的渲染放在了Presenter中，所以View和Persenter的交互会过于频繁</li>
+<li>如果Presenter过多地渲染了视图，往往会使得它与特定的视图的 联系过于紧密。一旦视图需要变更，那么 Presenter也需要变更了</li>
+</ul>
+</li>
+</ul>
+<h3 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h3><p><img src="/images/mvvm_01.png" alt="mvvm"></p>
+<ul>
+<li>优点<ul>
+<li>View完全独立于Model，一个viewModel可以绑定到不同的View上</li>
+<li>ViewModel可以处理一些逻辑业务，如数据获取或处理</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>数据的转化成本较高</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>架构设计</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>架构设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_多线程_GCD</title>
+    <url>/2019/04/13/iOS-%E5%A4%9A%E7%BA%BF%E7%A8%8B-GCD/</url>
+    <content><![CDATA[<h3 id="iOS中的常见的多线程方案"><a href="#iOS中的常见的多线程方案" class="headerlink" title="iOS中的常见的多线程方案"></a>iOS中的常见的多线程方案</h3><table>
+<thead>
+<tr>
+<th align="center">技术方案</th>
+<th align="center">简介</th>
+<th align="center">语言</th>
+<th align="center">线程生命周期</th>
+<th align="center">使用频率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">pthread</td>
+<td align="center">一套通用的多线程API；跨平台&#x2F;可移植；使用难度大</td>
+<td align="center">C</td>
+<td align="center">程序员管理</td>
+<td align="center">几乎不用</td>
+</tr>
+<tr>
+<td align="center">NSThread</td>
+<td align="center">使用更加面向对象；使用简单，可以直接创建线程对象</td>
+<td align="center">OC</td>
+<td align="center">程序员管理</td>
+<td align="center">偶尔使用</td>
+</tr>
+<tr>
+<td align="center">GCD</td>
+<td align="center">替代NSThread等技术；充分利用多核技术</td>
+<td align="center">C</td>
+<td align="center">自动管理</td>
+<td align="center">经常使用</td>
+</tr>
+<tr>
+<td align="center">NSOperation</td>
+<td align="center">基于GCD，比GCD多了一些简单实用的功能；使之更加面向第对象</td>
+<td align="center">OC</td>
+<td align="center">自动管理</td>
+<td align="center">经常使用</td>
+</tr>
+</tbody></table>
+<h3 id="GCD的常用函数"><a href="#GCD的常用函数" class="headerlink" title="GCD的常用函数"></a>GCD的常用函数</h3><ul>
+<li><p>GCD中有两个常用来执行任务的函数</p>
+<ul>
+<li><p>使用同步(sync)来执行任务</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line">dispatch_sync(dispatch_queue_t queue, dispatch_block_t block);</span><br></pre></td></tr></table></figure></li>
+<li><p>使用异步(async)来执行任务</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line">dispatch_async(dispatch_queue_t queue, dispatch_block_t block);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="GCD的队列"><a href="#GCD的队列" class="headerlink" title="GCD的队列"></a>GCD的队列</h3><ul>
+<li><p>GCD队列可以分为两大类</p>
+<ol>
+<li><p>并发队列（Concurrent Dispatch Queue）</p>
+<ul>
+<li><p>可以让多个任务并发（同时）执行（自动开启多个线程同时执行任务）</p>
+</li>
+<li><p>并发功能只有在异步（dispatch_async）函数下才有效</p>
+</li>
+</ul>
+</li>
+<li><p>串行队列（Serial Dispatch Queue）</p>
+<ul>
+<li>让任务一个接着一个地执行（一个任务执行完毕后，再执行下一个任务）</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="GCD各种队列的执行效果"><a href="#GCD各种队列的执行效果" class="headerlink" title="GCD各种队列的执行效果"></a>GCD各种队列的执行效果</h3><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">并发队列</th>
+<th align="center">手动创建的串行队列</th>
+<th align="center">主队列</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">同步（sync）</td>
+<td align="center">没有开启新的线程，串行执行任务</td>
+<td align="center">没有开启新的线程，串行执行任务</td>
+<td align="center">没有开启新的线程，串行执行任务</td>
+</tr>
+<tr>
+<td align="center">异步（async）</td>
+<td align="center">开启新的线程，并发执行任务</td>
+<td align="center">有新的线程开启，串行执行任务</td>
+<td align="center">没有开启新的线程，串行执行任务</td>
+</tr>
+</tbody></table>
+<p><u><strong>使用sync函数往当前串行队列中添加任务，会卡住当前的串行队列（产生死锁）</strong></u></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>多线程</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>GCD</tag>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_3D-Touch实现UITableViewCell的预览和跳转</title>
+    <url>/2017/11/18/iOS__3D-Touch%E5%AE%9E%E7%8E%B0UITableViewCell%E7%9A%84%E9%A2%84%E8%A7%88%E5%92%8C%E8%B7%B3%E8%BD%AC/</url>
+    <content><![CDATA[<p>苹果2015年发布iPhone 6s带来了全新的用户交互功能: 3D-Touch功能,他能根据用户按压手机屏幕的力度实现一些交互.<br>本篇文章介绍一下,3D-Touch实现UITableViewCell的预览和长重按跳转.</p>
+<span id="more"></span>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-758c4cab595ea923.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.27.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-580e0c43a09514c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.40.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-d28f9d8b1425389b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Simulator Screen Shot 2016年12月25日 下午7.55.43.png"></p>
+<p>第一步:遵守UIViewControllerPreviewingDelegate协议<br><img src="http://upload-images.jianshu.io/upload_images/2148605-0529b2035862a6b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20161225-0@2x.png"></p>
+<p>第二步:设置代理,在UITableView的代理方法cellForRowAtIndexPath</p>
+<p>    &#x2F;&#x2F; 对每个cell指定代理, 大致是这个意思<br>    [self registerForPreviewingWithDelegate:self sourceView:cell];<br>第三步:实现UIViewControllerPreviewingDelegate代理方法</p>
+<ol>
+<li>-(UIViewController*)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location</li>
+</ol>
+<p>2.-(void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit</p>
+<p>以上三步就可以实现uitableViewCell3D-Touch实现UITableViewCell的预览和跳转</p>
+<p>具体代码请跳转到我的github查看:<a href="https://github.com/Johnhao941026/3D-Touch_TabelViewCell">https://github.com/Johnhao941026/3D-Touch_TabelViewCell</a></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_IPA包重签企业证书</title>
+    <url>/2018/05/09/iOS__IPA%E5%8C%85%E9%87%8D%E7%AD%BE%E4%BC%81%E4%B8%9A%E8%AF%81%E4%B9%A6/</url>
+    <content><![CDATA[<blockquote>
+<p>苹果ipa包重签企业证书</p>
+</blockquote>
+<p>####1. 需要有有效企业证书和描述文件（xxx.mobileprovision）及对应的Bundle identifier<br><img src="http://upload-images.jianshu.io/upload_images/2148605-c3562afaaeaa11d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<span id="more"></span>
+<p>####2.将ipa包的文件后缀改为zip格式，在解压！<br><img src="http://upload-images.jianshu.io/upload_images/2148605-8879f6f270c679d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><img src="http://upload-images.jianshu.io/upload_images/2148605-993e6483eb9e2cd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####3.打开Payload文件，右击选择显示包内容<br><img src="http://upload-images.jianshu.io/upload_images/2148605-8e9fd59979fc53f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####4.找到一个叫embedded.mobileprovision文件，用我们自己的描述文件进行替换（注意：自己的描述文件名字一定要改成embedded.mobileprovision）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-ded9671c32b0f8bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>####5.使用embedded.mobileprovision制作entitlements.plist 文件，打开终端</p>
+<pre><code>xianghaodeMacBook-Pro:~ Johnhao$ security cms -D -i /Users/Johnhao/Downloads/Payload/LotteryProject.app/embedded.mobileprovision &gt; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements_full.plist
+xianghaodeMacBook-Pro:~ Johnhao$ /usr/libexec/PlistBuddy -x -c &#39;Print:Entitlements&#39; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements_full.plist  &gt; /Users/Johnhao/Downloads/Payload/LotteryProject.app/entitlements.plist 
+</code></pre>
+<p>######security cms -D -i embedded.mobileprovision文件路径 &gt; 生成entitlements_full.plist文件的路径<br> ######&#x2F;usr&#x2F;libexec&#x2F;PlistBuddy -x -c ‘Print:Entitlements’  entitlements_full.plist文件的路径 &gt; 生成entitlements.plist文件的路径<br>####6.完成以上步骤后，打开info.plist文件，更改我们自己描述文件对应的bundle id<br><img src="http://upload-images.jianshu.io/upload_images/2148605-55e0d75e794a0bc6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>####7.重签,安装一下步骤执行，出现replacing existing signature说明你成功了！就可以发布到蒲公英或者fir.im了。<br>    xianghaodeMacBook-Pro:~ Johnhao$ &#x2F;usr&#x2F;bin&#x2F;codesign –continue -f -s “iPhone  Distribution: Xiaofu Ecommerce (Beijing) Co., Ltd.” –entitlements “&#x2F;Users&#x2F;Johnhao&#x2F;Downloads&#x2F;Payload&#x2F;LotteryProject.app&#x2F;entitlements.plist” “&#x2F;Users&#x2F;Johnhao&#x2F;Downloads&#x2F;Payload&#x2F;LotteryProject.app”<br>&#x2F;Users&#x2F;Johnhao&#x2F;Downloads&#x2F;Payload&#x2F;LotteryProject.app: replacing existing signature</p>
+<p>#####&#x2F;usr&#x2F;bin&#x2F;codesign –continue -f -s “证书(在钥匙串访问中找到你的企业证书，在右击显示简介，拷贝组织)”   –entitlements “entitlements.plist路径” “app文件路径”</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-13392404ff56df8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p>##最后：谢谢你的阅读，如果对你有帮助，请点击❤️，谢谢！</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS - 企业签名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_swift中字符编码转表情符号</title>
+    <url>/2016/12/18/iOS__swift%E4%B8%AD%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E8%BD%AC%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7/</url>
+    <content><![CDATA[<blockquote>
+<p>在iOS开发中,字符编码转表情符号</p>
+</blockquote>
+<p>代码如下:</p>
+<pre><code>如字符编码: 0x1f603
+let str = &quot;0x1f603&quot;
+// 创建一个扫描器
+let scanner = NScanner(string: str)
+// 从字符串中扫描对应的16进制数
+var result: UInt32 = 0
+scanner.scanHexInt(&amp;result)
+// 根据扫描出的16进制创建一个字符串
+let emoticonStr = &quot;\(Character(UnicodeScalar(result)))&quot;
+</code></pre>
+<p>最后emoticonStr字符串就是一个表情符号了😁😁😁😁😁</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_裁剪图片为正方形</title>
+    <url>/2017/04/18/iOS__-%E8%A3%81%E5%89%AA%E5%9B%BE%E7%89%87%E4%B8%BA%E6%AD%A3%E6%96%B9%E5%BD%A2/</url>
+    <content><![CDATA[<ul>
+<li><p>(UIImage *)squareImageFromImage:(UIImage *)image scaledToSize:(CGFloat)newSize {<br>  CGAffineTransform scaleTransform;<br>  CGPoint origin;</p>
+<p>  if (image.size.width &gt; image.size.height) {<br>  CGFloat scaleRatio &#x3D; newSize &#x2F; image.size.height;<br>  scaleTransform &#x3D; CGAffineTransformMakeScale(scaleRatio, scaleRatio);<br>  origin &#x3D; CGPointMake(-(image.size.width - image.size.height) &#x2F; 2.0f, 0);<br>  } else {<br>  CGFloat scaleRatio &#x3D; newSize &#x2F; image.size.width;<br>  scaleTransform &#x3D; CGAffineTransformMakeScale(scaleRatio, scaleRatio);<br><br>  origin &#x3D; CGPointMake(0, -(image.size.height - image.size.width) &#x2F; 2.0f);<br>  }</p>
+<p>  CGSize size &#x3D; CGSizeMake(newSize, newSize);<br>  &#x2F;&#x2F;创建画板<br>  if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {<br>  UIGraphicsBeginImageContextWithOptions(size, YES, 0);<br>  } else {<br>  UIGraphicsBeginImageContext(size);<br>  }</p>
+<p>  CGContextRef context &#x3D; UIGraphicsGetCurrentContext();<br>  &#x2F;&#x2F;将image<br>  CGContextConcatCTM(context, scaleTransform);<br>  &#x2F;&#x2F;origin<br>  [image drawAtPoint:origin];</p>
+<p>  &#x2F;&#x2F;获取缩放后剪切的image图片<br>  image &#x3D; UIGraphicsGetImageFromCurrentImageContext();</p>
+<p>  UIGraphicsEndImageContext();</p>
+<p>  return image;</p>
+</li>
+</ul>
+<p>}</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_APP上架出现的问题及解决办法</title>
+    <url>/2018/05/18/iOS__APP%E4%B8%8A%E6%9E%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2148605-ce0bec532eed49b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="appstore.png"></p>
+<ul>
+<li><p>2.2 PERFORMANCE: BETA TESTING<br>意思: 程序出现了测试数据<br>解决办法: 删除程序的测试数据,不要出现测试相关的数据就行了.</p>
+</li>
+<li><p>2.4 PERFORMANCE: HARDWARE COMPATIBILITY<br>意思: 硬件兼容性, 程序在iPhone或者在iPad上出现不兼容情况<br>解决办法: 苹果要求程序必须能在iPhone和iPad都能正常运行</p>
+</li>
+<li><p>3.1.1 BUSINESS: PAYMENTS - IN-APP PURCHASE<br>意思: APP中出现内购,但是没有使用苹果官方的API<br>解决办法: 如果是有内购请使用苹果官方的API,如果没有可能是你程序中出现的支付的功能,并且是虚拟产品,要么把虚拟产品改为实体产品,要么使用苹果官方的API就可以解决.</p>
+</li>
+<li><p>5.1.5 LEGAL: PRIVACY - LOCATION SERVICES<br>意思: 隐私-定位服务,可能是你在后台一直开启定位功能.<br>解决办法: 在info.plist文件中添加一直定位描述,并描述为什么一直定位?</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_xcode-8需要添加访问描述</title>
+    <url>/2016/11/18/iOS__xcode-8%E9%9C%80%E8%A6%81%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E6%8F%8F%E8%BF%B0/</url>
+    <content><![CDATA[<p>#####在2016年秋季发布会iOS 10 及iPhone 7&#x2F;7plus,以及XCODE 8, 如果是iOS 开发者就会发现如果项目中要使用到位置,相机,相册等等的时候,程序会崩溃,日志上会打印:<br>This app has crashed because it attempted to access privacy-sensitive data without a usage description.  The app’s Info.plist must contain an NSPhotoLibraryUsageDescription key with a string value explaining to the user how the app uses this data.<br>其实这就是xcode 8 要求开发者需要到info.plist文件添加访问描述,如果没有添加就会出现程序崩溃.以下就是开发中如果访问用户的一些隐私方面的功能时需要添加的描述:</p>
+<span id="more"></span>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-8ea05d436adb75ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="EE1CAF76-0A03-42C7-BE3B-F9FAA5AFD790.png"></p>
+<pre><code>    &lt;key&gt;NSAppleMusicUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问音乐&lt;/string&gt;
+&lt;key&gt;NSBluetoothPeripheralUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问蓝牙&lt;/string&gt;
+&lt;key&gt;NSCalendarsUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问日历&lt;/string&gt;
+&lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问相机&lt;/string&gt;
+&lt;key&gt;NSContactsUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许联系人&lt;/string&gt;
+&lt;key&gt;NSHealthShareUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许健康分享&lt;/string&gt;
+&lt;key&gt;NSHealthUpdateUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许健康更新&lt;/string&gt;
+&lt;key&gt;NSHomeKitUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问智能家居&lt;/string&gt;
+&lt;key&gt;NSLocationAlwaysUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许一直访问位置&lt;/string&gt;
+&lt;key&gt;NSLocationUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问位置&lt;/string&gt;
+&lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许试用期间访问位置&lt;/string&gt;
+&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问麦克风&lt;/string&gt;
+&lt;key&gt;NSMotionUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许运动记录&lt;/string&gt;
+&lt;key&gt;NSPhotoLibraryUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许相册&lt;/string&gt;
+&lt;key&gt;NSRemindersUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问备忘录&lt;/string&gt;
+&lt;key&gt;NSSiriUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问siri&lt;/string&gt;
+&lt;key&gt;NSSpeechRecognitionUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许访问语音&lt;/string&gt;
+&lt;key&gt;NSVideoSubscriberAccountUsageDescription&lt;/key&gt;
+&lt;string&gt;是否允许视频&lt;/string&gt;
+</code></pre>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_压缩视频</title>
+    <url>/2017/11/21/iOS__%E5%8E%8B%E7%BC%A9%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<p>&#x2F;&#x2F;&#x2F; 压缩视频</p>
+<ul>
+<li>(void) convertVideoQuailtyWithInputURL:(NSURL*)inputURL<br>                         outputURL:(NSURL*)outputURL<br>                   completeHandler:(void (^)(AVAssetExportSession*))handler</li>
+</ul>
+<p>{<br>    AVURLAsset *avAsset &#x3D; [AVURLAsset URLAssetWithURL:inputURL options:nil];</p>
+<pre><code>AVAssetExportSession *exportSession = [[AVAssetExportSession alloc] initWithAsset:avAsset presetName:AVAssetExportPresetMediumQuality];
+//  NSLog(resultPath);
+exportSession.outputURL = outputURL;
+exportSession.outputFileType = AVFileTypeMPEG4;
+exportSession.shouldOptimizeForNetworkUse= YES;
+[exportSession exportAsynchronouslyWithCompletionHandler:^(void)
+ &#123;
+     switch (exportSession.status) &#123;
+         case AVAssetExportSessionStatusCancelled:
+             NSLog(@&quot;AVAssetExportSessionStatusCancelled&quot;);
+             break;
+         case AVAssetExportSessionStatusUnknown:
+             NSLog(@&quot;AVAssetExportSessionStatusUnknown&quot;);
+             break;
+         case AVAssetExportSessionStatusWaiting:
+             NSLog(@&quot;AVAssetExportSessionStatusWaiting&quot;);
+             break;
+         case AVAssetExportSessionStatusExporting:
+             NSLog(@&quot;AVAssetExportSessionStatusExporting&quot;);
+             break;
+         case AVAssetExportSessionStatusCompleted:
+             NSLog(@&quot;AVAssetExportSessionStatusCompleted&quot;);
+             NSLog(@&quot;%@&quot;,[NSString stringWithFormat:@&quot;%f s&quot;, [self getVideoLength:outputURL]]);
+             NSLog(@&quot;%@&quot;, [NSString stringWithFormat:@&quot;%.2f kb&quot;, [self getFileSize:[outputURL path]]]);
+             
+             //UISaveVideoAtPathToSavedPhotosAlbum([outputURL path], self, nil, NULL);//这个是保存到手机相册
+             
+             break;
+         case AVAssetExportSessionStatusFailed:
+             NSLog(@&quot;AVAssetExportSessionStatusFailed&quot;);
+             break;
+     &#125;
+ &#125;];
+</code></pre>
+<p>}</p>
+<ul>
+<li><p>(CGFloat) getFileSize:(NSString *)path<br>{<br>  NSLog(@”%@”,path);<br>  NSFileManager *fileManager &#x3D; [NSFileManager defaultManager];<br>  float filesize &#x3D; -1.0;<br>  if ([fileManager fileExistsAtPath:path]) {<br>  NSDictionary <em>fileDic &#x3D; [fileManager attributesOfItemAtPath:path error:nil];&#x2F;&#x2F;获取文件的属性<br>  unsigned long long size &#x3D; [[fileDic objectForKey:NSFileSize] longLongValue];<br>  filesize &#x3D; 1.0</em>size&#x2F;1024;<br>  }else{<br>  NSLog(@”找不到文件”);<br>  }<br>  return filesize;<br>}&#x2F;&#x2F;此方法可以获取文件的大小，返回的是单位是KB。</p>
+</li>
+<li><p>(CGFloat) getVideoLength:(NSURL *)URL<br>{</p>
+<p>  AVURLAsset *avUrl &#x3D; [AVURLAsset assetWithURL:URL];<br>  CMTime time &#x3D; [avUrl duration];<br>  int second &#x3D; ceil(time.value&#x2F;time.timescale);<br>  return second;</p>
+</li>
+</ul>
+<p>}&#x2F;&#x2F;此方法可以获取视频文件的时长。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_在swift中实现debug隐藏打印日志</title>
+    <url>/2017/11/08/iOS__%E5%9C%A8swift%E4%B8%AD%E5%AE%9E%E7%8E%B0debug%E9%9A%90%E8%97%8F%E6%89%93%E5%8D%B0%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2148605-c815314135c9e9f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ20170107-092051@2x.png"></p>
+<p>在AppDelegate.swift文件中自定义一个泛型函数如下:</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="keyword">func</span> <span class="title function_">JHLog</span>&lt;<span class="type">T</span>&gt;(<span class="params">log</span>: <span class="type">T</span>, <span class="params">fileName</span>: <span class="type">String</span> <span class="operator">=</span> <span class="keyword">#file</span>, <span class="params">methodName</span>: <span class="type">String</span> <span class="operator">=</span>   <span class="keyword">#function</span>, <span class="params">lineNumber</span>: <span class="type">Int</span> <span class="operator">=</span> <span class="keyword">#line</span>) &#123;</span><br><span class="line">  <span class="comment">//        print(#file)    //获取当前print所在的文件路径</span></span><br><span class="line">  <span class="comment">//        print(#function)    //获取当前print所在的方法名称</span></span><br><span class="line">  <span class="comment">//        print(#line)    //获取当前print所在的行数</span></span><br><span class="line">  <span class="comment">///判断是否打印debug</span></span><br><span class="line">  <span class="keyword">#if</span> <span class="type">DEBUG</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\((fileName as NSString).pathComponents.last<span class="operator">!</span>)</span>_<span class="subst">\(methodName)</span>[行: <span class="subst">\(lineNumber)</span>]: <span class="subst">\(log)</span>&quot;</span>)    </span><br><span class="line">  <span class="keyword">#endif</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>Swift</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Swift</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_【App-Store】2016年最新审核规则</title>
+    <url>/2017/02/11/iOS__%E3%80%90App-Store%E3%80%912016%E5%B9%B4%E6%9C%80%E6%96%B0%E5%AE%A1%E6%A0%B8%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<p>##[App Store2016年最新审核规则:<br>1<br>为App Store开发程序，开发者必须遵守 Program License Agreement (PLA)、人机交互指南(HIG)以及开发者和苹果签订的任何协议和合同。<br>2.1<br>崩溃的程序将会被拒绝。<br>2.2<br>存在错误的程序将会被拒绝。<br>2.3<br>跟开发者宣传不符的程序将会被拒绝。</p>
+<span id="more"></span>
+<p>2.4<br>无应用文档或隐藏功能与描述不符的程序将会被拒绝。<br>2.5<br>使用非公开API的程序将会被拒绝。<br>2.6<br>在指定容器范围外读写数据的程序将会被拒绝。<br>2.7<br>以任何方式或形式下载代码的程序将会被拒绝。<br>2.8<br>安装或运行其他可执行代码的程序将会被拒绝。<br>2.9<br>beta版、demo版、trial版和test版的程序将会被拒绝。<br>2.1<br>iPhone程序必须不经修改就能以iPhone分辨率和2倍 iPhone 3GS的分辨率在iPad上运行。<br>2.11<br>与App Store已有程序重复的应用可能会被拒绝，特别是数量很多的情况下，比如手电筒应用和爱经应用。<br>2.12<br>有用性不显著、不独特的应用或者与网站简单捆绑的应用有可能被拒;不提供任何持久娱乐价值的程序可能会被拒绝。<br>2.13<br>主要用于营销或广告的程序将会被拒绝。<br>2.14<br>提供欺骗或虚假功能，却有没有明确标示的应用程序将会被拒绝。<br>2.15<br>大于100MB(绿色原先是50MB)无法通过蜂窝网络下载的应用(App Store会自动禁止)。<br>2.16<br>多任务程序使用后台服务仅限于几种目的：VoIP，音频播放，地理位置，完成任务以及本地提醒等。<br>2.17<br>应用程序只允许使用ios WebKit框架和WebKit Javascript浏览web内容。<br>2.18<br>鼓励酗酒或使用违禁药物，或引诱青少年饮酒或吸烟的程序将会被拒绝。<br>2.19<br>提供错误的系统诊断或设备数据的应用将会被拒绝。<br>2.2<br>向App Store上传大量相似版本程序的开发者将会从iOS开发者计划中除名。<br>2.21<br>简单的歌曲或者影片应用要提交到iTunes store，书籍类应用应该提交到iBookstore。<br>2.22<br>武断地根据环境(如定位或者运营商)限制用户使用的应用会被拒。<br>2.23<br>应用必须遵守iOS数据储存指导方针(iOS Data Storage Guidelines )，否则应用将被拒。<br>2.24<br>存放在Newsstand的应用必须遵守开发者项目许可协议(Developer Program License Agreement)的表1、表2以及表3，否则应用将会被拒。<br>2.25<br>类似App Store，基于购买或者促销的目的而展示其他应用的应用将会被拒绝，除非是经过特殊审核批准(比如健康管理、航空以及其他无障碍需求等)，或者为特殊群体用户提供具有重大意义的附加值的应用。<br>2.26<br>只有当app采集是出于特殊审核需求时，app才可以展示和推荐自身以外的其他应用程序，比如健康管理、航空以及无障碍需求等，否则应用程序将会被拒绝。(新增)<br>3.1<br>应用或者元数据中提到其他任何移动平台将会被拒。<br>3.2<br>带有占位符文本的程序将会被拒绝<br>3.3<br>描述中有与程序内容和功能不相关的信息的应用将会被拒绝。<br>3.4<br>为了不混淆用户，iTunes Connect中的应用名称应该和展示在设备上的应用名称一致<br>3.5<br>不同尺寸的app icon要一致，否则会造成混淆。<br>3.6<br>程序图标和截图不符合4+年龄评级的程序将会被拒绝。<br>3.7<br>目录与类型不适合于程序内容的程序将会被拒绝。<br>3.8<br>开发者有责任为其程序指定适合的评级。不相称的评级可能会由苹果公司修改。<br>3.9<br>开发者有责任为其程序指定恰当的关键字。不恰当的关键词可能会被苹果公司修改&#x2F;删除。<br>3.1<br>有以下行为的开发者将会被苹果从iOS开发者计划中除名：试图操纵或者欺骗用户评级，伪造或者付费评级，以及其他不相称的行为。<br>3.11<br>在安装下载之前推荐用户重启iOS设备的应用将会被拒。<br>3.12<br>在提交审核过程中，应用程序应包含能正常运行的URL，比如支持URL和隐私政策URL。<br>3.13<br>如果应用程序的截图和营销文本没有清晰地确定需要额外单独购买(比如使用IAP)的内容或者项目，那么应用程序将会被拒绝。<br>3.14<br>App预览可以仅使用从应用程序捕获的视频屏幕、旁白、文本以及design overlays，否则应用程序将会被拒绝。<br>3.15<br>添加App预览的应用程序，未经许可展示真人个人信息将会被拒绝。<br>3.16<br>App预览可能仅包括在所有选定地区内经过授权许可用于此目的的音乐。<br>3.17<br>App预览包含未经许可的通过app播放的内容(比如iTunes playlist和YouTube流媒体)的应用将会被拒绝。<br>4.1<br>在收集、传输或使用位置数据之前未通知并获得用户同意的程序将会被拒绝。<br>4.2<br>使用基于位置的API来自动控制车辆、飞机或其他设备的应用程序将会被拒绝。<br>4.3<br>使用基于位置的API用于调度、车队管理或应急服务的程序将会被拒绝。<br>4.4<br>当与应用功能或服务密切相关时可以使用位置数据，或者用于经过授权的广告。<br>5.1<br>不使用苹果推送通知 (APN)应用接口提供推送通知的程序将会被拒绝。<br>5.2<br>不使用苹果推送通知 (APN)应用接口提供推送通知的程序将会被拒绝。<br>5.3<br>在首次推送消息或者要求推送通知运行之前未获得用户许可的应用将会被拒绝。<br>5.4<br>使用推送通知发送敏感个人信息或机密信息的程序将会被拒绝。<br>5.5<br>使用推送通知发送非请求消息或用于钓鱼或群发垃圾邮件用途的程序将会被拒绝。<br>5.6<br>应用程序不可使用推送通知发送广告、促销或任何类型的直销信息。<br>5.7<br>应用程序不能向使用推送通知服务的用户收取费用。<br>5.8<br>使用推送通知会过多利用APN服务的网络流量或带宽或给设备带来过度负担的程序将会被拒绝。<br>5.9<br>如果应用程序传送病毒、文件、计算机代码或程序，并且对APN服务的正常运行造成损害或中断，那么该程序将会被拒绝。<br>6.1<br>向终端用户或任意第三方显示玩家ID的程序将会被拒绝。<br>6.2<br>将玩家ID用于任何未经游戏中心条款批准用途的程序将会被拒绝。<br>6.3<br>试图进行反向搜索、跟踪、关联、挖掘、获得或利用玩家ID、别名或通过游戏中心获得其他信息的开发者将会iOS开发者计划除名。<br>6.4<br>游戏中心信息(例如排行榜分数)只能通过游戏中心用于应用中。<br>6.5<br>利用游戏中心服务发送非请求信息或用于钓鱼或群发垃圾邮件的程序将会被拒绝。<br>6.6<br>使用游戏中心过多占用网络流量或带宽的程序将会被拒绝。<br>6.7<br>如果程序能够传送病毒、文件、计算机代码或程序，并且对游戏中心服务的正常运行造成损害或中断，该程序将会被拒绝。<br>7.1<br>人工刷广告浏览量或者广告点击率的应用程序将会被拒绝。<br>7.2<br>包含空iAd广告的应用程序将会被拒绝。<br>7.3<br>主要设计目的在于显示广告的应用程序将会被拒绝。<br>8.1<br>应用程序必须遵守”Guidelines for Using Apple Trademarks and Copyrights”和”Apple Trademark List”中说明的所有条款与条件。<br>8.2<br>任何误导和暗示苹果公司是该应用程序来源或提供商，或者苹果公司以任何形式表示认可其质量或功能的应用程序将会被拒绝。<br>8.3<br>与目前已有苹果产品或者广告主题外观相似或混淆的应用程序将会被拒绝。<br>8.4<br>在应用程序名称中将苹果产品名拼错的应用程序(例如，GPS for Iphone，iTunz)将会被拒绝。<br>8.5<br>使用受保护的第三方材料(商标、版权、商业机密、其他私有内容)在申请时需要提供一份文本形式的版权确认。<br>8.6<br>下载的音乐或视频如果没有获得授权使用了第三方提供的资源，(例如tube，soundcloud，vimeo等)的应用将会被拒绝。<br>9.1<br>不使用媒体播放器框架(MediaPlayer Framework)获取音乐库中媒体内容的应用程序将会被拒绝。<br>9.2<br>用户界面模仿任何iPod界面的应用程序将会被拒绝。<br>9.3<br>通过蜂窝网络传输的音频流内容每5分钟不得超过5MB。<br>9.4<br>通过蜂窝网络传输超过10分钟的视频流内容需要使用HTTP Live Streaming，并包含一个基准线为64kbps的音频HTTP Live Streaming。<br>10.1<br>应用程序必须遵守苹果的《iOS Human Interface Guidelines》中所有的条款和条件。<br>10.2<br>外观与与iPhone的自带应用(比如App Store、iTunes Store和iBookstore)相似的应用将会被拒绝。<br>10.3<br>未能按苹果《iOS Human Interface Guidelines》描述正确使用系统提供的项目(比如按钮、图标)的应用将会被拒绝。<br>10.4<br>创建多桌面&#x2F;主屏幕环境或者模拟multi-App插件体验的应用程序将会被拒绝。<br>10.5<br>修改音量大小和铃声&#x2F;静音开关等标准开关功能的应用程序将会被拒绝。<br>10.6<br>苹果和我们的客户高度推崇简单、精致、富有创造性以及经过精心设计的界面。虽然需要付出更多，但却非常值得。苹果设立了很高的门槛。如果你的用户界面太过复杂或者水准不高，可能会被拒绝。<br>10.7<br>主要功能只是看时间的应用将会被拒绝。<br>11.1<br>使用App Store以外的渠道解锁或开启附加属性和功能的应用程序将会被拒绝。<br>11.2<br>使用应用内支付系统(IAP)以外的系统购买内容、功能或服务的应用软件将会被拒绝。<br>11.3<br>使用IAP购买实物商品和并非用于该软件的服务的应用软件将会被拒绝。<br>11.4<br>应用程序使用IAP购买积分(Credit)或者其他的货币必须在本应用中消费。<br>11.5<br>使用IAP购买已过期积分(Credit)或者其他货币的应用软件将会被拒绝。<br>11.6<br>使用IAP订阅的内容至少要持续7天，而且允许在用户的其他iOS设备间共享。<br>11.7<br>应用程序使用IAP购买项目必须分派到正确的购买类型中。<br>11.8<br>使用IAP购买iOS内置功能(如照相机，陀螺仪)的应用程序将会被拒绝。<br>11.9<br>含有超过限定时间的内容或服务的应用程序将会被拒绝，除了特殊批准的内容(比如films、电视节目音乐以及书籍)。<br>11.1<br>保险类应用程序必须免费，遵守发布地区的法律，并且不能使用IAP。<br>11.11<br>一般而言，你的应用程序越贵，我们的评审越彻底。<br>11.12<br>提供订阅功能的应用必须使用IAP，苹果将会按照 Developer Program License Agreement 中的约定与开发者按30&#x2F;70比例分成。<br>11.13<br>在应用内使用跳转至外部购买或订阅链接的应用将会被拒，比如”buy”按钮跳转至一个购买电子书的web页面。<br>11.14<br>只要应用内没有跳转至外部购买、订阅的按钮或链接，苹果允许这些应用读取或展示经批准的、在应用外购买或订阅内容(特别是杂志、报纸、书籍、音频、音乐、视频以及云存储内容)。苹果只能通过应用程序内的购买获得一部分收益。<br>11.15<br>应用程序可以只使用自动更新订阅期刊(报纸、杂志)、商业应用程序(企业类、效率类、专业创意类以及云存储类)和媒体应用程序(视频、音频、声音)，否则应用程序将被拒绝。<br>11.16<br>当与特定的经过审核的实体产品(比如玩具)结合使用时，应用程序可以使用获得批准的附件功能，只要附加功能完全依赖于该硬件产品(比如一款用于控制望远镜的应用程序)或者也可以在不使用实物产品的情况下使用应用程序，比如作为成功的奖励或者使用IAP。<br>11.17<br>如果应用功能遵照各州和联邦法律，那么应用可以用来促进被认可的虚拟货币的流通。(新增)<br>12.1<br>从苹果网站(例如<a href="//link.zhihu.com/?target=http://apple.com">http://apple.com**</a>、iTunes Store、App Store、iTunes Connect以及Apple Developer Programs等)抓取任何信息或者使用苹果网站内容和服务进行排名的应用程序将会被拒绝。<br>12.2<br>应用软件可以使用获得批准的苹果RSS feeds，例如iTunes Store RSS feeds。<br>12.3<br>只是简单的网页剪切、内容整合或者收集链接的应用程序可能会被拒绝。<br>13.1<br>怂恿用户以可能造成损害的方式使用苹果设备的应用软件将会被拒绝。<br>13.2<br>快速耗光设备电量或产生过多热量的应用软件将会被拒绝。<br>13.3<br>能导致用户人身伤害的app将会被拒绝(新增)<br>14.1<br>涉及诽谤、人身攻击性质以及内容狭隘卑鄙的应用软件或者打击特定个人或组织的应用软件将会被拒绝。<br>14.2<br>职业政治讽刺家和幽默作家不受这一条款约束。<br>14.3<br>EULA：app凡是带有可随用户自行产生内容的,必须包含内容过滤功能,或者用户自行标记屏蔽功能,以及拉黑功能<br>15.1<br>应用程序中出现人或动物被杀、致残以及枪击、刺伤、拷打等受伤情形的真实画面将会被拒绝。<br>15.2<br>出现描绘暴力或虐待儿童等内容的应用程序将会被拒绝。<br>15.3<br>游戏中出现的”敌人”不可指向一个特定种族、文化、一个真实存在的政府、企业或者其他任何现实中的实体。<br>15.4<br>对武器进行真实描述以怂恿非法使用或滥用这些武器的应用程序将会被拒绝。<br>15.5<br>包含俄罗斯轮盘赌博内容的游戏将会被拒。<br>16.1<br>应用程序中出现过于令人反感或者低俗的内容将会被拒绝。<br>16.2<br>在设计上激怒用户或令人感到厌恶的应用程序将会被拒绝。<br>17.1<br>在未经用户事先许可，或未告知用户如何使用信息，在何处使用信息的情况下，应用程序不能传输用户数据。<br>17.2<br>要求用户提供电子邮箱地址和出生日期等私人信息才可使用其功能的应用程序将会被拒绝。<br>17.3<br>仅出于遵守适用的儿童隐私法规的目的，应用程序可以要求用户的出生日期(或者使用其他age-gating机制)，但是必须包括一些有用的功能或者娱乐价值，不管用户年龄大小。<br>17.4<br>应用程序收集、传输以及分享未成年用户个人信息(比如名字、地址、邮件、位置、照片、视频、绘画、聊天以及其他个人数据，或者与以上所述相关的永久性标示符)必须遵守应用儿童隐私法规，并且必须包含隐私条款。<br>17.5<br>包含账号注册或者访问用户现有账号的应用程序必须包含隐私策略，否则将会被拒绝。<br>18.1<br>含有色情素材，也就是《韦氏词典》中定义的”旨在激发情欲，对性器官或性行为的明确描述或展示，而无关美学或情绪感受”的程序将会被拒绝。<br>18.2<br>用户频繁提供生成色情内容的应用程序(比如以前的Chat Roulette程序)将会被拒绝。<br>19.1<br>涉及宗教、文化或种族群体的引用或评论包含诽谤性、攻击性或狭隘内容，或会使特定群体遭受伤害或暴力的应用程序将会被拒绝。<br>19.2<br>程序可以包含或引用宗教经文，程序所提供的引用或翻译必须准确且不会引起误导。评论应该有教育意义，可以令人开阔眼界，而不应有煽动性。<br>20.1<br>赌博和竞赛必须由应用程序的开发者或者app所属公司发起。<br>20.2<br>应用程序必须展示赌博和竞赛的正式规则，并声明苹果不是发起者，也没有以任何方式参与活动。<br>20.3<br>开发者运营一款具有抽奖性质的应用必须经过法律允许，并且抽奖应用必须具备以下特征：报酬、机会以及奖品。<br>20.4<br>允许用户在应用中直接购买彩票或彩券的应用将会被拒。<br>20.5<br>提供真钱游戏(比如体育博彩、扑克牌、赌场游戏以及赛马)的应用程序必须有应用使用区当地必要的许可和允许，必须限制在这些区域，必须可以从App Store免费下载。<br>20.6<br>使用IAP购买信誉或者货币，且结合真钱游戏的应用将会被拒绝。<br>21.1<br>包含可以向已认证的慈善组织捐赠功能的应用程序必须是免费的。<br>21.2<br>捐赠款项的募集必须通过Safari浏览器访问web页面或是手机短消息完成。<br>22.1<br>应用程序必须遵守所有发布地区当地法律，开发者有义务了解并遵守所有当地法<br>22.2<br>包含虚假，欺诈或误导性陈述的程序将会被拒绝。<br>22.3<br>任何招徕、促进或鼓励犯罪或明显鲁莽行为的程序将会被拒绝。<br>22.4<br>支持非法文件共享的程序将会被拒绝。<br>22.5<br>被设计用以非法赌博工具的应用程序(包括点算牌)将会被拒绝。<br>22.6<br>具有匿名或恶作剧拨打电话或发送类似短信&#x2F;彩信功能的程序将会被拒绝。<br>22.7<br>任何开发暗中收集用户密码或用户私人数据程序的开发者将会从iOS开发者计划中除名。<br>22.8<br>包含非法律执行部分发布的DUI检查点信息，或者怂恿&#x2F;协助酒后驾车的应用将会被拒绝。<br>22.9<br>任何计算药用剂量的应用必须提交药品制造商或者认可机构(比如医院、保险公司以及高校)。<br>22.1<br>在未授权的情况下使用iTunes音乐预览的应用程序将会被拒绝。<br>23.1<br>Passbook Passes可被用来支付或者接收支付，传递商业信息或者提供验证(比如电影票、飞机票、优惠券以及其他)，而把Passbook Passes用于其他用途的应用程序可能会遭到拒绝，并且会被撤销Passbook证书。<br>23.2<br>Passes必须包含有效的pass发行人有效的联系资料，否则app将会被拒绝，并且Passbook证书也会被取消。<br>23.3<br>Passes必须经过实体签名，并基于其名字、商标或者品牌进行分发，否则应用程序将会被拒绝，而Passbook证书也可能会被撤销。<br>24.1<br>主要供儿童使用的应用程序必须包含隐私政策，必须适用于应用程序的儿童隐私法。<br>24.2<br>主要供儿童使用的应用程序不允许包括行为广告(比如基于用户app内部活动的广告)，任何在应用程序中展示的上下文广告必须适合儿童。<br>24.3<br>主要供儿童使用的应用程序必须得到家长许可或使用parental gate才能链接至应用程序外部或进行交易。<br>24.4<br>儿童类别中的应用程序必须标明”5岁以下，6-8岁或者9-11岁”。<br>25.1<br>包含扩展的应用程序必须遵照 App Extension Programming Guide (中文版,英文版)要求。<br>25.2<br>包含扩展的应用程序必须提供某些功能(辅助屏幕，附加设置)否则将会被拒绝。<br>25.3<br>如果扩展的视图中包含营销推广、广告或者IAP内容，那么包含该扩展的应用将会被拒绝。<br>25.4<br>键盘扩展必须提供一个切换至下个键盘的方法。<br>25.5<br>键盘扩展必须具有离线访问功能，否则将会被拒绝。<br>25.6<br>键盘扩展必须提供和 App Extension Programming Guide 描述一致的数字和十进键盘类型，否则将会被拒绝。<br>25.7<br>提供键盘扩展的应用必须拥有基本的功能分类和隐私政策，否则将会被拒绝。<br>25.8<br>提供键盘扩展的应用程序只允许收集用户活动以增强键盘扩展在iOS设备上的功能，否则将会被拒绝。<br>26.1<br>使用HomeKit框架的应用程序必须有提供家庭自动化服务的主要目的。<br>26.2<br>使用HomeKit框架的应用程序必须在营销文本中说明用途，同时必须提供隐私政策，否则将会被拒绝。<br>26.3<br>应用程序不允许将从HomeKit API收集的数据用于广告宣传或者其他基于使用的数据挖掘。<br>26.4<br>出于其他目的使用从HomeKit API收集的数据，而不是用于提高用户体验或者家庭自动化功能中硬件&#x2F;软件性能，这类应用将会被拒绝。<br>27.1<br>使用HealthKit框架的应用程序必须遵守其所在区域的适用法律，以及iOS Developer Program License Agreement中的3.3.28和3.39条款。<br>27.2<br>将虚假或者错误的数据写入HealthKit的应用程序将会被拒绝。<br>27.3<br>使用HealthKit框架iCloud中储存用户健康信息的应用程序将会被拒绝。<br>27.4<br>应用程序不允许将通过HealthKit API收集的用户数据用作广告宣传或者基于使用的数据挖掘目的，除了改善健康、医疗、健康管理以及医学研究目的。<br>27.5<br>27.5 未经用户许可与第三方分享通过HealthKit API获得的用户数据的应用程序将会被拒绝。<br>27.6<br>使用HealthKit框架的应用程序必须在营销文本中说明集成了Health app，同时必须在app用户界面清楚阐释HealthKit功能。<br>27.7<br>使用HealthKit框架的应用程序必须提供隐私政策，否则将会被拒绝。<br>27.8<br>提供诊断、治疗建议或者控制硬件以诊断或者治疗疾病的应用，若没有根据要求提供书面的监管审批，将会被拒绝。<br>27.9<br>应用关于人类健康的研究必须得到参与者的同意或是未成年人的父母或监护人的同意，包括(1)性质，目的和研究的时间期限;(2)程序，风险和参与者的利益;(3)信息的保密以及数据的处理(包括与第三方共享信息);(4)参与者问题联系(5)退出过程。<br>27.1<br>应用关于人类健康相关的研究必须得到伦理审查委员会的同意并提供证明。<br>28.1<br>应用程序仅能使用TestFlight对以公开发布为目的的应用进行beta版测试，且必须遵守完整的App Review Guidelines。<br>28.2<br>当版本中包含的内容或功能有重大变化时，使用TestFlight的应用程序必须提交审核。<br>28.3<br>使用TestFlight的应用程序不允许分发给测试者，以作为任何形式的补偿。<br>29.1<br>使用Apple Pay的应用程序必须在出售任何商品或者服务之前为用户提供所有材料的购买信息，否则将会被拒绝。<br>29.2<br>使用Apple Pay的应用程序必须正确使用 Apple Pay Human Interface Guidelines 中的Apple Pay标识和用户界面元素，否则将会被拒绝。<br>29.3<br>使用Apple Pay的应用程序不能提供触犯任何领域范围法律的用于交付的商品或者服务，也不能用作任何非法目的。<br>29.4<br>使用Apple Pay的应用程序必须提供隐私政策，否则将会被拒绝。<br>29.5<br>只有为了促进或提高商品和服务的交付，或者依照法律要求，使用Apple Pay的应用程序才能与第三方分享通过Apple Pay获得的数据。<br>x.2<br>“You” and “Your” 是指个人或者合法实体在本协议下(包括公司，组织，教育机构，或政府机构，部门)使用Apple 软件或行使权力。您可以授权您的合同商代表您开发应用，但是所开发的应用必须在您的开发者账户下进行提交。如果您代表客户发行应用，您的客户可以参加iOS开发者计划，把您加入进开发者团队，这一您就可以在他们的账户下提交应用。<br>x.3<br>如果您的应用(以及提供广告的第三方)要调用IDFA或包含IDFA相关信息，必须在应用里投放广告。如果用户重置IDFA，您不能将重置后的IDFA与重置前的IDFA相关联。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cocoapods_Cocoapods-安装第三方框架-pod-install-报Generating-Pods-project-Abort-trap</title>
+    <url>/2017/11/09/iOS__Cocoapods-%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%86%E6%9E%B6-pod-install-%E6%8A%A5Generating-Pods-project-Abort-trap/</url>
+    <content><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2148605-4873774cf9295147.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="44219f6ca3e72abae1c8fd107ebddf9c.jpg"></p>
+<p>在开发iOS程序经常会使用到第三方开源的框架,在是使用Cocoapods时,如果遇到pod install 报如下错误:</p>
+<pre><code>$ pod install
+Generating Pods project 
+Abort trap: 6
+</code></pre>
+<span id="more"></span>
+<p>####解决办法:<br>1.首先需要执行如下命令  <em>(注意:一个一个的执行,且每个命令都要执行)</em></p>
+<pre><code>sudo gem uninstall cocoapods
+sudo gem uninstall cocoapods-core
+sudo gem uninstall cocoapods-deintegrate
+sudo gem uninstall cocoapods-downloader
+sudo gem uninstall cocoapods-plugins
+sudo gem uninstall cocoapods-search
+sudo gem uninstall cocoapods-stats
+sudo gem uninstall cocoapods-try
+sudo gem uninstall cocoapods-trunk
+</code></pre>
+<p>2.然后在执行 ：</p>
+<pre><code>sudo gem install cocoapods --pre
+</code></pre>
+<p>3.如果执行  sudo gem install cocoapods –pre 出现以下错误:</p>
+<pre><code>ERROR:  While executing gem ... (Gem::DependencyError)
+</code></pre>
+<p>    Unable to resolve dependencies: cocoapods requires molinillo </p>
+<p>4.需要：更新  gem 运行一下命令</p>
+<pre><code>sudo gem update --system
+</code></pre>
+<p>5.如果出现以下错误：</p>
+<pre><code>ERROR:  While executing gem ... (Errno::EPERM)
+</code></pre>
+<p>    Operation not permitted - &#x2F;usr&#x2F;bin&#x2F;xcodeproj<br>6.执行以下命令:</p>
+<pre><code>sudo gem install -n /usr/local/bin cocoapods --pre
+</code></pre>
+<p>结语: 如果能解决你的问题,请帮忙给一个爱心❤️,谢谢!!!!😁😁</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Cocoapods</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_字母大小写互转</title>
+    <url>/2018/05/12/iOS__%E5%AD%97%E6%AF%8D%E5%A4%A7%E5%B0%8F%E5%86%99%E4%BA%92%E8%BD%AC/</url>
+    <content><![CDATA[<blockquote>
+<p>OC字母大小写互转</p>
+</blockquote>
+<ul>
+<li><p>大写转小写<br>-(NSString *)stringToLower:(NSString *)str{<br>for (NSInteger i &#x3D; 0; i &lt; str.length; i++) {<br>  if ([str characterAtIndex:i] &gt;&#x3D; ‘A’ &amp; [str characterAtIndex:i] &lt;&#x3D; ‘Z’) {<br>    char  temp &#x3D; [str characterAtIndex:i]+32;<br>    NSRange range &#x3D; NSMakeRange(i, 1);<br>    str &#x3D; [str stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@”%c”,temp]];<br>  }<br>}<br>return str;<br>  }</p>
+</li>
+<li><p>小写转大写<br> -(NSString *)stringToUpper:(NSString *)str{<br>   for (NSInteger i &#x3D; 0; i &lt; str.length; i++) {<br>     if ([str characterAtIndex:i] &gt;&#x3D; ‘a’ &amp; [str characterAtIndex:i] &lt;&#x3D; ‘z’) {<br>     char  temp &#x3D; [str characterAtIndex:i] - 32;<br>     NSRange range &#x3D; NSMakeRange(i, 1);<br>     str &#x3D; [str stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@”%c”,temp]];<br>     }<br>   }<br>   return str;<br> }</p>
+</li>
+</ul>
+<blockquote>
+<p>如果对您有帮助，帮忙点个❤️，^_^</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-102d8d9238eff084.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="_DSC1031.JPG"></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_打越狱包</title>
+    <url>/2018/04/11/iOS__%E6%89%93%E8%B6%8A%E7%8B%B1%E5%8C%85/</url>
+    <content><![CDATA[<blockquote>
+<p>最近公司接的项目，客户要求打一个越狱包，然后度娘了一下，以下是我找到的方法：</p>
+</blockquote>
+<span id="more"></span>
+
+<ul>
+<li><p>第一步： 首先将项目进行Archive，完成后；<br>点击__Export…__,如下图：<br><img src="http://upload-images.jianshu.io/upload_images/2148605-32888effa72a05c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"><br>然后选择__Save for Ad Hoc Deployment__，<br><img src="http://upload-images.jianshu.io/upload_images/2148605-d09152579f53a43f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2.png"></p>
+</li>
+<li><p>第二步：将导出的ipa包，更改为zip压缩包。如图：</p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-33b76c9cf792300e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="3.png"></p>
+<ul>
+<li>第三步：在该文件夹内是一个用你BundleName命名的文件，鼠标对准，然后右击，选择“显示包内容”，这时会显示里面的所有内容，这些内容主要是你的资源文件，例如图片和nib文件等。</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-1b5a6a6da45952aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="4.png"></p>
+<p>在这些文件中找到名为“info.plist”的文件，双击打开（用xcode或者文本编辑器），直接选择用xcode打开就可以了，然后再里面添加字段，其中Key是SignerIdentity，Value是Apple iPhone OS Application Signing。然后保存该文件。</p>
+<ul>
+<li>最后：将Payload压缩，将压缩后的文件后缀名改成ipa。这个ipa越狱包可以安装在没有证书的手机上。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_播放mp3文件根据光线传感器设置外置或者听筒播放</title>
+    <url>/2018/02/19/iOS__%E6%92%AD%E6%94%BEmp3%E6%96%87%E4%BB%B6%E6%A0%B9%E6%8D%AE%E5%85%89%E7%BA%BF%E4%BC%A0%E6%84%9F%E5%99%A8%E8%AE%BE%E7%BD%AE%E5%A4%96%E7%BD%AE%E6%88%96%E8%80%85%E5%90%AC%E7%AD%92%E6%92%AD%E6%94%BE/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<pre><code>UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,
+                        sizeof(sessionCategory),
+                        &amp;sessionCategory);
+
+UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
+AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
+                         sizeof (audioRouteOverride),
+                         &amp;audioRouteOverride);
+
+AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+//默认情况下扬声器播放
+[audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+[audioSession setActive:YES error:nil];
+
+NSError *playerError;
+  //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[VoiceRecorderBaseVC getPathByFileName:recordedFile ofType:@&quot;aac&quot;]] error:&amp;playerError];
+self.player.meteringEnabled = YES;
+
+
+if (self.player == nil)
+&#123;
+    NSLog(@&quot;ERror creating player: %@&quot;, [playerError description]);
+&#125;
+
+[self handleNotification:YES];
+self.player.delegate = self;
+self.player.volume = 1;
+[self.player play];
+</code></pre>
+<p>#pragma mark - 监听听筒or扬声器<br>    - (void) handleNotification:(BOOL)state<br>    {<br>    [[UIDevice currentDevice] setProximityMonitoringEnabled:state]; &#x2F;&#x2F;建议在播放之前设置yes，播放结束设置NO，这个功能是开启红外感应</p>
+<pre><code>if(state)//添加监听
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(sensorStateChange:) name:@&quot;UIDeviceProximityStateDidChangeNotification&quot;
+                                               object:nil];
+else//移除监听
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;UIDeviceProximityStateDidChangeNotification&quot; object:nil];
+&#125;
+</code></pre>
+<p>&#x2F;&#x2F;处理监听触发事件</p>
+<pre><code>-(void)sensorStateChange:(NSNotificationCenter *)notification;
+&#123;
+  //如果此时手机靠近面部放在耳朵旁，那么声音将通过听筒输出，并将屏幕变暗（省电啊）
+    if ([[UIDevice currentDevice] proximityState] == YES)
+    &#123;
+        NSLog(@&quot;Device is close to user&quot;);
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    &#125;
+    else
+    &#123;
+      NSLog(@&quot;Device is not close to user&quot;);
+      [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    &#125;
+&#125;
+</code></pre>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_监听webView的网络请求,并获取网络请求回来的数据</title>
+    <url>/2017/02/23/iOS__%E7%9B%91%E5%90%ACwebView%E7%9A%84%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82,%E5%B9%B6%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E5%9B%9E%E6%9D%A5%E7%9A%84%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>####导语:</p>
+<blockquote>
+<p>最近,webAPP比较火,公司也在用JS框架开发移动APP,web前端的同事负责用JS开发内容,负责iOS的我 和 负责Android的同事,就简单的搭建一个架子.<br> 但是,我在开发中就遇到一些问题,比如本篇文章要讲的webView获取网络请求返回的Session,开始我也是一头雾水,经过一番折腾,到百度,Google.还是找到了解决的办法.</p>
+</blockquote>
+<span id="more"></span>
+
+<p>####第一步:创建一个继承NSURLProtocol的类<br>在.m文件中声明NSURLConnection的属性,而且遵守NSURLConnectionDelegate,代码如下:</p>
+<pre><code>#import &quot;CustomURLProtocol.h&quot;
+
+static NSString * const URLProtocolHandledKey =   @&quot;URLProtocolHandledKey&quot;;      
+@interface CustomURLProtocol ()&lt;NSURLConnectionDelegate&gt;
+@property (nonatomic, strong) NSURLConnection *connection
+@end
+</code></pre>
+<ul>
+<li>NSURLConnection: 提供支持执行异步加载URL请求，向数据库提供数据客户提供的代理(<em>英语不好,找Google翻译的</em>)</li>
+</ul>
+<p>####第二步: 去重写NSURLProtocol的方法<br>代码如下:</p>
+<pre><code>//This method determines whether this protocol can handle the given request.
++ (BOOL)canInitWithRequest:(NSURLRequest *)request
+&#123;
+    //只处理http和https请求
+    NSString *scheme = [[request URL] scheme];
+    if ( ([scheme caseInsensitiveCompare:@&quot;http&quot;] == NSOrderedSame ||
+    [scheme caseInsensitiveCompare:@&quot;https&quot;] == NSOrderedSame)) &#123;
+    //看看是否已经处理过了，防止无限循环
+    if ([NSURLProtocol propertyForKey:URLProtocolHandledKey inRequest:request]) &#123;
+        return NO;
+    &#125;
+    Log(@&quot;relativePath -- %@&quot;,request.URL.relativePath);
+    // 可以做一些网络请求的需要的事情(如:带cookie等等)
+    return YES;
+&#125;
+
+//This method returns a canonical version of the given request.
++ (NSURLRequest *) canonicalRequestForRequest:(NSURLRequest *)request &#123;
+  return request;
+&#125;
+
+//Compares two requests for equivalence with regard to caching.
++ (BOOL)requestIsCacheEquivalent:(NSURLRequest *)a toRequest:(NSURLRequest *)b
+&#123;
+   return [super requestIsCacheEquivalent:a toRequest:b];
+&#125;
+
+//Starts protocol-specific loading of a request.
+- (void)startLoading
+&#123;
+  NSMutableURLRequest *mutableReqeust = [[self request] mutableCopy];
+  //打标签，防止无限循环
+  [NSURLProtocol setProperty:@YES forKey:URLProtocolHandledKey inRequest:mutableReqeust];
+  self.connection = [NSURLConnection connectionWithRequest:mutableReqeust delegate:self];
+&#125;
+
+//tops protocol-specific loading of a request. 
+- (void)stopLoading
+&#123;
+  [self.connection cancel];
+&#125;
+</code></pre>
+<p> ####第三步: 实现NSURLConnectionDelegate<br>的方法代码如下:</p>
+<pre><code>#pragma mark - NSURLConnectionDelegate
+/// 网络请求返回数据
+- (void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response &#123;
+  NSHTTPURLResponse *httpresponse = (NSHTTPURLResponse *)response;
+  if([httpresponse respondsToSelector:@selector(allHeaderFields)])&#123;
+    NSDictionary *di  = [httpresponse allHeaderFields];
+    NSArray *keys = [di allKeys];
+    for(int i=0; i&lt;di.count;i++)&#123;
+        NSString *key = [keys objectAtIndex:i];
+        NSString *value=[di objectForKey:key];
+        if([key rangeOfString:@&quot;Set-Cookie&quot;].location != NSNotFound)
+        &#123;
+            Log(@&quot;response_header_value -- %@&quot;,value);
+            // 获取Session
+        &#125;
+    &#125;
+&#125;
+
+  [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
+&#125;
+
+- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data &#123;
+  [self.client URLProtocol:self didLoadData:data];
+&#125;
+
+- (void) connectionDidFinishLoading:(NSURLConnection *)connection &#123;
+  [self.client URLProtocolDidFinishLoading:self];
+&#125;
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error &#123;
+  [self.client URLProtocol:self didFailWithError:error];
+&#125;
+</code></pre>
+<p>####第四步:在AppDelegate.m中注册<br>    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {<br>      &#x2F;&#x2F;注册protocol<br>      [NSURLProtocol registerClass:[CustomURLProtocol class]];<br>      return YES;<br>    }</p>
+<p>####结语:</p>
+<blockquote>
+<p>也是第一次了解这方面的知识,对你有帮助就帮忙点个赞,有错误的地方望大家指出来,谢谢😁😁</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_多线程</title>
+    <url>/2016/12/18/iOS__%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
+    <content><![CDATA[<p>##多线程技术</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">术语:</span><br><span class="line">进程Process: 已经启动的应用程序叫进程</span><br><span class="line">线程Thread: 一段可执行的代码序列(任务/代码)</span><br><span class="line"></span><br><span class="line">进程和线程的区别:</span><br><span class="line">    一个进程可以包含一个线程</span><br><span class="line">    进程分配资源,线程执行任务</span><br><span class="line"></span><br><span class="line">主线程: 如果xcode启动时候,自动创建一个线程,该线程才称为主线程</span><br><span class="line">子线程; 使用代码来创建子线程</span><br><span class="line"></span><br><span class="line">主线程和子线程的责任分工</span><br><span class="line">主线程责任(用户/交互):</span><br><span class="line">    所有和界面相关的逻辑由主线程执行(UIKit Framework)</span><br><span class="line">    响应用户事件(滚动/拖拽/点击...)</span><br><span class="line">子线程责任(耗时操作):</span><br><span class="line">    下载图片/音频文件/for循环(耗时操作)</span><br><span class="line"></span><br><span class="line">iOS提供多少个创建子线程技术</span><br><span class="line">分析:</span><br><span class="line">主线程阻塞:有其他的耗时操作占用着主线程</span><br><span class="line">所有的事件/任务都会放到队列中(主线程的队列叫做主队列);队列中的任务以FIFO(先进先出)方式响应(执行)</span><br><span class="line">让子线程执行耗时操作就不会造成主线程阻塞</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<ul>
+<li>1.pathread</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">POSIX(Portable Operation System Interface) Thread :可移植的操作系统接口</span><br><span class="line">特点:</span><br><span class="line">    优点: 可移植性</span><br><span class="line">    缺点: 基于C语言,底层,功能少</span><br><span class="line">样例: 代码创建一个子线程,给定子线程的任务Task;</span><br><span class="line">代码:</span><br><span class="line"><span class="comment">//void *(void *)</span></span><br><span class="line"><span class="type">void</span> *task(<span class="type">void</span> *data)&#123;</span><br><span class="line">    <span class="comment">//验证传过来的参数</span></span><br><span class="line">    printf(<span class="string">&quot;验证传过来的值:%s&quot;</span>,(<span class="type">char</span> *)data);</span><br><span class="line">    <span class="comment">//耗时操作</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;<span class="number">20000</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@&quot;执行次数:%d&quot;</span>,i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//主线程MainThread</span></span><br><span class="line">- (<span class="keyword">IBAction</span>)executeTimingOperation:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;<span class="number">20000</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@&quot;执行次数:%d&quot;</span>,i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子线程</span></span><br><span class="line">- (<span class="keyword">IBAction</span>)executeTimimngOpertionByPathread:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1.创建子线程对象</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *参数一: 指定pathread_t类型的子线程地址</span></span><br><span class="line"><span class="comment">     *参数二: 指定线程特定属性(占用内存空间)</span></span><br><span class="line"><span class="comment">     *参数三: 函数声明</span></span><br><span class="line"><span class="comment">     *参数四: 传给上面函数的参数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    pthread_t pathread;</span><br><span class="line">    <span class="type">char</span> *data = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">    pthread_create(&amp;pathread, <span class="literal">NULL</span>, task, data);</span><br><span class="line">    <span class="comment">//2.把耗时操作给子线程执行</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>2.NSThread</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="built_in">NSThread</span>特点:</span><br><span class="line">优点: 基于OC语言;</span><br><span class="line">缺点: 需要知道线程的生命周期;锁/开锁;</span><br><span class="line">如何使用?</span><br><span class="line">如何创建<span class="built_in">NSThread</span>类型子线程方式(alloc/init)</span><br><span class="line">如何去调用<span class="built_in">NSThread</span>方法.来判断代码是由主线程还是子线程执行的</span><br><span class="line">&#123;number = <span class="number">1</span>, name = main&#125;</span><br><span class="line">&#123;number = <span class="number">2</span>, name = (null)&#125;</span><br><span class="line">通过[<span class="built_in">NSThread</span> currentThread]的返回值判定由子线程还是子线程执行</span><br><span class="line">样例:创建<span class="built_in">NSThread</span>类型子线程,执行耗时操作</span><br><span class="line">代码:</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//1.创建一个NSThread对象</span></span><br><span class="line">    <span class="built_in">NSThread</span> *thread = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(downloadImage:) object:<span class="string">@&quot;hello&quot;</span>];</span><br><span class="line">    <span class="comment">//3.启动子线程的任务Task</span></span><br><span class="line">    [thread start];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;由主线程执行如下代码:%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//2.将耗时操作指定给子线程方法(对象)</span></span><br><span class="line">- (<span class="type">void</span>)downloadImage:(<span class="built_in">NSString</span> *)string</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//由子线程执行</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;由子线程执行如下代码:%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="built_in">NSLog</span>(<span class="string">@&quot;执行--&gt;%d&quot;</span>,i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">前提:知道图片的地址(URL)</span><br><span class="line">下载图片方式一: <span class="built_in">NSString</span> -&gt; <span class="built_in">NSRUL</span>(网址特点类) -&gt; <span class="built_in">NSData</span> -&gt; <span class="built_in">UIImage</span></span><br><span class="line">界面: <span class="built_in">UIImageView</span> + <span class="built_in">UIButton</span></span><br><span class="line">样例: 创建<span class="built_in">NSThread</span>类型子线程,执行下载图片的操作</span><br><span class="line">代码:</span><br><span class="line">- (<span class="keyword">IBAction</span>)downloadButton:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1.创建NSThread对象</span></span><br><span class="line">    <span class="built_in">NSThread</span> *thread = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(downloadImage) object:<span class="literal">nil</span>];</span><br><span class="line">    <span class="comment">//执行下载逻辑</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//启动子线程</span></span><br><span class="line">    [thread start];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)downloadImage&#123;</span><br><span class="line">    <span class="comment">//NSString -&gt; NSURL -&gt; NSData -&gt; UIImage</span></span><br><span class="line">    <span class="built_in">NSString</span> *imageStr = <span class="string">@&quot;http://f.hiphotos.baidu.com/image/h%3D200/sign=66e8237adac451dae9f60beb86fd52a5/4bed2e738bd4b31cfa3c2f9f80d6277f9e2ff896.jpg&quot;</span>;</span><br><span class="line">    <span class="built_in">NSURL</span> *imageUrl = [<span class="built_in">NSURL</span> URLWithString:imageStr];</span><br><span class="line">    <span class="comment">//如下方法是耗时的</span></span><br><span class="line">    <span class="built_in">NSData</span> *imageData = [<span class="built_in">NSData</span> dataWithContentsOfURL:imageUrl];</span><br><span class="line">    <span class="built_in">UIImage</span> *image = [<span class="built_in">UIImage</span> imageWithData:imageData];</span><br><span class="line">    <span class="comment">//要由子线程回到主线程,赋值给imageview</span></span><br><span class="line">    <span class="comment">//主要线程执行任务的优先级高于子线程任务</span></span><br><span class="line">    <span class="comment">//子线程回到主线程方式一</span></span><br><span class="line">    [<span class="keyword">self</span> performSelectorOnMainThread:<span class="keyword">@selector</span>(returnMainThread:) withObject:image waitUntilDone:<span class="literal">YES</span>];<span class="comment">//waitUntilDone:表示该方法执行完后是否执行下面的代码</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;----&gt;&gt;&gt;&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>苹果默认不允许http,要在info改设置,如下:<br><img src="/HTTP.png"><br>和UIKit相关的操作需要从子线程回到主线程(原理)</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//子线程回到主线程</span></span><br><span class="line">    [<span class="keyword">self</span> performSelectorOnMainThread:<span class="keyword">@selector</span>(returnMainThread:) withObject:image waitUntilDone:<span class="literal">YES</span>];</span><br></pre></td></tr></table></figure>
+<p>##多线程</p>
+<ul>
+<li>问题: 多个子线程同时修改&#x2F;更新同一个变量的值时,会造成数据不一致现象</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">样例: 实现上面问题逻辑(如:两个窗口同时卖北京到深圳的票)</span><br><span class="line">-&gt; 两个窗口 -&gt; 两个<span class="built_in">NSThread</span>对象</span><br><span class="line">卖票 - &gt; 总票数为<span class="number">60</span>;对总票数减减</span><br><span class="line">分析问题: 多个子线程同时修改同一个值</span><br><span class="line">解决方案: 适当的时候<span class="string">&quot;加锁&quot;</span>;适当的时候<span class="string">&quot;解锁&quot;</span>;</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">ViewController</span> ()</span></span><br><span class="line"><span class="comment">/** 剩余的票数 */</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">assign</span>) <span class="type">int</span> leftTicketCount;</span><br><span class="line"><span class="comment">/** 互斥锁属性 */</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>) <span class="built_in">NSLock</span> *lock;</span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line">    - (<span class="type">void</span>)viewDidLoad &#123;</span><br><span class="line">    [<span class="variable language_">super</span> viewDidLoad];</span><br><span class="line">    <span class="comment">//初始化lock对象</span></span><br><span class="line">    <span class="keyword">self</span>.lock = [[<span class="built_in">NSLock</span> alloc] init];</span><br><span class="line">    <span class="comment">//给定一个初始值 总票数60</span></span><br><span class="line">    <span class="built_in">NSNumber</span> *totalTicketCount = @<span class="number">60</span>;</span><br><span class="line">    <span class="keyword">self</span>.leftTicketCount = [totalTicketCount intValue];</span><br><span class="line">    <span class="comment">//1.创建两个NSTread对象</span></span><br><span class="line">    <span class="built_in">NSThread</span> *firstThreadWindow = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(sellTicket) object:<span class="literal">nil</span>];</span><br><span class="line">    firstThreadWindow.name = <span class="string">@&quot;窗口一&quot;</span>;</span><br><span class="line">    <span class="built_in">NSThread</span> *secondThreadWindow = [[<span class="built_in">NSThread</span> alloc] initWithTarget:<span class="keyword">self</span> selector:<span class="keyword">@selector</span>(sellTicket) object:<span class="literal">nil</span>];</span><br><span class="line">    secondThreadWindow.name = <span class="string">@&quot;窗口二&quot;</span>;</span><br><span class="line">    <span class="comment">//2.在子线程执行卖票的逻辑</span></span><br><span class="line">    <span class="comment">//3.启动卖票动作</span></span><br><span class="line">    [firstThreadWindow start];</span><br><span class="line">    [secondThreadWindow start];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)sellTicket&#123;</span><br><span class="line">    <span class="comment">//在子线程执行 --&gt;卖票</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">//加锁</span></span><br><span class="line">        [<span class="keyword">self</span>.lock lock];</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">self</span>.leftTicketCount &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="comment">//模拟延时操作</span></span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">0.1</span>];</span><br><span class="line">            <span class="keyword">self</span>.leftTicketCount--;</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;窗口:%@;剩余票数:%d&quot;</span>,[<span class="built_in">NSThread</span> currentThread],<span class="keyword">self</span>.leftTicketCount);</span><br><span class="line">            <span class="comment">//解锁</span></span><br><span class="line">            [<span class="keyword">self</span>.lock unlock];</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;票已经卖完!&quot;</span>);</span><br><span class="line">            <span class="comment">//解锁</span></span><br><span class="line">            [<span class="keyword">self</span>.lock unlock];</span><br><span class="line">            <span class="keyword">break</span>;<span class="comment">//跳出当前循环</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>需求: 多个耗时任务同时执行</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">-&gt; 创建多个子线程同时执行耗时任务</span><br><span class="line">-&gt; performSelectorOnMAainThread回到主线程</span><br></pre></td></tr></table></figure>
+<p>##GCD(Grand Central Dispath)</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>是什么?</span><br><span class="line">    易用的多线程的解决方案</span><br><span class="line"><span class="number">2.</span>为什么提出GCD</span><br><span class="line">    提供比较方便,好用多线程调度方案</span><br><span class="line"><span class="number">3.</span>如何使用?</span><br><span class="line">    一般的<span class="built_in">CGD</span>的执行任务流程</span><br><span class="line">        a. 创建队列</span><br><span class="line">        b.给执行任务,放到队列中</span><br><span class="line">        c.执行队列中的任务</span><br><span class="line">    <span class="number">3.1</span> 队列类型</span><br><span class="line">        串行队列(Serial Queue): 顺序执行</span><br><span class="line">        并行队列(Concurrent Queue): 同步执行</span><br><span class="line">        系统默认创建主队列(Main Queue): 主线程顺序执行 -&gt; 由主线程执行的串行队列</span><br><span class="line">        系统默认创建全局队列(Global Queue): 同时执行 -&gt; 已经创建好的并行队列</span><br><span class="line">    <span class="number">3.2</span> 执行任务的方式</span><br><span class="line">        同步执行(Synchronous): 当前线程执行 + 等待任务执行完毕</span><br><span class="line">        注意: 一般不使用同步执行,会造成阻塞</span><br><span class="line">        异步执行(Asynchronous): 子线程执行 + 立即返回(不等待任务)</span><br><span class="line">    <span class="number">3.3</span> 明确知道两点:</span><br><span class="line">        a. 任务的执行顺序: 打印log,看时间</span><br><span class="line">        b. 有谁执行任务(主线程还是子线程): [<span class="built_in">NSTread</span> currentThread]</span><br><span class="line">    <span class="number">3.4</span> 从多个排列组合中,寻找可以完成需求的组合</span><br><span class="line">        -&gt; 子线程执行的组合</span><br><span class="line">        -&gt; 回到主线程的组合</span><br><span class="line">样例: 实现四种排列组合</span><br><span class="line"></span><br><span class="line">    串行队列同步执行</span><br><span class="line">    代码:</span><br><span class="line"></span><br><span class="line">     <span class="comment">//明确点: 任务执行的顺序; 主线程还是子线程执行</span></span><br><span class="line">    <span class="comment">//1.创建一个串行队列</span></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  参数一: 给定名字</span></span><br><span class="line"><span class="comment">     *  参数二: 指定的队列类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span>  queue = dispatch_queue_create(<span class="string">&quot;FirstSerialQueue&quot;</span>,DISPATCH_QUEUE_SERIAL);</span><br><span class="line">    <span class="comment">//2.添加两个任务到串行队列中(BLOCK)</span></span><br><span class="line">    <span class="comment">//3.同步执行两个任务</span></span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加第一个任务(耗时操作)</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;+++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加第二个任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;-----------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line">    串行队列异步执行</span><br><span class="line">    代码:</span><br><span class="line">    <span class="comment">//明确点:任务的执行顺序;</span></span><br><span class="line">    <span class="comment">//1.创建一个串行队列</span></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  参数一: 给定名称</span></span><br><span class="line"><span class="comment">     *  参数二: 指定的队列类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_queue_create(<span class="string">&quot;secondSerialQueue&quot;</span>, DISPATCH_QUEUE_SERIAL);</span><br><span class="line">    <span class="comment">//添加两个任务到串行队列中并异步执行两个任务</span></span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加到队列中的任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span>  sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;++++++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">       <span class="comment">//添加第二个任务</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;--------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line">    并行队列同步执行</span><br><span class="line">    注意:</span><br><span class="line">        一般在主线程中不会用,因为不能实现并行执行</span><br><span class="line">    代码:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  并行队列: 同时的执行</span></span><br><span class="line"><span class="comment">     *  同步执行: 当前线程 + 等待任务执行完毕</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_queue_create(<span class="string">&quot;FirstConcurrent&quot;</span>, DISPATCH_QUEUE_CONCURRENT);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">        <span class="comment">//</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;++++++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(queue, ^&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;--------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line">    并行队列异步执行</span><br><span class="line">    代码:</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  并行队列: 同时执行</span></span><br><span class="line"><span class="comment">     *  异步执行: 子线程 + 立即返回(不等待任务)</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_queue_create(<span class="string">&quot;SecondConcurrent&quot;</span>, DISPATCH_QUEUE_CONCURRENT);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;+++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">            <span class="built_in">NSLog</span>(<span class="string">@&quot;-----------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//全局队列异步执行</span></span><br><span class="line">    - (<span class="keyword">IBAction</span>)globalQueueAsync:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//结论和并行队列异步执行一样</span></span><br><span class="line">    <span class="comment">//1.获取全局队列(只有这一步不同)</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    *  参数一: 指定全局队列的优先级(主队列优先级最高)</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_HIGH</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_DEFAULT</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_LOW</span></span><br><span class="line"><span class="comment">    #define DISPATCH_QUEUE_PRIORITY_BACKGROUND</span></span><br><span class="line"><span class="comment">    *  参数二: 0</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, <span class="number">0</span>);</span><br><span class="line">    <span class="comment">//2.添加任务</span></span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">//3.异步执行</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;-------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//主队列异步执行</span></span><br><span class="line">    - (<span class="keyword">IBAction</span>)mainQueueAsync:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1. 获取主队列</span></span><br><span class="line">    <span class="built_in">dispatch_queue_t</span> queue = dispatch_get_main_queue();</span><br><span class="line">    <span class="comment">//2. 添加任务</span></span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;+++++++++++++%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 + 结束&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_async</span>(queue, ^&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    [<span class="built_in">NSThread</span> sleepForTimeInterval:<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;-------------%@&quot;</span>,[<span class="built_in">NSThread</span> currentThread]);</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;打印 - 结束&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//主队列同步执行</span></span><br><span class="line">    - (<span class="keyword">IBAction</span>)mainQueueSync:(<span class="type">id</span>)sender &#123;</span><br><span class="line">    <span class="comment">//1.获取主队列</span></span><br><span class="line">    <span class="comment">//    dispatch_queue_t queue = dispatch_get_main_queue();</span></span><br><span class="line">    <span class="comment">//添加任务</span></span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;任务一&quot;</span>);</span><br><span class="line">    <span class="built_in">dispatch_sync</span>(dispatch_get_main_queue(), ^&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;任务二&quot;</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;任务三&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>GCD底层实现原理:</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.底层维护一个线程池,自动从线程池中找空闲的子线程</span><br><span class="line">2.不需要创建子线程对象</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_上传应用到AppStore出现Authenticating-with-the-iTunes-store</title>
+    <url>/2018/02/28/iOS__%E4%B8%8A%E4%BC%A0%E5%BA%94%E7%94%A8%E5%88%B0AppStore%E5%87%BA%E7%8E%B0Authenticating-with-the-iTunes-store/</url>
+    <content><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2148605-b7bac6480ca2688e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-5c6b03fb1465bf07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="eV1e7.png"></p>
+<blockquote>
+<p>upload to App Store 出现一直在__  Authenticating with the iTunes store__ 卡住</p>
+</blockquote>
+<p>######最近打包上传到App Store的时候，一直卡在验证App Store界面，一卡就是半个小时，然后提示请重试，然后在<a href="http://stackoverflow.com/questions/22443425/application-loader-stuck-at-authenticating-with-the-itunes-store-when-uploadin">stackoverflow</a>找到解决的方法，如下：<br>   打开终端，依次输入，运行5分钟左右关闭，重启xcode，再重新upload！</p>
+<pre><code>cd ~
+mv .itmstransporter/ .old_itmstransporter/
+&quot;/Applications/Xcode.app/Contents/Applications/Application Loader.app/Contents/itms/bin/iTMSTransporter&quot;
+</code></pre>
+<p>如果对你有帮助，麻烦您点个❤️！^_^</p>
+<p>备注：如果还是不行，卸载xcode(一定要卸载干净), 重新安装xcode，再重复以上步骤！</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_获取项目下面的文件路径</title>
+    <url>/2017/10/10/iOS__%E8%8E%B7%E5%8F%96%E9%A1%B9%E7%9B%AE%E4%B8%8B%E9%9D%A2%E7%9A%84%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/</url>
+    <content><![CDATA[<blockquote>
+<p>获取工程项目中文件夹或者文件的路径</p>
+</blockquote>
+<ol>
+<li>将文件拖入项目中,选择Create Folder References，点击Finish(如下图)</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-6d6329e270b6b1bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p>
+<p>2.将拖入的文件添加到Copy Bundle Resource，具体步骤如下图:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-79f44c63dd188361.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171010-105650@2x副本.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2148605-20fa0404c8129dcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WX20171010-105748@2x.png"></p>
+<p>3.获取文件的代码：</p>
+<pre><code>// 获取文件路径
+NSString *filePath = [[NSBundle mainBundle] pathForResource:@&quot;文件名&quot;ofType:@&quot;文件类型&quot;];
+// 获取文件夹下的文件路径
+NSString *filePath = [[NSBundle mainBundle] pathForResource:@&quot;文件名&quot; ofType:@&quot;文件类型&quot; inDirectory:@&quot;文件夹名&quot;];
+</code></pre>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_后台如何保持socket长连接和数据传输</title>
+    <url>/2017/06/14/iOS%E5%90%8E%E5%8F%B0%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81socket%E9%95%BF%E8%BF%9E%E6%8E%A5%E5%92%8C%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/</url>
+    <content><![CDATA[<p><a href="http://blog.sina.com.cn/s/blog_af73e7a70102uzfr.html">转载：一根火柴的博客</a><br>工程中使用tcp长连接来和服务端进行数据传输，在IOS平台上，由于苹果的后台机制，会有以下问题：<br>当程序退到后台的时候，所有线程被挂起，系统会回收所有的socket资源，那么socket连接就会被关闭，因此无法再进行数据的传输：</p>
+<span id="more"></span>
+<p>解决方法：<br>通过设置以下属性可以保持socket连接和数据的继续传输<br>1.需要在Info.plist文件中添加UIBackgroundModes中的VOIP键值；<br>2.设置流属性<br>CFReadStreamRef和CFWriteStreamRef通过如下方法设置kCFStreamNetworkServiceType属性为kCFStreamNetworkServiceTypeVoIP；<br> <br>CFReadStreamSetProperty(theReadStream, kCFStreamNetworkServiceType, kCFStreamNetworkServiceTypeVoIP);<br>CFWriteStreamSetProperty(theWriteStream, kCFStreamNetworkServiceType, kCFStreamNetworkServiceTypeVoIP);</p>
+<p>NSInputStream 和NSOutputStream通过如下方法设置NSStreamNetworkServiceType属性为NSStreamNetworkServiceTypeVoIP； <br>[self.stream setProperty: NSStreamNetworkServiceTypeVoIP forKey:NSStreamNetworkServiceType];</p>
+<p>3.这里有一个问题，就是客户端是通过心跳来和服务端保持连接，心跳是由定时器触发的，当我退到后台以后，定时器方法被挂起，那么通过如下设置来在后台运行定时器</p>
+<pre><code>- (void)applicationDidEnterBackground:(UIApplication*)application&#123;
+  UIApplication*  app = [UIApplication sharedApplication];
+  __block   UIBackgroundTaskIdentifier bgTask;
+  bgTask= [app beginBackgroundTaskWithExpirationHandler:^&#123;
+  dispatch_async(dispatch_get_main_queue(),^&#123;
+    if(bgTask != UIBackgroundTaskInvalid)&#123;
+      bgTask= UIBackgroundTaskInvalid;
+    &#125;
+  &#125;);
+&#125;];
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,  0  ),^&#123;
+  dispatch_async(dispatch_get_main_queue(),^&#123;
+  if  (bgTask != UIBackgroundTaskInvalid)  &#123;
+      bgTask= UIBackgroundTaskInvalid;
+   &#125;  
+  &#125;);
+&#125;);
+&#125;
+</code></pre>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_横竖屏切换</title>
+    <url>/2016/12/08/ios-%E6%A8%AA%E7%AB%96%E5%B1%8F%E5%88%87%E6%8D%A2/</url>
+    <content><![CDATA[<p>AppDelagete.m</p>
+<ul>
+<li>(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {<br>  if (self.rotateDirection &#x3D;&#x3D; 1) {<br>  return UIInterfaceOrientationMaskLandscapeRight;<br>  }<br>  return UIInterfaceOrientationMaskPortrait;<br>}</li>
+</ul>
+<span id="more"></span>
+<p>ViewController.m</p>
+<ul>
+<li>(void)touchesBegan:(NSSet&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event {<br>  AppDelegate *appdelegate &#x3D; (AppDelegate *)[[UIApplication sharedApplication] delegate];<br>  if (appdelegate.rotateDirection &#x3D;&#x3D; 0){<br>  appdelegate.rotateDirection &#x3D; 1;<br>  NSLog(@” orientation1 : %ld”,[UIDevice currentDevice].orientation);<br>  if ([UIDevice currentDevice].orientation !&#x3D; 1){<br>      [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIInterfaceOrientationPortrait] forKey:@”orientation”];<br>  }<br>      NSLog(@” orientation2 : %ld”,[UIDevice currentDevice].orientation);<br>      [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIInterfaceOrientationLandscapeRight] forKey:@”orientation”];<br>      NSLog(@” orientation3 : %ld”,[UIDevice currentDevice].orientation);<br>      [[UIApplication sharedApplication] setStatusBarHidden:NO];<br>      [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeRight animated:NO];<br>  } else {<br> appdelegate.rotateDirection &#x3D; 0;<br> NSLog(@” orientation1 : %ld”,[UIDevice currentDevice].orientation);<br> if ([UIDevice currentDevice].orientation !&#x3D; 4) {<br>    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIInterfaceOrientationLandscapeRight] forKey:@”orientation”];<br> }<br> NSLog(@” orientation2 : %ld”,[UIDevice currentDevice].orientation);<br> [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIInterfaceOrientationPortrait] forKey:@”orientation”];<br> NSLog(@” orientation3 : %ld”,[UIDevice currentDevice].orientation);<br> [[UIApplication sharedApplication] setStatusBarHidden:NO];<br> [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:NO];<br>  }</li>
+</ul>
+<p>}</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_socket适配ipv6，同时兼容ipv4</title>
+    <url>/2017/08/08/iOS%E2%80%94%E2%80%94socket%E9%80%82%E9%85%8Dipv6%EF%BC%8C%E5%90%8C%E6%97%B6%E5%85%BC%E5%AE%B9ipv4/</url>
+    <content><![CDATA[<p>由于<a href="http://lib.csdn.net/base/ios">iOS</a>苹果审核需要支持ipv6，我公司手游用的socket底层调用的是C标准库，故在此记录下需要调整修改的地方<br>1、网络环境配置方面，具体参见这篇帖子，：<a href="http://www.code4app.com/thread-8513-1-1.html">http://www.code4app.com/thread-8513-1-1.html</a><br>补充说明，由于IPV6需要设备支持，搭建好的IPV6的WIFI，可能电脑跟<a href="http://lib.csdn.net/base/android">安卓</a>手机都连接不上，但用苹果手机连接却可以浏览上网，那证明网络OK，可以在真机上进行下一步的代码调试了。</p>
+<span id="more"></span>
+<p>2、原理说明：在访问服务器前，通过getaddrinfo创建对应的网络协议，ipv6网络下可以得到服务器的IPV6地址（其实是IPV4下IP的IPV6写法），通过IPV6地址去访问</p>
+<p>这里贴出主要的Connect方法，Connect能连接上了，后面send，recv都是可以的不用修改<br><a href="http://lib.csdn.net/base/android">Android</a>、<a href="http://lib.csdn.net/base/ios">ios</a>环境下代码，兼容IPV4跟IPV6：</p>
+<p><strong>[cpp]</strong> <a href="http://blog.csdn.net/xunmengdqingmao/article/details/51603825#">view plain</a> <a href="http://blog.csdn.net/xunmengdqingmao/article/details/51603825#">copy</a></p>
+<pre><code>bool ODSocket::Connect(const char* domain, unsigned short port)  
+&#123;  
+</code></pre>
+<p>    &#x2F;&#x2F;连接ip  <br>    char ip[128];  <br>    memset(ip, 0, sizeof(ip));  <br>    strcpy(ip, domain);  <br>  <br>    void* svraddr &#x3D; nullptr;  <br>    int error&#x3D;-1, svraddr_len;  <br>    bool ret &#x3D; true;  <br>    struct sockaddr_in svraddr_4;  <br>    struct sockaddr_in6 svraddr_6;  <br>  <br>    &#x2F;&#x2F;获取网络协议  <br>    struct addrinfo *result;  <br>    error &#x3D; getaddrinfo(ip, NULL, NULL, &amp;result);  <br>    const struct sockaddr <em>sa &#x3D; result-&gt;ai_addr;  <br>    socklen_t maxlen &#x3D; 128;  <br>    switch(sa-&gt;sa_family) {  <br>        case AF_INET:&#x2F;&#x2F;ipv4  <br>            if ((m_sock &#x3D; socket(AF_INET, SOCK_STREAM, 0)) &lt; 0) {  <br>                perror(“socket create failed”);  <br>                ret &#x3D; false;  <br>                break;  <br>            }  <br>            if(inet_ntop(AF_INET, &amp;(((struct sockaddr_in *)sa)-&gt;sin_addr),  <br>                         ip, maxlen) &lt; 0){  <br>                perror(ip);  <br>                ret &#x3D; false;  <br>                break;  <br>            }  <br>            svraddr_4.sin_family &#x3D; AF_INET;  <br>            svraddr_4.sin_addr.s_addr &#x3D; inet_addr(ip);  <br>            svraddr_4.sin_port &#x3D; htons(port);  <br>            svraddr_len &#x3D; sizeof(svraddr_4);  <br>            svraddr &#x3D; &amp;svraddr_4;  <br>            break;  <br>        case AF_INET6:&#x2F;&#x2F;ipv6  <br>            if ((m_sock &#x3D; socket(AF_INET6, SOCK_STREAM, 0)) &lt; 0) {  <br>                perror(“socket create failed”);  <br>                ret &#x3D; false;  <br>                break;  <br>            }  <br>            inet_ntop(AF_INET6, &amp;(((struct sockaddr_in6 *)sa)-&gt;sin6_addr),  <br>                      ip, maxlen);  <br>              <br>            printf(“socket created ipv6&#x2F;n”);  <br>              <br>            bzero(&amp;svraddr_6, sizeof(svraddr_6));  <br>            svraddr_6.sin6_family &#x3D; AF_INET6;  <br>            svraddr_6.sin6_port &#x3D; htons(port);  <br>            if ( inet_pton(AF_INET6, ip, &amp;svraddr_6.sin6_addr) &lt; 0 ) {  <br>                perror(ip);  <br>                ret &#x3D; false;  <br>                break;  <br>            }  <br>            svraddr_len &#x3D; sizeof(svraddr_6);  <br>            svraddr &#x3D; &amp;svraddr_6;  <br>            break;  <br>              <br>        default:  <br>            printf(“Unknown AF\ns”);  <br>            ret &#x3D; false;  <br>    }  <br>    freeaddrinfo(result);  <br>    if(!ret)  <br>    {  <br>        fprintf(stderr , “Cannot Connect the server!n”);  <br>        return false;  <br>    }  <br>    int nret &#x3D; connect(m_sock, (struct sockaddr</em>)svraddr, svraddr_len);  <br>    if(nret&#x3D;&#x3D;SOCKET_ERROR )  <br>    {  <br>        return false;  <br>    }  <br>  <br>    return true;  <br>    }  </p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SwiftUI-创建一个新项目并探索画布</title>
+    <url>/2019/08/01/swiftUI-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%B9%B6%E6%8E%A2%E7%B4%A2%E7%94%BB%E5%B8%83/</url>
+    <content><![CDATA[<p>SwiftUI 创建一个新的项目并探索画布</p>
+<ol>
+<li><p>步骤一</p>
+<p>打开Xcode，在Xcode的启动窗口中单击“ <strong>创建新的Xcode项目”</strong>，或选择“ <strong>文件”&gt;“新建”&gt;“项目”</strong>。</p>
+</li>
+<li><p>步骤二</p>
+<p>在模板选择器中，选择<strong>iOS</strong>作为平台，选择<strong>Single View App</strong>模板，然后单击<strong>Next</strong>。</p>
+</li>
+<li><p>步骤三</p>
+<p>输入“项目名称”作为Product Name，选择<strong>Use SwiftUI</strong>复选框，然后单击<strong>Next</strong>。选择一个位置以在Mac上保存标记项目。</p>
+<p><img src="/images/swiftUI-1.png" alt="创建项目"></p>
+</li>
+<li><p>步骤四</p>
+<p>在项目导航器中，单击以选中。<code>ContentView.swift</code></p>
+<p>默认情况下，SwiftUI视图文件声明了两种结构。第一个结构符合<code>View</code>协议并描述视图的内容和布局。第二个结构声明该视图的预览。</p>
+</li>
+<li><p>步骤五</p>
+<p>在画布中，单击” <strong>resume</strong>“以显示预览。</p>
+<p>如果画布不可见，请选择“ <strong>Eidtor</strong>”&gt;“<strong>Editor and Canvas</strong>”以显示它。</p>
+<p><img src="/images/swiftUI-2.png" alt="显示预览图"></p>
+</li>
+<li><p>步骤六</p>
+<p>在<code>body</code>，将“Hello World”更改为您自己的问候语。</p>
+<p>当您更改视图<code>body</code>属性中的代码时，预览会更新以反映您的更改。</p>
+<p><img src="/images/swiftUI-3.png" alt="更改text"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>Swift</category>
+        <category>SwiftUI</category>
+      </categories>
+      <tags>
+        <tag>ios</tag>
+        <tag>swift</tag>
+        <tag>swiftUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_通过SignalR实现即时通讯</title>
+    <url>/2017/06/08/iOS%E9%80%9A%E8%BF%87SignalR%E5%AE%9E%E7%8E%B0%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/</url>
+    <content><![CDATA[<ul>
+<li><p>瞎比比😁😁</p>
+<blockquote>
+<p>在iOS开发中，经常会使用到即时通讯，通常我们会使用Socket，今天我介绍另外一种方法，就是SignalR！</p>
+</blockquote>
+</li>
+<li><p>SignalR简要介绍</p>
+<blockquote>
+<p>SignalR 是为 ASP.NET 开发人员提供的一个库，可以简化开发人员将实时 Web 功能添加到应用程序的过程。实时 Web 功能是指这样一种功能：当所连接的客户端变得可用时服务器代码可以立即向其推送内容，而不是让服务器等待客户端请求新的数据。</p>
+</blockquote>
+</li>
+<li><p>集成步骤</p>
+<blockquote>
+<p>iOS使用SignalR，要用到的第三方框架**<a href="https://github.com/DyKnow/SignalR-ObjC">SignalR-ObjC</a>**(好像有一年左右没更新了😭😭 )<br>方法一： 通过 using CocoaPods<br>        pod ‘SignalR-ObjC’</p>
+</blockquote>
+</li>
+</ul>
+<p>方法二： 那就是自己到**<a href="https://github.com/DyKnow/SignalR-ObjC">Gitgub SignalR-ObjC</a>**下载，再放入项目中！<br><strong>建议使用方法一：因为SignalR-ObjC会依赖<a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a>，<a href="https://github.com/square/SocketRocket">SocketRocket</a> 两个框架</strong></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git_在码云部署git</title>
+    <url>/2016/12/08/%E5%9C%A8%E7%A0%81%E4%BA%91%E9%83%A8%E7%BD%B2git/</url>
+    <content><![CDATA[<ul>
+<li><p>在<a href="https://git.oschina.net/%E7%BD%91%E7%AB%99%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7">https://git.oschina.net/网站注册账号</a></p>
+</li>
+<li><p>Johnhao-2:~ Johnhao$ cd ~&#x2F;.ssh</p>
+</li>
+<li><p>Johnhao-2:.ssh Johnhao$ ls</p>
+</li>
+</ul>
+<p>github_rsa id_rsa  key_backup<br>github_rsa.pub id_rsa.pub known_hosts<br>Johnhao-2:.ssh Johnhao$ ssh-keygen -t rsa -C “邮箱@163.com”<br>Generating public&#x2F;private rsa key pair.<br>Enter file in which to save the key (&#x2F;Users&#x2F;Johnhao&#x2F;.ssh&#x2F;id_rsa): <br>&#x2F;Users&#x2F;Johnhao&#x2F;.ssh&#x2F;id_rsa already exists.<br>Overwrite (y&#x2F;n)? y<br>Enter passphrase (empty for no passphrase): <br>Enter same passphrase again: <br>Your identification has been saved in &#x2F;Users&#x2F;Johnhao&#x2F;.ssh&#x2F;id_rsa.<br>Your public key has been saved in &#x2F;Users&#x2F;Johnhao&#x2F;.ssh&#x2F;id_rsa.pub.<br>The key fingerprint is:<br>SHA256:FKucxmYjDfLe1MkHy6++Hrw0SgGauofVEQ&#x2F;iAt9tKZ8 邮箱@163.com<br>The key’s randomart image is:<br>+—[RSA 2048]—-+<br>|        .        |<br>|. . o    o       |<br>|.o.oo&#x3D; .+        |<br>|. o&#x3D;+<em>&#x3D;B +       |<br>| .o.o&#x3D;&amp;.S .      |<br>| ….BE+ o       |<br>|.o  . o &#x3D; .      |<br>|…  . o &#x3D;       |<br>|..    .o</em>.       |<br>+—-[SHA256]—–+</p>
+<span id="more"></span>
+<ul>
+<li>Johnhao-2:.ssh Johnhao$ cat ~&#x2F;.ssh&#x2F;id_rsa.pub</li>
+</ul>
+<p>ssh-rsa <del>AAAAB3NzaC1yc2EAAAADAQABAAABAQDO4zT4NR7VdNEV9F6K680VJgA4NR7AkqGhQDtYXu8Vxkn6mD5xwv7vZOhTMyaklthZS2FTT4i83VjQdaxprz0ubf+c1W03&#x2F;NBSLn+zb2tEUFdOgMRcCT6Eo&#x2F;kFvXKYZcj0RUHV3Nzdb312tv4hl2fBtFGZEUx4tkB&#x2F;EyQW5u2UEViHw3xoAT&#x2F;szwJ4SlOXPtYTPijwctDmX+JKtoRl0ZsGxKq7qRzqIRW3m1qnWi5AuOgFejPs1ebek58FRgGd3b&#x2F;KZ7r&#x2F;PraFnz7NWFZBYm5Mwb7EJSLAooIR33nrFSuEZQWNUVVUAzogoPwShfKQjP5abd2cS7JWBq8bQ3m6piX9 邮箱@163.com</del></p>
+<ul>
+<li>Johnhao-2:.ssh Johnhao$ ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#46;&#x6f;&#x73;&#99;&#x68;&#105;&#x6e;&#97;&#x2e;&#110;&#x65;&#116;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#116;&#46;&#x6f;&#x73;&#99;&#x68;&#105;&#x6e;&#97;&#x2e;&#110;&#x65;&#116;</a></li>
+</ul>
+<p>Welcome to Git@OSC, x_johnhao!</p>
+<ul>
+<li>Johnhao-2:.ssh Johnhao$ cd &#x2F;Users&#x2F;Johnhao&#x2F;Desktop&#x2F;swift&#x2F;Code </li>
+<li>Johnhao-2:Code Johnhao$ git clone <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#46;&#x6f;&#115;&#99;&#104;&#x69;&#x6e;&#97;&#46;&#110;&#101;&#116;">&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#46;&#x6f;&#115;&#99;&#104;&#x69;&#x6e;&#97;&#46;&#110;&#101;&#116;</a>:johnhao&#x2F;JohnWB.git</li>
+</ul>
+<p>Cloning into ‘JohnWB’…<br>remote: Counting objects: 4, done.<br>remote: Compressing objects: 100% (3&#x2F;3), done.<br>remote: Total 4 (delta 0), reused 0 (delta 0)<br>Receiving objects: 100% (4&#x2F;4), done.<br>Checking connectivity… done.</p>
+<ul>
+<li>Johnhao-2:Code Johnhao$ cp &#x2F;Users&#x2F;Johnhao&#x2F;Downloads&#x2F;gitignore-master&#x2F;Swift.gitignore &#x2F;Users&#x2F;Johnhao&#x2F;Desktop&#x2F;swift&#x2F;Code&#x2F;JohnWB&#x2F;.gitignore </li>
+<li>Johnhao-2:Code Johnhao$ cd &#x2F;Users&#x2F;Johnhao&#x2F;Desktop&#x2F;swift&#x2F;Code&#x2F;JohnWB </li>
+<li>Johnhao-2:JohnWB Johnhao$ git add .</li>
+<li>Johnhao-2:JohnWB Johnhao$ git status</li>
+</ul>
+<p>On branch master<br>Your branch is up-to-date with ‘origin&#x2F;master’.<br>Changes to be committed:<br>  (use “git reset HEAD <file>…” to unstage)</p>
+<p> new file:   .gitignore</p>
+<ul>
+<li>Johnhao-2:JohnWB Johnhao$ git commit -m “添加gitignore”</li>
+</ul>
+<p>[master b468236] 添加gitignore<br> Committer: Johnhao941026 <a href="mailto:&#x4a;&#x6f;&#104;&#x6e;&#x68;&#x61;&#111;&#64;&#x4a;&#x6f;&#104;&#x6e;&#104;&#97;&#111;&#x2d;&#x32;&#x2e;&#108;&#x6f;&#99;&#97;&#108;">&#x4a;&#x6f;&#104;&#x6e;&#x68;&#x61;&#111;&#64;&#x4a;&#x6f;&#104;&#x6e;&#104;&#97;&#111;&#x2d;&#x32;&#x2e;&#108;&#x6f;&#99;&#97;&#108;</a><br>Your name and email address were configured automatically based<br>on your username and hostname. Please check that they are accurate.<br>You can suppress this message by setting them explicitly:</p>
+<p>    git config –global user.name “Your Name”<br>    git config –global user.email <a href="mailto:&#x79;&#111;&#117;&#64;&#x65;&#120;&#97;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#109;">&#x79;&#111;&#117;&#64;&#x65;&#120;&#97;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#109;</a></p>
+<p>After doing this, you may fix the identity used for this commit with:</p>
+<p>    git commit –amend –reset-author</p>
+<p> 1 file changed, 65 insertions(+)<br> create mode 100755 .gitignore</p>
+<ul>
+<li>Johnhao-2:JohnWB Johnhao$ git status</li>
+</ul>
+<p>On branch master<br>Your branch is ahead of ‘origin&#x2F;master’ by 1 commit.<br>  (use “git push” to publish your local commits)<br>nothing to commit, working directory clean</p>
+<ul>
+<li>Johnhao-2:JohnWB Johnhao$ git push</li>
+</ul>
+<p>Counting objects: 3, done.<br>Delta compression using up to 4 threads.<br>Compressing objects: 100% (3&#x2F;3), done.<br>Writing objects: 100% (3&#x2F;3), 1009 bytes | 0 bytes&#x2F;s, done.<br>Total 3 (delta 0), reused 0 (delta 0)<br>To <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x2e;&#x6f;&#x73;&#x63;&#x68;&#x69;&#110;&#x61;&#46;&#x6e;&#101;&#116;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x2e;&#x6f;&#x73;&#x63;&#x68;&#x69;&#110;&#x61;&#46;&#x6e;&#101;&#116;</a>:johnhao&#x2F;JohnWB.git<br>   256a953..b468236  master -&gt; master</p>
+<ul>
+<li>Johnhao-2:JohnWB Johnhao$ git add .</li>
+<li>Johnhao-2:JohnWB Johnhao$ git commit -m “创建项目工程”</li>
+</ul>
+<p>[master 58b06f7] 创建项目工程<br> Committer: Johnhao941026 <a href="mailto:&#74;&#x6f;&#104;&#x6e;&#x68;&#x61;&#x6f;&#64;&#74;&#111;&#x68;&#110;&#104;&#97;&#x6f;&#45;&#50;&#46;&#x6c;&#x6f;&#99;&#x61;&#108;">&#74;&#x6f;&#104;&#x6e;&#x68;&#x61;&#x6f;&#64;&#74;&#111;&#x68;&#110;&#104;&#97;&#x6f;&#45;&#50;&#46;&#x6c;&#x6f;&#99;&#x61;&#108;</a><br>Your name and email address were configured automatically based<br>on your username and hostname. Please check that they are accurate.<br>You can suppress this message by setting them explicitly:</p>
+<p>    git config –global user.name “Your Name”<br>    git config –global user.email <a href="mailto:&#x79;&#111;&#x75;&#x40;&#x65;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x79;&#111;&#x75;&#x40;&#x65;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a></p>
+<p>After doing this, you may fix the identity used for this commit with:</p>
+<p>    git commit –amend –reset-author</p>
+<p> 12 files changed, 858 insertions(+)<br> create mode 100644 JohnWB&#x2F;JohnWB.xcodeproj&#x2F;project.pbxproj<br> create mode 100644 JohnWB&#x2F;JohnWB.xcodeproj&#x2F;project.xcworkspace&#x2F;contents.xcworkspacedata<br> create mode 100644 JohnWB&#x2F;JohnWB&#x2F;AppDelegate.swift<br> create mode 100644 JohnWB&#x2F;JohnWB&#x2F;Assets.xcassets&#x2F;AppIcon.appiconset&#x2F;Contents.json<br> create mode 100644 JohnWB&#x2F;JohnWB&#x2F;Base.lproj&#x2F;LaunchScreen.storyboard<br> create mode 100644 JohnWB&#x2F;JohnWB&#x2F;Base.lproj&#x2F;Main.storyboard<br> create mode 100644 JohnWB&#x2F;JohnWB&#x2F;Info.plist<br> create mode 100644 JohnWB&#x2F;JohnWB&#x2F;ViewController.swift<br> create mode 100644 JohnWB&#x2F;JohnWBTests&#x2F;Info.plist<br> create mode 100644 JohnWB&#x2F;JohnWBTests&#x2F;JohnWBTests.swift<br> create mode 100644 JohnWB&#x2F;JohnWBUITests&#x2F;Info.plist<br> create mode 100644 JohnWB&#x2F;JohnWBUITests&#x2F;JohnWBUITests.swift</p>
+<ul>
+<li>Johnhao-2:JohnWB Johnhao$ git push</li>
+</ul>
+<p>Counting objects: 22, done.<br>Delta compression using up to 4 threads.<br>Compressing objects: 100% (20&#x2F;20), done.<br>Writing objects: 100% (22&#x2F;22), 7.94 KiB | 0 bytes&#x2F;s, done.<br>Total 22 (delta 3), reused 0 (delta 0)<br>To <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#116;&#46;&#x6f;&#x73;&#99;&#x68;&#105;&#110;&#x61;&#46;&#110;&#x65;&#x74;">&#x67;&#105;&#116;&#64;&#x67;&#105;&#116;&#46;&#x6f;&#x73;&#99;&#x68;&#105;&#110;&#x61;&#46;&#110;&#x65;&#x74;</a>:johnhao&#x2F;JohnWB.git<br>   b468236..58b06f7  master -&gt; master</p>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面试题</title>
+    <url>/2018/05/12/%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="一个NSObject对象占用多少内存？"><a href="#一个NSObject对象占用多少内存？" class="headerlink" title="一个NSObject对象占用多少内存？"></a>一个NSObject对象占用多少内存？</h3><ul>
+<li>系统分配了16个字节给NSObject对象，可以通过malloc_size函数获得</li>
+<li>但是NSObject对象内部只使用了8个字节的空间，可以通过class_getInstanceSize函数获得</li>
+</ul>
+<h3 id="对象的isa指针指向哪里？"><a href="#对象的isa指针指向哪里？" class="headerlink" title="对象的isa指针指向哪里？"></a>对象的isa指针指向哪里？</h3><ul>
+<li>实例对象的isa指向class对象</li>
+<li>class对象的isa指向mete-class对象</li>
+<li>meta-class对象的isa指向基类的meta-class对象</li>
+</ul>
+<h3 id="OC的类信息存放在哪里？"><a href="#OC的类信息存放在哪里？" class="headerlink" title="OC的类信息存放在哪里？"></a>OC的类信息存放在哪里？</h3><ul>
+<li>对象方法、属性、成员变量、协议信息，存放在class对象中</li>
+<li>类方法，存放在meta-class对象中</li>
+<li>成员变量的具体值，存放在instance对象</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>面试题</category>
+      </categories>
+      <tags>
+        <tag>iOS面试题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cocoapods_使用cocoapods、brew、等报网络错误</title>
+    <url>/2016/12/18/%E4%BD%BF%E7%94%A8cocoapods%E3%80%81brew%E3%80%81%E7%AD%89%E6%8A%A5%E7%BD%91%E7%BB%9C%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<p>终端执行 git config –global –unset http.proxy</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Cocoapods</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS_Swift_常用的第三方开源框架</title>
+    <url>/2017/05/05/swift__%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/</url>
+    <content><![CDATA[<p>来自<a href="http://www.jianshu.com/u/43e90a4207ae">良辰乐</a>(<a href="http://www.jianshu.com/p/3a3bf236e85e">http://www.jianshu.com/p/3a3bf236e85e</a>)</p>
+<blockquote>
+<p>这些库的 TL;DR 列表，供快速查询：</p>
+</blockquote>
+<span id="more"></span>
+<p>1.<a href="https://github.com/Instagram/IGListKit">IGListKit</a> [UICollectionView 框架] -&gt; pod ‘IGListKit’, ‘<del>&gt; 2.0.0<br>2.<a href="https://github.com/realm/realm-cocoa">Realm</a> [移动端数据库] -&gt; pod ‘RealmSwift’<br>3.<a href="https://github.com/Moya/Moya">Moya</a> [抽象网络层] -&gt; pod ‘Moya’, ‘8.0.0’<br>4.<a href="https://github.com/SwiftyJSON/SwiftyJSON">SwiftyJSON</a> [JSON 解析] -&gt; pod ‘SwiftyJSON’<br>5.<a href="https://github.com/square/Valet">Valet</a> [钥匙串帮手] -&gt; pod ‘Valet’<br>6.<a href="https://firebase.google.com/docs/analytics/">Firebase Analytics</a> [分析] -&gt; pod ‘Firebase&#x2F;Core’<br>7.<a href="https://github.com/facebook/AsyncDisplayKit">AsyncDisplayKit</a> [异步 UI SDK] -&gt; pod ‘AsyncDisplayKit’<br>8.<a href="https://github.com/dzenbot/DZNEmptyDataSet">DZNEmptyDataSet</a> [空状态模式] -&gt; pod ‘DZNEmptyDataSet’<br>9.<a href="https://github.com/ViccAlexander/Chameleon">Chameleon</a> [扁平化颜色框架] -&gt; pod ‘ChameleonFramework&#x2F;Swift’, :<a href="http://lib.csdn.net/base/28">Git</a> &#x3D;&gt; ‘<a href="https://github.com/ViccAlexander/Chameleon.git">https://github.com/ViccAlexander/Chameleon.git</a>‘<br>10.<a href="https://github.com/nickoneill/PermissionScope">PermissionScope</a> [iOS 权限框架] -&gt; pod ‘PermissionScope’<br>11.<a href="https://github.com/nvzqz/FileKit">FileKit</a> [文件管理] -&gt; pod ‘FileKit’, ‘</del>&gt; 4.0.0’<br>12.<a href="https://github.com/radex/SwiftyUserDefaults">SwiftyUserDefaults</a> [user defaults 帮手] -&gt; pod ‘SwiftyUserDefaults’<br>13.<a href="https://github.com/onevcat/Kingfisher">Kingfisher</a> [下载图片] -&gt; pod ‘Kingfisher’, ‘<del>&gt; 3.0’<br>14.<a href="https://github.com/lkzhao/Hero">Hero</a> [自定义试图控制器过渡动画] -&gt; pod ‘Hero’<br>15.<a href="https://github.com/onevcat/Hedwig">Hedwig</a> [发送 email]<br>16.<a href="https://github.com/dennisweissmann/DeviceKit">DeviceKit</a> [设备信息] -&gt; pod ‘DeviceKit’, ‘</del>&gt; 1.0’<br>17.<a href="https://github.com/danielgindi/Charts">Charts</a> [图表] -&gt; pod ‘Charts’<br>18.<a href="https://github.com/MortimerGoro/MGSwipeTableCell">MGSwipeTableCell</a> [可以滑动的 table cells] -&gt; pod ‘MGSwipeTableCell’<br>19.<a href="https://github.com/nvzqz/RandomKit">RandomKit</a> [随机生成数字] -&gt; pod ‘RandomKit’, ‘<del>&gt; 3.0.0’<br>20.<a href="https://github.com/netguru/ResponseDetective">ResponseDetective</a> [调适网络请求] -&gt; pod ‘ResponseDetective’<br>21.<a href="https://github.com/mamaral/Onboard">Onboard</a> [用户指导页] -&gt; pod ‘Onboard’<br>22.<a href="https://github.com/Quick/Quick">Quick</a> + <a href="https://github.com/Quick/Nimble">Nimble</a> [BDD 测试] -&gt; pod ‘Quick’pod ‘Nimble’<br>23.<a href="https://github.com/krzyzanowskim/Natalie">Natalie</a> [从 storyboard 生成代码]<br>24.<a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> [reactive 编程] -&gt; pod ‘RxSwift’, ‘</del>&gt; 3.0’<br>25.<a href="https://github.com/dani-gavrilov/GDPerformanceView-Swift">GDPerformanceView</a> [实时 FPS and CPU 用量] -&gt; pod ‘GDPerformanceView-Swift’, ‘<del>&gt; 1.1.0’<br>26.<a href="https://github.com/Alamofire/Alamofire">Alamofire</a> [网络] -&gt; pod ‘Alamofire’, ‘</del>&gt; 4.3’<br>27.<a href="https://github.com/bizz84/SwiftyStoreKit">SwiftyStoreKit</a> [app 内购] -&gt; pod ‘SwiftyStoreKit’<br>28.<a href="https://github.com/naoty/Timepiece">Timepiece</a> [date 帮手] -&gt; pod ‘Timepiece’<br>29.<a href="https://github.com/krzyzanowskim/CryptoSwift">CryptoSwift</a> [加密] -&gt; pod ‘CryptoSwift’<br>30.<a href="https://github.com/WenchaoD/FSCalendar">FSCalendar</a> [日历] -&gt; pod ‘FSCalendar’<br>31.<a href="https://github.com/MailOnline/ImageViewer">ImageViewer</a> [模仿 Twitter 的图片查看器] -&gt; pod ‘ImageViewer’<br>32.<a href="https://github.com/mxcl/PromiseKit">PromiseKit</a> [promises] -&gt; pod ‘PromiseKit’, ‘~&gt; 4.0’<br>33.<a href="https://github.com/drewmccormack/ensembles">Ensembles</a> [Core Data 同步] -&gt; pod ‘Ensembles’</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>Swift</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Swift</tag>
+      </tags>
+  </entry>
+</search>
